@@ -37,6 +37,9 @@ Evidence-backed prompting techniques. This is the flagship section — see [prom
 
 - **[Chain-of-thought prompting](prompting/chain-of-thought.md)** `[paper]` — "Let's think step by step" lifts reasoning accuracy on multi-step tasks by a double-digit margin on published benchmarks.
 - **[Few-shot prompting](prompting/few-shot.md)** `[paper]` — In-context examples outperform zero-shot on most tasks; example count has diminishing returns past ~8.
+- **[Self-consistency](prompting/self-consistency.md)** `[paper]` — Sample multiple CoT paths and take the majority vote; beats single-sample CoT on reasoning benchmarks.
+- **[Self-refine](prompting/self-refine.md)** `[paper]` — Generate → critique → revise in three phases; improves quality where the model can recognize its own errors.
+- **[Extended thinking / reasoning modes](prompting/extended-thinking.md)** `[provider-doc]` — Provider-native "think longer before answering" budgets on Claude, OpenAI o-series, and Gemini.
 - **[Prompt caching](prompting/prompt-caching.md)** `[provider-doc]` — Reuse a static prefix across requests to cut cost ~90% and latency materially on repeated long-context calls.
 - **[Structured output](prompting/structured-output.md)** `[provider-doc]` — JSON-schema-constrained generation eliminates parsing errors and reduces hallucinated fields.
 
@@ -44,7 +47,12 @@ Evidence-backed prompting techniques. This is the flagship section — see [prom
 
 Building agents — not using them. See [agents/README.md](agents/README.md).
 
-*Seeding in v0.2.*
+- **[ReAct: Reasoning + Acting](agents/react.md)** `[paper]` — Interleave Thought/Action/Observation; the pattern underlying most modern tool-using agents.
+- **[Toolformer](agents/toolformer.md)** `[paper]` — Train tool-calling into the model via self-supervised filtering; the training-time complement to ReAct.
+- **[Reflexion](agents/reflexion.md)** `[paper]` — After a failed attempt, generate a verbal self-reflection and retry with it in context.
+- **[SWE-Bench](agents/swe-bench.md)** `[paper]` — The benchmark to cite when evaluating code-operating agents on real GitHub issues.
+- **[Tool use (Anthropic / Claude)](agents/tool-use-anthropic.md)** `[provider-doc]` — Claude's structured tool-use API: schemas, `tool_use` blocks, parallel calls.
+- **[Tool use (OpenAI)](agents/tool-use-openai.md)** `[provider-doc]` — OpenAI function calling + hosted tools (`web_search`, `code_interpreter`, etc.).
 
 ## Extensions
 
@@ -63,7 +71,11 @@ Make your existing AI tool do more. Each extension type is its own curated list:
 
 Per-provider deep dives: available models, context windows, pricing, strengths/weaknesses (cited), best-fit tasks. See [models/README.md](models/README.md).
 
-*Seeding in v0.2 — starting with `claude.md`, `gpt.md`, `gemini.md`.*
+- **[Claude (Anthropic)](models/claude.md)** `[provider-doc]` — Opus/Sonnet/Haiku tiers, extended thinking, 90%-off prompt caching, strict tool use, long-context coding.
+- **[GPT (OpenAI)](models/gpt.md)** `[provider-doc]` — Broad multimodality, hosted tools (`web_search`, `code_interpreter`), o-series reasoning, Batch API discount.
+- **[Gemini (Google)](models/gemini.md)** `[provider-doc]` — 1M-token context, native multimodality (video/audio), explicit context caching, thinking budget control.
+
+More providers (Kimi, Qwen, DeepSeek, Grok, Llama, Mistral) land in v0.3.
 
 ## Self-hosted
 

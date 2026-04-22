@@ -15,9 +15,22 @@ Subtopics we'll cover as entries accumulate:
 - **Evaluation** — agent eval harnesses, where SWE-Bench / GAIA / τ-bench fit
 - **Hardening** — prompt-injection resistance, tool-output sanitization, sandboxing
 
-## Status
+## Entries
 
-Seeding in v0.2. This README will fill in as entries land.
+### Patterns
+
+- **[ReAct: Reasoning + Acting](react.md)** `[paper]` — Interleave Thought/Action/Observation; the pattern underlying most modern tool-using agents.
+- **[Toolformer](toolformer.md)** `[paper]` — Training-time tool use: the model learns when to emit calls via self-supervised filtering.
+- **[Reflexion](reflexion.md)** `[paper]` — Verbal self-reflection after failures, kept in context for the next attempt.
+
+### Tool use (provider APIs)
+
+- **[Tool use (Anthropic / Claude)](tool-use-anthropic.md)** `[provider-doc]` — `tool_use` / `tool_result` protocol, parallel calls, cacheable tool definitions.
+- **[Tool use (OpenAI)](tool-use-openai.md)** `[provider-doc]` — Function calling + hosted tools (`web_search`, `code_interpreter`, etc.) in the Responses API.
+
+### Evaluation
+
+- **[SWE-Bench](swe-bench.md)** `[paper]` — Real GitHub issues as the eval; the single most-cited agent-coding benchmark.
 
 ## Out of scope
 
