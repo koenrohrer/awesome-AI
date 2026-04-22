@@ -74,8 +74,11 @@ Per-provider deep dives: available models, context windows, pricing, strengths/w
 - **[Claude (Anthropic)](models/claude.md)** `[provider-doc]` — Opus/Sonnet/Haiku tiers, extended thinking, 90%-off prompt caching, strict tool use, long-context coding.
 - **[GPT (OpenAI)](models/gpt.md)** `[provider-doc]` — Broad multimodality, hosted tools (`web_search`, `code_interpreter`), o-series reasoning, Batch API discount.
 - **[Gemini (Google)](models/gemini.md)** `[provider-doc]` — 1M-token context, native multimodality (video/audio), explicit context caching, thinking budget control.
+- **[Kimi (Moonshot AI)](models/kimi.md)** `[provider-doc]` — MoE flagship with long-context focus; selected releases published as open weights.
+- **[Qwen (Alibaba)](models/qwen.md)** `[provider-doc]` — The most consistently open-weight frontier-adjacent family; strong specialist variants (Coder, VL, Math, Audio).
+- **[DeepSeek](models/deepseek.md)** `[provider-doc]` — MoE + open-weight reasoning (R1); aggressive hosted-API pricing.
 
-More providers (Kimi, Qwen, DeepSeek, Grok, Llama, Mistral) land in v0.3.
+More providers (Grok, Llama, Mistral, Phi) land in a later wave.
 
 ## Self-hosted
 
@@ -99,12 +102,21 @@ Running models locally.
 
 ## Learning
 
-- **[Papers](learning/papers/)** — landmark papers with TL;DRs
-- **[Courses](learning/courses/)** — vetted courses worth your time
-- **[Architecture explainers](learning/architecture/)** — transformers, MoE, diffusion, etc.
-- **[Safety](learning/safety/)** — red-teaming, jailbreak resistance, prompt injection
+Foundations, not tips. Subsections: [papers](learning/papers/), [courses](learning/courses/), [architecture explainers](learning/architecture/), [safety](learning/safety/).
 
-*Seeding in v0.2.*
+### Papers — foundational
+
+- **[Attention Is All You Need](learning/papers/attention-is-all-you-need.md)** `[paper]` — Vaswani et al. 2017. The Transformer paper. The architecture underlying every modern LLM.
+- **[Scaling laws (Kaplan + Chinchilla)](learning/papers/scaling-laws.md)** `[paper]` — Kaplan 2020 + Hoffmann 2022. Why bigger works, and what ratio of parameters to data is actually compute-optimal.
+- **[InstructGPT / RLHF](learning/papers/instructgpt.md)** `[paper]` — Ouyang et al. 2022. The three-stage recipe (SFT → reward model → PPO) that made ChatGPT possible.
+- **[Direct Preference Optimization (DPO)](learning/papers/dpo.md)** `[paper]` — Rafailov et al. 2023. Closed-form alignment from preference data without the RL loop.
+- **[Constitutional AI](learning/papers/constitutional-ai.md)** `[paper]` — Bai et al. 2022. Replace human labelers with model self-critique against a constitution — the foundation of scalable alignment.
+
+### Safety — prompt injection, jailbreaks, red-teaming
+
+- **[Indirect Prompt Injection](learning/safety/indirect-prompt-injection.md)** `[paper]` — Greshake et al. 2023. The foundational framing of the injection threat when agents read untrusted content.
+- **[GCG: Universal Adversarial Attacks](learning/safety/gcg-attack.md)** `[paper]` — Zou et al. 2023. Automated jailbreak discovery; suffixes transfer across models.
+- **[Jailbroken: How Does LLM Safety Training Fail?](learning/safety/jailbreak-failure-modes.md)** `[paper]` — Wei et al. 2023. The framework for understanding *why* jailbreaks work (competing objectives, mismatched generalization).
 
 ## Tools
 
