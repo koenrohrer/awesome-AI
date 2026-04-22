@@ -1,4 +1,4 @@
-# Awesome AI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome AI
 
 > A curated, **evidence-backed** guide to the AI landscape — prompting, agents, tool extensions, models, self-hosted setups, integrations, and education. Every entry carries a badge showing the evidence behind it. Nothing unlabeled.
 
