@@ -1,7 +1,8 @@
 {
   "ignorePatterns": [
     { "pattern": "^http://localhost" },
-    { "pattern": "^https://github.com/koenrohrer/awesome-AI/discussions" }
+    { "pattern": "^https://github.com/koenrohrer/awesome-AI/discussions" },
+    { "pattern": "^https://ai\\.google\\.dev" }
   ],
   "retryOn429": true,
   "retryCount": 3,
