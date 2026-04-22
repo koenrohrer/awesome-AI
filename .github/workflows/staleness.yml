@@ -1,0 +1,29 @@
+name: Staleness check
+
+on:
+  schedule:
+    - cron: "0 14 1 * *"
+  workflow_dispatch:
+
+jobs:
+  link-rot:
+    name: Find broken links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: markdown-link-check
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: "yes"
+          use-verbose-mode: "yes"
+          config-file: ".github/markdown-link-check.json"
+
+  flag-stale-tools:
+    name: Flag tool entries with no recent upstream commits
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder
+        run: |
+          echo "Placeholder job. Implement upstream-commit freshness checks"
+          echo "when the tool list grows enough to warrant automation."

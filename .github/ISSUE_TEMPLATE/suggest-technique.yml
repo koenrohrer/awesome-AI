@@ -1,0 +1,68 @@
+name: Suggest a technique
+description: Propose a prompting or agent technique. Requires [paper], [provider-doc], or [tested] evidence.
+title: "[technique] "
+labels: ["track:technique", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Techniques must be backed by one of: a published paper, an official provider doc, or a maintainer-run test. Read [CONTRIBUTING.md](../CONTRIBUTING.md) before opening.
+  - type: input
+    id: name
+    attributes:
+      label: Technique name
+      placeholder: e.g., Chain-of-thought prompting
+    validations:
+      required: true
+  - type: dropdown
+    id: badge
+    attributes:
+      label: Evidence badge
+      options:
+        - "[paper]"
+        - "[provider-doc]"
+        - "[tested] (maintainer-only)"
+    validations:
+      required: true
+  - type: textarea
+    id: citation
+    attributes:
+      label: Citation or doc link
+      description: Full citation for papers, direct URL for provider docs, test directory path for [tested].
+      placeholder: "Wei et al., 2022. https://arxiv.org/abs/2201.11903"
+    validations:
+      required: true
+  - type: textarea
+    id: pitch
+    attributes:
+      label: One-sentence pitch
+      description: Under 140 characters. What it is + who it's for.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - prompting
+        - agents
+    validations:
+      required: true
+  - type: textarea
+    id: evidence-summary
+    attributes:
+      label: What the evidence actually shows
+      description: Summarize the paper's finding or the doc's claim in plain English. Don't overstate.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have read CONTRIBUTING.md
+          required: true
+        - label: The evidence I cited supports the claim in my pitch (no overreach)
+          required: true
+        - label: This is not a duplicate of an existing entry
+          required: true

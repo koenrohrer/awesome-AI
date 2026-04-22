@@ -1,0 +1,84 @@
+name: Suggest a tool
+description: Propose a tool, skill, plugin, hook, MCP server, or similar. Requires maintained + used + scope-fit.
+title: "[tool] "
+labels: ["track:tool", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tools must meet all three criteria: **maintained** (commit within 90 days), **used** (you ran it on a real task), **scope-fit** (solves one specific problem). Read [CONTRIBUTING.md](../CONTRIBUTING.md) before opening.
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Repository URL
+      placeholder: https://github.com/...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - extensions/skills
+        - extensions/hooks
+        - extensions/plugins
+        - extensions/mcp-servers
+        - extensions/subagents
+        - extensions/slash-commands
+        - tools (standalone)
+        - self-hosted/runners
+    validations:
+      required: true
+  - type: input
+    id: last-commit
+    attributes:
+      label: Date of last commit
+      description: Must be within 90 days of today.
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: used
+    attributes:
+      label: How you used it
+      description: Describe the real task you ran this tool on. "I tried it once" is not enough — what did it do for you?
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: The one specific problem it solves
+      description: "'General purpose' is not a scope. Be specific."
+    validations:
+      required: true
+  - type: textarea
+    id: pitch
+    attributes:
+      label: One-sentence pitch
+      description: Under 140 characters.
+    validations:
+      required: true
+  - type: textarea
+    id: gotchas
+    attributes:
+      label: Known gotchas (optional)
+      description: Things that tripped you up. Honest caveats are welcome.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmations
+      options:
+        - label: Last commit is within the past 90 days
+          required: true
+        - label: I have personally run this tool on a real task
+          required: true
+        - label: I have read CONTRIBUTING.md
+          required: true
+        - label: This is not a duplicate of an existing entry
+          required: true

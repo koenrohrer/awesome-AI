@@ -1,0 +1,52 @@
+name: Suggest a hardware entry
+description: Propose a hardware spec, benchmark, or compatibility note. Requires a named third-party source.
+title: "[hardware] "
+labels: ["track:hardware", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every hardware claim must cite a named third-party source. No rumor-based specs. Read [CONTRIBUTING.md](../CONTRIBUTING.md) before opening.
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      placeholder: e.g., Apple Mac Studio M4 Max 128GB, NVIDIA RTX 5090
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim
+      description: What does this entry assert? (e.g., "runs Llama-3 70B q4 at 25 tok/s")
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Named source for the claim
+      description: Apple spec sheet URL, NVIDIA whitepaper URL, a named YouTuber's benchmark video (with creator name and title), a specific HuggingFace leaderboard entry. No "Reddit said…" or unnamed forums.
+    validations:
+      required: true
+  - type: dropdown
+    id: use-case
+    attributes:
+      label: Best-fit use case
+      options:
+        - Local LLM inference (7B–13B)
+        - Local LLM inference (30B–70B)
+        - Local LLM inference (70B+)
+        - Fine-tuning
+        - Agent workflows (low latency)
+        - Multi-modal (vision/audio)
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmations
+      options:
+        - label: My source is named and linkable (not "someone on Reddit")
+          required: true
+        - label: I have read CONTRIBUTING.md
+          required: true
