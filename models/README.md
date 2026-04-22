@@ -33,9 +33,13 @@ Per-provider deep dives. One file per provider, structured identically so you ca
 **Open weights:** Llama, Mistral, Qwen, DeepSeek, Kimi, Phi
 **Specialist:** Mixtral, Command R, Yi, Hermes fine-tunes
 
-## Status
+## Entries
 
-Seeding in v0.2. First batch: `claude.md`, `gpt.md`, `gemini.md`.
+- **[Claude (Anthropic)](claude.md)** `[provider-doc]` — Opus/Sonnet/Haiku, extended thinking, 90%-off prompt caching, strict tool use.
+- **[GPT (OpenAI)](gpt.md)** `[provider-doc]` — Broad multimodality, hosted tools, o-series reasoning, Batch API discount.
+- **[Gemini (Google)](gemini.md)** `[provider-doc]` — 1M-token context, native video/audio, explicit context caching, thinking budgets.
+
+More providers (Kimi, Qwen, DeepSeek, Grok, Llama, Mistral) land in v0.3.
 
 ## Editorial rules
 
