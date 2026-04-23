@@ -39,6 +39,9 @@ Evidence-backed prompting techniques. This is the flagship section — see [prom
 - **[Few-shot prompting](prompting/few-shot.md)** `[paper]` — In-context examples outperform zero-shot on most tasks; example count has diminishing returns past ~8.
 - **[Self-consistency](prompting/self-consistency.md)** `[paper]` — Sample multiple CoT paths and take the majority vote; beats single-sample CoT on reasoning benchmarks.
 - **[Self-refine](prompting/self-refine.md)** `[paper]` — Generate → critique → revise in three phases; improves quality where the model can recognize its own errors.
+- **[Tree of Thoughts](prompting/tree-of-thoughts.md)** `[paper]` — CoT generalized to a tree with explicit search; for problems where a single reasoning path isn't enough.
+- **[Least-to-most prompting](prompting/least-to-most.md)** `[paper]` — Decompose into subproblems, solve them in order with answers accumulating as context.
+- **[Prompt chaining](prompting/prompt-chaining.md)** `[provider-doc]` — Break complex tasks into multiple focused prompts; the default pattern for non-trivial workflows.
 - **[Extended thinking / reasoning modes](prompting/extended-thinking.md)** `[provider-doc]` — Provider-native "think longer before answering" budgets on Claude, OpenAI o-series, and Gemini.
 - **[Prompt caching](prompting/prompt-caching.md)** `[provider-doc]` — Reuse a static prefix across requests to cut cost ~90% and latency materially on repeated long-context calls.
 - **[Structured output](prompting/structured-output.md)** `[provider-doc]` — JSON-schema-constrained generation eliminates parsing errors and reduces hallucinated fields.
@@ -49,8 +52,11 @@ Building agents — not using them. See [agents/README.md](agents/README.md).
 
 - **[ReAct: Reasoning + Acting](agents/react.md)** `[paper]` — Interleave Thought/Action/Observation; the pattern underlying most modern tool-using agents.
 - **[Toolformer](agents/toolformer.md)** `[paper]` — Train tool-calling into the model via self-supervised filtering; the training-time complement to ReAct.
+- **[Plan-and-Solve prompting](agents/plan-and-solve.md)** `[paper]` — Plan first, then execute; the planner/worker split underlying most agent frameworks.
 - **[Reflexion](agents/reflexion.md)** `[paper]` — After a failed attempt, generate a verbal self-reflection and retry with it in context.
+- **[Voyager](agents/voyager.md)** `[paper]` — Open-ended Minecraft agent: automatic curriculum + reusable skill library + environment-grounded feedback.
 - **[SWE-Bench](agents/swe-bench.md)** `[paper]` — The benchmark to cite when evaluating code-operating agents on real GitHub issues.
+- **[GAIA: General AI Assistant benchmark](agents/gaia.md)** `[paper]` — 466 real-world multi-tool, multimodal questions; grades the whole agent stack, not just the model.
 - **[Tool use (Anthropic / Claude)](agents/tool-use-anthropic.md)** `[provider-doc]` — Claude's structured tool-use API: schemas, `tool_use` blocks, parallel calls.
 - **[Tool use (OpenAI)](agents/tool-use-openai.md)** `[provider-doc]` — OpenAI function calling + hosted tools (`web_search`, `code_interpreter`, etc.).
 
@@ -74,11 +80,14 @@ Per-provider deep dives: available models, context windows, pricing, strengths/w
 - **[Claude (Anthropic)](models/claude.md)** `[provider-doc]` — Opus/Sonnet/Haiku tiers, extended thinking, 90%-off prompt caching, strict tool use, long-context coding.
 - **[GPT (OpenAI)](models/gpt.md)** `[provider-doc]` — Broad multimodality, hosted tools (`web_search`, `code_interpreter`), o-series reasoning, Batch API discount.
 - **[Gemini (Google)](models/gemini.md)** `[provider-doc]` — 1M-token context, native multimodality (video/audio), explicit context caching, thinking budget control.
+- **[Grok (xAI)](models/grok.md)** `[provider-doc]` — Closed API with OpenAI-compatible endpoint; integrated live web/X data; select older weights occasionally released.
 - **[Kimi (Moonshot AI)](models/kimi.md)** `[provider-doc]` — MoE flagship with long-context focus; selected releases published as open weights.
 - **[Qwen (Alibaba)](models/qwen.md)** `[provider-doc]` — The most consistently open-weight frontier-adjacent family; strong specialist variants (Coder, VL, Math, Audio).
 - **[DeepSeek](models/deepseek.md)** `[provider-doc]` — MoE + open-weight reasoning (R1); aggressive hosted-API pricing.
+- **[Llama (Meta)](models/llama.md)** `[provider-doc]` — The reference open-weight family; first-class support in every open-source inference stack.
+- **[Mistral](models/mistral.md)** `[provider-doc]` — Dual track of proprietary flagships and Apache-2.0-licensed open-weight MoE releases; EU-based.
 
-More providers (Grok, Llama, Mistral, Phi) land in a later wave.
+More providers (Phi, Command R, Yi) land in a later wave.
 
 ## Self-hosted
 
