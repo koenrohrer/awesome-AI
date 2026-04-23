@@ -12,8 +12,7 @@
 | Gemini 2.5 Pro TTS (preview) | Audio generation | Text-to-speech preview variant |
 | Gemma 3 | Open-weight multimodal line | 128K context, text+image input |
 | Gemma 3n | On-device open model line | Multimodal, audio-capable, parameter-efficient device deployment |
-
-As of 2026-04-23, Google's public developer docs show Gemma 3 and Gemma 3n, not a public "Gemma 4" release. If someone asks for Gemma 4, verify again before repeating it as fact.
+| Gemma 4 | Open-weight family, edge → workstation | `E2B`/`E4B` at 128K; `26B A4B` MoE and `31B` dense at 256K |
 
 ## Model pages
 
@@ -22,6 +21,7 @@ As of 2026-04-23, Google's public developer docs show Gemma 3 and Gemma 3n, not 
 - [Gemini 2.5 Flash-Lite](models/gemini-2-5-flash-lite.md)
 - [Gemma 3](models/gemma-3.md)
 - [Gemma 3n](models/gemma-3n.md)
+- [Gemma 4](models/gemma-4.md)
 
 ## Model cards and docs
 
@@ -29,6 +29,7 @@ As of 2026-04-23, Google's public developer docs show Gemma 3 and Gemma 3n, not 
 - [Gemma models overview](https://ai.google.dev/gemma/docs)
 - [Gemma 3 model card](https://ai.google.dev/gemma/docs/core/model_card_3)
 - [Gemma 3n model card](https://ai.google.dev/gemma/docs/gemma-3n/model_card)
+- [Gemma 4 model card](https://ai.google.dev/gemma/docs/core/model_card_4)
 
 Google does not currently publish a public Gemini “system card” hub in the same vendor pattern as Anthropic/OpenAI. For Gemini, the model page and launch documentation are the practical primary sources. For Gemma, the model cards are the closest equivalent.
 
@@ -56,7 +57,7 @@ Google does not currently publish a public Gemini “system card” hub in the s
 
 - **AI Studio vs Vertex AI.** Same underlying Gemini family, different operational surface. [AI Studio](https://aistudio.google.com/), [Vertex AI](https://cloud.google.com/vertex-ai).
 - **Gemma is not Gemini.** Gemma docs live separately and describe open weights, local deployment, and model-card style safety notes.
-- **Do not assume “Gemma 4.”** The public docs available on April 23, 2026 still point to Gemma 3 and 3n.
+- **Gemma 3 and Gemma 4 coexist.** Gemma 4 launched in April 2026 as a separate open-weight line; Gemma 3 and 3n remain documented and deployable. Pick the version that matches the runtime/device you're targeting.
 
 ## Official docs
 
@@ -69,8 +70,9 @@ Google does not currently publish a public Gemini “system card” hub in the s
 - [Gemma overview](https://ai.google.dev/gemma/docs)
 - [Gemma 3 overview](https://ai.google.dev/gemma/docs/core)
 - [Gemma 3n overview](https://ai.google.dev/gemma/docs/gemma-3n)
+- [Gemma 4 launch page](https://deepmind.google/models/gemma/gemma-4/)
 - [Pricing](https://ai.google.dev/pricing)
 
 ## Status
 
-`[provider-doc]`. Google's hosted and open-model lines are both current here, with an explicit note that a public Gemma 4 page was not present in official docs on 2026-04-23.
+`[provider-doc]`. Gemini and Gemma families are both current. Gemma 4 launched April 2026 alongside the continued Gemma 3 / 3n lines; see the per-model pages for deployment specifics.
