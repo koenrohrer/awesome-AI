@@ -17,7 +17,7 @@ Model IDs roll forward; the [models page](https://ai.google.dev/gemini-api/docs/
 - **Very long context.** 1M-token context windows across the 2.x series. See [long context docs](https://ai.google.dev/gemini-api/docs/long-context).
 - **Native multimodality.** Text, images, audio, and video input handled by the same model family. See the [vision and video docs](https://ai.google.dev/gemini-api/docs/vision).
 - **Thinking mode with explicit budget.** Configurable thinking-token budget on 2.5 series.
-- **Context caching.** Explicit, managed cache objects via API — you create a cache handle, reuse it across calls, pay per-token storage while it's alive. See the caching docs linked in [integrations/ci-cd/](../integrations/ci-cd/) (note: ai.google.dev URLs excluded from our automated link-check due to their regional redirects).
+- **Context caching.** Explicit, managed cache objects via API — you create a cache handle, reuse it across calls, pay per-token storage while it's alive. See the caching docs linked in [integrations/ci-cd/](../../integrations/ci-cd/) (note: ai.google.dev URLs excluded from our automated link-check due to their regional redirects).
 - **Free-tier API access.** Google offers a generous free tier for development — see [Gemini API keys](https://ai.google.dev/gemini-api/docs/api-key).
 
 ## Weaknesses (cited)
