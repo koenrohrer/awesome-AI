@@ -1,48 +1,69 @@
 # DeepSeek `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify against [DeepSeek platform docs](https://api-docs.deepseek.com/) before building a cost model.*
+*Last reviewed: 2026-04-23. DeepSeek's hosted API has converged on a simpler two-alias model surface even while the open-weight release story keeps moving. Verify against the live [models and pricing page](https://api-docs.deepseek.com/quick_start/pricing/) and [change log](https://api-docs.deepseek.com/updates/).*
 
 ## Current model lines
 
-| Model | Role | Notable feature |
-|---|---|---|
-| DeepSeek V3 (and successors) | General chat | MoE architecture, large total parameters with small active parameter count |
-| DeepSeek R1 (and successors) | Reasoning | Explicit reasoning/thinking model |
-| DeepSeek Coder | Code | Code-specialized variant |
+| Surface | Backing model | Role | Notable feature |
+|---|---|---|---|
+| `deepseek-chat` | DeepSeek-V3.2 (non-thinking) | General chat | Tool calls, JSON output, lower-cost path |
+| `deepseek-reasoner` | DeepSeek-V3.2 (thinking) | Reasoning | Thinking mode with much larger output ceiling |
+| DeepSeek-V3.2 | Open-weight flagship | General + agent use | Official open-weight release |
+| DeepSeek-R1 | Open-weight reasoning family | Reasoning | First major open-weight reasoning breakout |
 
-Most DeepSeek flagship releases are published as **open weights** on [HuggingFace](https://huggingface.co/deepseek-ai).
+The public API docs now explicitly state that `deepseek-chat` and `deepseek-reasoner` both map to DeepSeek-V3.2, rather than separate branded API models.
+
+## Model pages
+
+- [deepseek-chat](models/deepseek-chat.md)
+- [deepseek-reasoner](models/deepseek-reasoner.md)
+- [DeepSeek-V3.2](models/deepseek-v3-2.md)
+- [DeepSeek-R1](models/deepseek-r1.md)
+
+## Model docs
+
+- [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/)
+- [Change log](https://api-docs.deepseek.com/updates/)
+- [DeepSeek-V3.2 release](https://api-docs.deepseek.com/news/news251201)
+- [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
+
+DeepSeek does not currently publish public “system cards” in the same style as Anthropic/OpenAI. The release notes, pricing docs, papers, and Hugging Face model cards are the practical equivalents.
 
 ## Strengths (cited)
 
-- **Reasoning model with open weights.** DeepSeek R1 was among the first broadly-accessible open-weight reasoning models; the accompanying paper described a large-scale RL-based reasoning training recipe. See the [DeepSeek-R1 release on HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1) and its associated paper.
-- **MoE cost profile.** V3-family models use mixture-of-experts — large parameter counts but smaller *active* parameter counts per token, keeping inference cost lower than dense equivalents at similar quality.
-- **Aggressive pricing** on DeepSeek's hosted API relative to Western frontier models. Always cross-check live pricing on [api-docs.deepseek.com](https://api-docs.deepseek.com/) — DeepSeek has historically adjusted pricing frequently.
-- **Competitive SWE-Bench and reasoning-benchmark performance.** Model-announcement posts include benchmark tables; cross-check against the [SWE-Bench leaderboard](https://www.swebench.com/) or LMSYS arena for independent numbers.
+- **Simple hosted API surface.** Two aliases cover the main hosted paths: chat and reasoner. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
+- **Open-weight frontier-adjacent releases.** DeepSeek still publishes major flagship weights openly on [Hugging Face](https://huggingface.co/deepseek-ai).
+- **Reasoning baked into tool use.** DeepSeek's V3.2 release notes call out thinking integrated with tool-use. [DeepSeek-V3.2 release](https://api-docs.deepseek.com/news/news251201).
+- **Aggressive pricing.** The current published API pricing remains unusually low. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
 
 ## Weaknesses (cited)
 
-- **Western hosting considerations.** Some organizations have policy constraints on sending data to China-hosted APIs. For those cases, running open weights locally via `vLLM` or a Western host (Together, Fireworks, Groq) is the path.
-- **Documentation depth** lags Anthropic/OpenAI for advanced features (prompt caching, fine-tuning, tool-use edge cases). Community writeups on HuggingFace fill some gaps.
-- **Tool-calling ergonomics** have historically varied between releases — verify the current model's function-calling schema against your agent framework.
+- **Hosted surface is narrower than the open-weight brand story suggests.** The public API is effectively two aliases, not a broad branded family menu.
+- **Documentation depth still lags the Western incumbents.** Advanced agent/framework details remain thinner.
+- **Policy and deployment constraints matter.** Some teams will prefer self-hosting or third-party hosting for governance reasons rather than calling DeepSeek directly.
 
 ## Best-fit tasks
 
-- Open-weight reasoning workloads where R1-class capability on self-hosted infrastructure is valuable
-- Cost-sensitive API workloads where the pricing delta over Western providers matters
-- Research and fine-tuning on frontier-adjacent open weights
+- Cost-sensitive hosted inference
+- Open-weight reasoning and research workloads
+- Agent systems that want separate chat vs reasoner routing with minimal model-selection complexity
+- Benchmarks and experiments where open release artifacts matter
 
 ## Provider-specific quirks
 
-- **OpenAI-compatible API.** Hosted endpoint mirrors OpenAI format; existing clients generally work with base-URL changes.
-- **Thinking output separation.** Reasoning-variant models distinguish thinking content from the final response; handle both when parsing.
+- **Do not assume the app/web naming maps to the API.** The pricing page explicitly says the API surface differs from app/web branding.
+- **Thinking is routed via `deepseek-reasoner`.** You are not selecting a separate branded “R1” API model for the main hosted path.
+- **Release notes matter.** DeepSeek quietly changes what the aliases point to; monitor the [change log](https://api-docs.deepseek.com/updates/).
 
 ## Official docs
 
-- [DeepSeek platform](https://platform.deepseek.com/)
-- [API docs](https://api-docs.deepseek.com/)
-- [DeepSeek on HuggingFace](https://huggingface.co/deepseek-ai)
+- [Platform](https://platform.deepseek.com/)
+- [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/)
+- [Change log](https://api-docs.deepseek.com/updates/)
+- [List models API](https://api-docs.deepseek.com/api/list-models)
+- [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
 - [DeepSeek on GitHub](https://github.com/deepseek-ai)
 
 ## Status
 
-`[provider-doc]`. Model lineup and pricing rotate frequently.
+`[provider-doc]`. This page now reflects the current hosted aliases (`deepseek-chat`, `deepseek-reasoner`) and the underlying DeepSeek-V3.2 mapping documented by DeepSeek itself.

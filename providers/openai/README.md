@@ -1,6 +1,6 @@
 # OpenAI `[provider-doc]`
 
-*Last reviewed: 2026-04-23. OpenAI spans model families plus multiple first-party product surfaces. Verify specs against [OpenAI's models page](https://platform.openai.com/docs/models) before building a cost model.*
+*Last reviewed: 2026-04-23. OpenAI's catalog is moving quickly; verify exact availability against the live [models page](https://developers.openai.com/api/docs/models) and current system-card pages before building around a specific snapshot.*
 
 ## Product surfaces
 
@@ -8,53 +8,78 @@
 - **[ChatGPT Desktop](chatgpt-desktop.md)** — desktop app surface for local workflows, screenshots, files, and IDE-connected chat.
 - **[Image generation](image-generation.md)** — GPT Image and related image-generation APIs/tools.
 
+## Model pages
+
+- [GPT-5.4](models/gpt-5-4.md)
+- [GPT-5.4 Pro](models/gpt-5-4-pro.md)
+- [GPT-5.4 mini](models/gpt-5-4-mini.md)
+- [GPT-5.4 nano](models/gpt-5-4-nano.md)
+- [GPT-5.3 Instant](models/gpt-5-3-instant.md)
+- [GPT-5.3-Codex](models/gpt-5-3-codex.md)
+- [GPT-5-Codex](models/gpt-5-codex.md)
+- [codex-mini-latest](models/codex-mini-latest.md)
+
 ## Current model lines
 
 | Line | Role | Notable feature |
 |---|---|---|
-| GPT-5 / GPT-4.1 series | General flagship | Multimodal input, long context |
-| o-series (o3, o4-mini, etc.) | Reasoning | Internal extended reasoning; `reasoning_effort` control |
-| GPT-4o-mini / mini-series | Low-cost general | Cheap, fast, wide context |
-| Realtime (voice) | Audio | Low-latency speech-to-speech |
+| GPT-5.4 | Current flagship | 1.05M context, native computer use, strongest general agentic model |
+| GPT-5.4 Pro | Max-compute flagship | Slower, more expensive, deeper reasoning path |
+| GPT-5.4 mini / nano | Fast and cheap GPT-5.4-class models | Strong fit for subagents, coding helpers, high-volume tasks |
+| GPT-5.3 Instant | Fast GPT-5-series conversational model | Better web-search flow and lower latency than heavier models |
+| GPT-5.3-Codex / GPT-5.2-Codex / GPT-5-Codex | Agentic coding | Codex-tuned coding models with long-horizon tool use |
+| `codex-mini-latest` | Budget Codex helper | Fast Codex CLI / IDE workload tier |
 
-Model IDs and pricing change frequently — the [pricing page](https://openai.com/api/pricing/) is authoritative.
+The live API docs now recommend `gpt-5.4` as the default starting point, with `gpt-5.4-mini` and `gpt-5.4-nano` as the smaller variants.
+
+## System cards
+
+- [GPT-5.4 Thinking system card](https://openai.com/index/gpt-5-4-thinking-system-card)
+- [GPT-5.3 Instant system card](https://openai.com/index/gpt-5-3-instant-system-card/)
+- [GPT-5.3-Codex system card](https://openai.com/index/gpt-5-3-codex-system-card/)
+- [Addendum to GPT-5 system card: GPT-5-Codex](https://openai.com/index/gpt-5-system-card-addendum-gpt-5-codex/)
+- [GPT-5 system card](https://openai.com/blog/gpt-5-system-card/)
+
+OpenAI does not currently expose a separate public system-card page for every API alias on the models page. For example, `gpt-5.4-pro`, `gpt-5.4-mini`, and `gpt-5.4-nano` are documented on the models page and launch posts, but the main public safety document is still anchored on GPT-5.4 Thinking.
 
 ## Strengths (cited)
 
-- **Broad multimodal coverage.** Vision, audio input, realtime voice, and image generation (DALL-E family, image models) exposed in a single provider API. See [capabilities overview](https://platform.openai.com/docs/overview).
-- **Hosted tools.** `web_search`, `file_search`, `code_interpreter`, and computer-use are provider-hosted — no infrastructure to run for common agent needs. [Tools docs](https://platform.openai.com/docs/guides/tools).
-- **Reasoning models.** o-series exposes `reasoning_effort` (minimal/low/medium/high) for controllable compute-vs-accuracy. [Reasoning docs](https://platform.openai.com/docs/guides/reasoning).
-- **Batch API.** 50% discount for async jobs returning within 24 hours. [Batch API](https://platform.openai.com/docs/guides/batch).
-- **Prompt caching is automatic** on eligible prompts with ~50% discount on cached input tokens. [Prompt caching](https://platform.openai.com/docs/guides/prompt-caching).
+- **Broad hosted tools surface.** `web_search`, `file_search`, `computer_use`, `hosted shell`, `apply_patch`, and related tools are exposed directly in the Responses API. [Models page](https://developers.openai.com/api/docs/models), [tools docs](https://platform.openai.com/docs/guides/tools).
+- **Strong agentic coding depth.** GPT-5.4 explicitly incorporates GPT-5.3-Codex capabilities, and OpenAI still ships dedicated Codex models for coding-heavy workflows. See [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/) and the [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex).
+- **Wide product/API convergence.** The same core line now spans ChatGPT, the API, and Codex, reducing “web model vs API model” drift for many workflows. [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/).
+- **Automatic prompt caching and flexible scaling paths.** OpenAI supports prompt caching, batch, flex processing, and background mode in the main API stack. See the [API docs](https://developers.openai.com/api/docs/models) and [pricing](https://openai.com/api/pricing/).
 
 ## Weaknesses (cited)
 
-- **Context window asymmetry.** Some model variants have large input windows but much smaller output limits. Check the [model capabilities table](https://platform.openai.com/docs/models) before assuming you can generate long outputs.
-- **Rate-limit complexity.** Tier-based quotas differ across model families; production deployments often need to manage multiple tiers. [Rate limits](https://platform.openai.com/docs/guides/rate-limits).
+- **Catalog sprawl.** OpenAI now has overlapping mainline GPT-5, GPT-5.4 variants, Codex variants, and specialized models; model choice is less obvious than “just use the flagship.” The [models page](https://developers.openai.com/api/docs/models) is authoritative.
+- **Feature support varies by alias.** `gpt-5.4-pro` supports a narrower subset of structured-output/tooling features than `gpt-5.4`, and Codex-optimized models differ again. Always check the per-model page.
+- **Safety docs do not map 1:1 to every alias.** You often need to read a flagship system card plus addenda and launch posts to understand a family.
 
 ## Best-fit tasks
 
-- Multimodal workflows (especially audio input/output and image generation in the same pipeline)
-- Agent workflows that benefit from hosted `web_search` / `code_interpreter` without self-hosting
-- Reasoning-heavy tasks where `reasoning_effort` tuning is useful
-- Cost-sensitive async workloads (Batch API)
+- Multimodal agent workflows that need hosted tools rather than self-hosted infrastructure
+- Coding agents that mix planning, computer use, and repo edits
+- Knowledge-work automation across documents, spreadsheets, and presentations
+- Small/large mixed-model systems where GPT-5.4 coordinates and mini/nano handle support tasks
 
 ## Provider-specific quirks
 
-- **Responses API vs Chat Completions.** The Responses API is the newer unified surface; older integrations still use Chat Completions. For new work, prefer Responses. [API overview](https://platform.openai.com/docs/overview).
-- **`strict: true` on functions** forces schema conformance at decoding time. Use it for tool-use reliability.
-- **Structured Outputs** via `response_format: { type: "json_schema", ... }` is a separate path from function calling. [Structured Outputs docs](https://platform.openai.com/docs/guides/structured-outputs).
+- **Responses API is the primary surface.** New tool support lands there first. Older Chat Completions integrations still work for many models, but new builds should bias toward Responses.
+- **Model-specific tool support matters.** The models page now lists supported tools per model; do not assume parity across aliases.
+- **Codex models remain separate.** Even though GPT-5.4 absorbed a lot of Codex capability, dedicated Codex models still exist and are easier to justify for coding-only workloads.
 
 ## Official docs
 
-- [Models](https://platform.openai.com/docs/models)
-- [Reasoning](https://platform.openai.com/docs/guides/reasoning)
-- [Function calling](https://platform.openai.com/docs/guides/function-calling)
-- [Tools (hosted)](https://platform.openai.com/docs/guides/tools)
-- [Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs)
-- [Prompt caching](https://platform.openai.com/docs/guides/prompt-caching)
+- [Models](https://developers.openai.com/api/docs/models)
+- [GPT-5.4 launch post](https://openai.com/index/introducing-gpt-5-4/)
+- [GPT-5.4 mini and nano launch post](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)
+- [GPT-5.4 model page](https://developers.openai.com/api/docs/models/gpt-5.4)
+- [GPT-5.4 Pro model page](https://developers.openai.com/api/docs/models/gpt-5.4-pro)
+- [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex)
+- [GPT-5-Codex model page](https://developers.openai.com/api/docs/models/gpt-5-codex)
+- [codex-mini-latest model page](https://developers.openai.com/api/docs/models/codex-mini-latest)
 - [Pricing](https://openai.com/api/pricing/)
 
 ## Status
 
-`[provider-doc]`.
+`[provider-doc]`. OpenAI now has enough public system-card coverage to document GPT-5.4, GPT-5.3 Instant, and GPT-5.3-Codex directly, but smaller and Pro variants still require cross-reading launch posts and per-model docs.

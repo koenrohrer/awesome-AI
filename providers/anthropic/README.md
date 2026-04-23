@@ -1,6 +1,6 @@
 # Anthropic `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Anthropic's primary model family is Claude. Prices and context windows change; verify against [the Anthropic pricing page](https://www.anthropic.com/pricing) before building a cost model.*
+*Last reviewed: 2026-04-23. Anthropic's public Claude lineup changed materially in early 2026; verify exact availability against the [Claude models overview](https://platform.claude.com/docs/en/about-claude/models/overview), [model deprecations page](https://platform.claude.com/docs/en/about-claude/model-deprecations), and [system cards index](https://www.anthropic.com/system-cards/) before shipping.*
 
 ## Product surfaces
 
@@ -8,52 +8,70 @@
 - **[Claude Desktop](claude-desktop.md)** — desktop app surface with local MCP and desktop extensions.
 - **[Claude Design](claude-design.md)** — design/prototyping surface from Anthropic Labs.
 
+## Model pages
+
+- [Claude Opus 4.7](models/claude-opus-4-7.md)
+- [Claude Opus 4.6](models/claude-opus-4-6.md)
+- [Claude Opus 4.5](models/claude-opus-4-5.md)
+- [Claude Sonnet 4.6](models/claude-sonnet-4-6.md)
+- [Claude Sonnet 4.5](models/claude-sonnet-4-5.md)
+- [Claude Haiku 4.5](models/claude-haiku-4-5.md)
+
 ## Current models
 
-| Family | Context | Notable feature |
-|---|---|---|
-| Claude Opus 4.x | 200K (1M beta) | Flagship; deep reasoning, extended thinking |
-| Claude Sonnet 4.x | 200K | Balanced cost/quality for most production workloads |
-| Claude Haiku 4.x | 200K | Low-latency, high-throughput tier |
+| Family | Claude API ID | Context | Notable feature |
+|---|---|---|---|
+| Claude Opus 4.7 | `claude-opus-4-7` | 1M | Current flagship; adaptive thinking, strongest agentic coding |
+| Claude Opus 4.6 | `claude-opus-4-6` | 1M | Prior flagship; still active |
+| Claude Opus 4.5 | `claude-opus-4-5-20251101` | 1M | Older active Opus snapshot with public system card |
+| Claude Sonnet 4.6 | `claude-sonnet-4-6` | 1M | Default balanced tier for most production work |
+| Claude Sonnet 4.5 | `claude-sonnet-4-5-20250929` | 1M | Older active Sonnet snapshot |
+| Claude Haiku 4.5 | `claude-haiku-4-5-20251001` | 200K | Fastest current Claude tier |
 
-Exact pricing and the current version letters (e.g., Opus 4.7, Sonnet 4.6) are listed on the pricing page. The family tiers (Opus/Sonnet/Haiku) are stable; version numbers roll forward.
+Anthropic's older `claude-opus-4-20250514` and `claude-sonnet-4-20250514` snapshots were deprecated on April 14, 2026 and are scheduled to retire on June 15, 2026. Use the deprecations page, not blog posts, as the source of truth.
 
-See [Claude model docs](https://docs.anthropic.com/en/docs/about-claude/models) for specs, context windows, and vision support.
+## System cards
+
+- [Model system cards index](https://www.anthropic.com/system-cards/) — current landing page for Claude system cards.
+- The current index lists system cards for Claude Opus 4.7, Claude Opus 4.6, Claude Opus 4.5, Claude Sonnet 4.6, Claude Sonnet 4.5, and Claude Haiku 4.5.
 
 ## Strengths (cited)
 
-- **Long-context coding and reasoning.** Anthropic publishes SWE-Bench Verified numbers in model announcements; Claude consistently ranks at or near the top of the public leaderboard at release time. See [swebench.com](https://www.swebench.com/) for current standings.
-- **Extended thinking mode.** Controllable reasoning-token budget, with visible reasoning content when enabled. [Extended thinking docs](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking).
-- **Prompt caching with generous economics.** Cached input tokens bill at 10% of base; 5-minute TTL by default, extended cache options available. [Prompt caching docs](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching).
+- **Long-context coding and reasoning.** Current Opus and Sonnet tiers expose 1M-token context windows. See the [models overview](https://platform.claude.com/docs/en/about-claude/models/overview).
+- **Adaptive thinking and effort controls.** Anthropic now distinguishes adaptive thinking from the older explicit thinking-budget path. See [What's new in Claude Opus 4.7](https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7).
+- **Prompt caching with strong economics.** Anthropic documents cache discounts and TTL behavior in the [prompt caching docs](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching).
 - **Structured tool use.** `tool_use` / `tool_result` block protocol with strict JSON-schema conformance. [Tool use docs](https://docs.anthropic.com/en/docs/build-with-claude/tool-use).
 
 ## Weaknesses (cited)
 
-- **Multimodal breadth.** Claude supports vision for images, but Anthropic's published multimodal coverage trails OpenAI and Google on audio/video input. Check [supported input types](https://docs.anthropic.com/en/docs/build-with-claude/vision) before assuming parity.
-- **No hosted web-search/code-execution by default** in the API the way OpenAI's Responses API exposes `web_search` and `code_interpreter`. The Claude Agent SDK adds some hosted utilities, but parity with OpenAI's hosted tools is not assumed.
+- **Multimodal breadth still trails OpenAI and Google.** Claude supports image input well, but Anthropic's published API surface is still lighter on native audio/video workflows than Gemini and OpenAI. See [vision docs](https://docs.anthropic.com/en/docs/build-with-claude/vision).
+- **Hosted tool surface is narrower.** Anthropic does not expose the same built-in web-search / code-execution tool menu that OpenAI exposes in the Responses API.
+- **Fast-moving version churn.** The Claude 4.0 snapshots were deprecated less than a year after launch. Pin exact IDs in production and watch the [deprecations page](https://platform.claude.com/docs/en/about-claude/model-deprecations).
 
 ## Best-fit tasks
 
-- Long-context code reasoning (whole-repo reads, multi-file edits)
-- Agent loops where prompt caching on a stable system-prompt+tools prefix materially reduces cost
-- Structured extraction using tool-use schemas
-- Tasks where extended thinking's controllable budget maps well to the problem
+- Long-context code reasoning and repository work
+- Agent loops where prompt caching on a stable system prompt + tools prefix materially reduces cost
+- Structured extraction via tool-use schemas
+- High-agency knowledge work where adaptive thinking and large outputs matter
 
 ## Provider-specific quirks
 
-- **XML tags in prompts.** Anthropic explicitly recommends XML tags (`<instructions>`, `<example>`, `<output>`) for structured prompts. Cited in [prompt engineering — use XML tags](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags).
-- **System prompt is a top-level field**, not a message. Put stable instructions there for cacheability.
-- **Tool definitions go at the top of the request.** Cache them.
+- **XML tags in prompts.** Anthropic explicitly recommends XML tags (`<instructions>`, `<example>`, `<output>`) for structured prompts. See [prompt engineering — use XML tags](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags).
+- **System prompt is a top-level field**, not a message. Keep stable instructions there for better cacheability.
+- **Thinking behavior changed across Claude 4 releases.** Opus 4.7 removes the older explicit `budget_tokens` path in favor of adaptive thinking. Do not assume prompt code written for 4.5/4.6 ports cleanly.
 
 ## Official docs
 
-- [Models](https://docs.anthropic.com/en/docs/about-claude/models)
+- [Models overview](https://platform.claude.com/docs/en/about-claude/models/overview)
+- [Model deprecations](https://platform.claude.com/docs/en/about-claude/model-deprecations)
+- [Model cards](https://platform.claude.com/docs/en/resources/overview)
+- [System cards index](https://www.anthropic.com/system-cards/)
 - [Prompt engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
 - [Tool use](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)
 - [Prompt caching](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching)
-- [Extended thinking](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking)
-- [Pricing](https://www.anthropic.com/pricing)
+- [Pricing](https://claude.com/pricing)
 
 ## Status
 
-`[provider-doc]`. Prices, benchmark rankings, and exact version numbers rotate — treat this page as a pointer, not a source of truth.
+`[provider-doc]`. The active Claude lineup is now concrete enough to document by exact version, but Anthropic rotates snapshots and retirement dates quickly.
