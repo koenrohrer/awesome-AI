@@ -20,4 +20,4 @@ Same as the rest of the repo:
 
 ## Status
 
-Seeding in v0.2.
+Partially seeded in v0.4. `papers/` and `safety/` are live; `courses/` and `architecture/` are still being seeded.

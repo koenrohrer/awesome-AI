@@ -1,6 +1,6 @@
-# Qwen (Alibaba) `[provider-doc]`
+# Alibaba `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify against [Qwen docs on DashScope](https://help.aliyun.com/zh/dashscope/) and [qwen.ai](https://qwen.ai/) before building a cost model.*
+*Last reviewed: 2026-04-22. Alibaba's primary open-weight family is Qwen. Verify against [Qwen docs on DashScope](https://help.aliyun.com/zh/dashscope/) and [qwen.ai](https://qwen.ai/) before building a cost model.*
 
 ## Current model lines
 

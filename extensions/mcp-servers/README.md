@@ -10,4 +10,4 @@ Extra rule for MCP servers: a maintainer has actually wired the server into a re
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

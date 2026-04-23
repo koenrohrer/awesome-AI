@@ -8,4 +8,4 @@ A link belongs here only if it is considered a definitive or near-definitive tre
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

@@ -7,3 +7,4 @@ node_modules/
 *.swo
 .env
 .env.local
+docs/plans/

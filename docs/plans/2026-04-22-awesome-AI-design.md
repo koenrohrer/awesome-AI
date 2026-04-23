@@ -1,11 +1,11 @@
 # awesome-AI — design
 
 **Date:** 2026-04-22
-**Status:** Locked for v0.1 scaffold
+**Status:** Locked for v0.1 scaffold; the repo has since advanced through v0.4.
 
 ## Purpose
 
-A curated, evidence-backed GitHub awesome-list covering the full AI landscape — prompting, agents, tool extensions, models, self-hosted setups, integrations, education — without the "trust me bro" padding that plagues most AI link lists.
+A curated, evidence-backed GitHub awesome-list covering the full AI landscape — prompting, agents, tool extensions, provider ecosystems, self-hosted setups, integrations, education — without the "trust me bro" padding that plagues most AI link lists.
 
 ## Editorial stance
 
@@ -34,7 +34,7 @@ Nothing bare. Every entry carries a badge.
 1. `prompting/` — evidence-backed prompting techniques (flagship)
 2. `agents/` — building agents: tool use, memory, planning, evals
 3. `extensions/` — skills, hooks, plugins, mcp-servers, subagents, slash-commands
-4. `models/` — per-provider deep dives (claude, gpt, gemini, kimi, qwen, deepseek, grok, mistral, llama)
+4. `providers/` — per-provider deep dives plus product surfaces where needed
 5. `self-hosted/` — runners, workflows, hardware (sourced)
 6. `integrations/` — AI glued to non-AI: shell, CI/CD, no-code. Genuine gap.
 7. `learning/` — papers, courses, architecture explainers, safety
@@ -52,8 +52,9 @@ Nothing bare. Every entry carries a badge.
 | Wave | What ships |
 |---|---|
 | v0.1 | Directory tree, README index, CONTRIBUTING, templates, CI, ~4 seed entries in `prompting/` to prove the format |
-| v0.2 | 20+ entries in `prompting/` and `agents/`, first 3 `models/*.md`, first `integrations/` examples |
+| v0.2 | 20+ entries in `prompting/` and `agents/`, first 3 provider overviews under `providers/`, first `integrations/` examples |
 | v0.3 | Announce, open to contributions |
+| v0.4 | Provider-folder taxonomy, `integrations/automations/`, and status-language cleanup so scaffolded sections read honestly |
 
 ## What we rejected, and why
 

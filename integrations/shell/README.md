@@ -8,4 +8,4 @@ AI wired into the shell you already use: shell scripts that call LLMs, Git hooks
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

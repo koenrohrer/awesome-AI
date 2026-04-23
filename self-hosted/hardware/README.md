@@ -17,4 +17,4 @@ The maintainer does not own the hardware listed here. The discipline of this sec
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

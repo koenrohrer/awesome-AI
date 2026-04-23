@@ -8,4 +8,4 @@ Local-first AI setups that work end-to-end — not "here's a docker-compose, goo
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.
