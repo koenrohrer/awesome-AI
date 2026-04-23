@@ -1,6 +1,6 @@
 # OpenAI `[provider-doc]`
 
-*Last reviewed: 2026-04-23. OpenAI's catalog is moving quickly; verify exact availability against the live [models page](https://developers.openai.com/api/docs/models) and current system-card pages before building around a specific snapshot.*
+*Last reviewed: 2026-04-23. OpenAI's catalog is moving quickly; GPT-5.5 launched today for ChatGPT and Codex with API access announced as coming soon. Verify exact availability against the live [models page](https://developers.openai.com/api/docs/models), [GPT-5.5 launch post](https://openai.com/index/introducing-gpt-5-5/), and current system-card pages before building around a specific snapshot.*
 
 ## Product surfaces
 
@@ -10,6 +10,8 @@
 
 ## Model pages
 
+- [GPT-5.5](models/gpt-5-5.md)
+- [GPT-5.5 Pro](models/gpt-5-5-pro.md)
 - [GPT-5.4](models/gpt-5-4.md)
 - [GPT-5.4 Pro](models/gpt-5-4-pro.md)
 - [GPT-5.4 mini](models/gpt-5-4-mini.md)
@@ -23,17 +25,20 @@
 
 | Line | Role | Notable feature |
 |---|---|---|
-| GPT-5.4 | Current flagship | 1.05M context, native computer use, strongest general agentic model |
-| GPT-5.4 Pro | Max-compute flagship | Slower, more expensive, deeper reasoning path |
+| GPT-5.5 | Current ChatGPT/Codex flagship; API soon | Stronger agentic coding, computer use, research, and document/spreadsheet work |
+| GPT-5.5 Pro | Higher-compute ChatGPT tier; API soon | Harder-question / higher-accuracy path |
+| GPT-5.4 | Current API flagship | 1.05M context, native computer use, default API starting point |
+| GPT-5.4 Pro | Max-compute API flagship | Slower, more expensive, deeper reasoning path |
 | GPT-5.4 mini / nano | Fast and cheap GPT-5.4-class models | Strong fit for subagents, coding helpers, high-volume tasks |
 | GPT-5.3 Instant | Fast GPT-5-series conversational model | Better web-search flow and lower latency than heavier models |
 | GPT-5.3-Codex / GPT-5.2-Codex / GPT-5-Codex | Agentic coding | Codex-tuned coding models with long-horizon tool use |
 | `codex-mini-latest` | Budget Codex helper | Fast Codex CLI / IDE workload tier |
 
-The live API docs now recommend `gpt-5.4` as the default starting point, with `gpt-5.4-mini` and `gpt-5.4-nano` as the smaller variants.
+The live API docs still recommend `gpt-5.4` as the default API starting point. OpenAI's April 23, 2026 GPT-5.5 launch post says `gpt-5.5` and `gpt-5.5-pro` are coming to the API soon; until the live models page lists them, treat them as product-available rather than generally callable API models.
 
 ## System cards
 
+- [GPT-5.5 system card](https://openai.com/index/gpt-5-5-system-card/)
 - [GPT-5.4 Thinking system card](https://openai.com/index/gpt-5-4-thinking-system-card)
 - [GPT-5.3 Instant system card](https://openai.com/index/gpt-5-3-instant-system-card/)
 - [GPT-5.3-Codex system card](https://openai.com/index/gpt-5-3-codex-system-card/)
@@ -45,7 +50,7 @@ OpenAI does not currently expose a separate public system-card page for every AP
 ## Strengths (cited)
 
 - **Broad hosted tools surface.** `web_search`, `file_search`, `computer_use`, `hosted shell`, `apply_patch`, and related tools are exposed directly in the Responses API. [Models page](https://developers.openai.com/api/docs/models), [tools docs](https://platform.openai.com/docs/guides/tools).
-- **Strong agentic coding depth.** GPT-5.4 explicitly incorporates GPT-5.3-Codex capabilities, and OpenAI still ships dedicated Codex models for coding-heavy workflows. See [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/) and the [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex).
+- **Strong agentic coding depth.** GPT-5.5 is now OpenAI's newest product model for agentic coding in ChatGPT and Codex, while GPT-5.4 remains the live default API starting point. See [Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/), [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/), and the [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex).
 - **Wide product/API convergence.** The same core line now spans ChatGPT, the API, and Codex, reducing “web model vs API model” drift for many workflows. [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/).
 - **Automatic prompt caching and flexible scaling paths.** OpenAI supports prompt caching, batch, flex processing, and background mode in the main API stack. See the [API docs](https://developers.openai.com/api/docs/models) and [pricing](https://openai.com/api/pricing/).
 
@@ -71,6 +76,8 @@ OpenAI does not currently expose a separate public system-card page for every AP
 ## Official docs
 
 - [Models](https://developers.openai.com/api/docs/models)
+- [GPT-5.5 launch post](https://openai.com/index/introducing-gpt-5-5/)
+- [GPT-5.5 system card](https://openai.com/index/gpt-5-5-system-card/)
 - [GPT-5.4 launch post](https://openai.com/index/introducing-gpt-5-4/)
 - [GPT-5.4 mini and nano launch post](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)
 - [GPT-5.4 model page](https://developers.openai.com/api/docs/models/gpt-5.4)
@@ -82,4 +89,4 @@ OpenAI does not currently expose a separate public system-card page for every AP
 
 ## Status
 
-`[provider-doc]`. OpenAI now has enough public system-card coverage to document GPT-5.4, GPT-5.3 Instant, and GPT-5.3-Codex directly, but smaller and Pro variants still require cross-reading launch posts and per-model docs.
+`[provider-doc]`. OpenAI now has public GPT-5.5 system-card coverage, but GPT-5.5 and GPT-5.5 Pro should be treated as product-available/API-soon until they appear on the live API models page.

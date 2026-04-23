@@ -1,24 +1,29 @@
 # Providers
 
-Per-provider deep dives. Each provider gets a folder, not a single flat file: start with the provider overview, then drill into product surfaces when the vendor has multiple distinct apps, runtimes, or workflows.
+Per-provider deep dives. Each provider gets a folder, not a single flat file: start with the provider overview, use the [model directory](models/) for cross-provider discovery, then drill into product surfaces when the vendor has multiple distinct apps, runtimes, or workflows.
 
 ## Folder structure
 
 ```text
 providers/
+  models/          # cross-provider index linking seeded model pages
   <provider>/
     README.md      # provider overview: model lines, strengths/weaknesses, docs
     models/        # one file per current first-class model line where useful
     <surface>.md   # optional product-specific page (desktop app, coding agent, image stack, etc.)
 ```
 
+## Model directory
+
+- **[Provider model directory](models/)** `[provider-doc]` — cross-provider map of seeded model pages and docs-only model lines for Anthropic, OpenAI, Google, DeepSeek, Moonshot/Kimi, MiniMax, and adjacent providers.
+
 ## Providers
 
 ### Closed frontier
 
 - **[Anthropic](anthropic/)** `[provider-doc]` — Claude model families plus Anthropic-specific product surfaces like Claude Code, Claude Desktop, and Claude Design.
-- **[OpenAI](openai/)** `[provider-doc]` — GPT and o-series model lines plus Codex, ChatGPT Desktop, and image-generation surfaces.
-- **[Google](google/)** `[provider-doc]` — Gemini models, long-context API guidance, and Google-specific deployment surfaces.
+- **[OpenAI](openai/)** `[provider-doc]` — GPT-5.5/GPT-5.4 model lines plus Codex, ChatGPT Desktop, and image-generation surfaces.
+- **[Google](google/)** `[provider-doc]` — Gemini/Gemma models plus Google-specific product surfaces like Antigravity and Stitch.
 - **[xAI](xai/)** `[provider-doc]` — Grok models, consumer/API split, and live-data positioning.
 
 ### Open-weight and Chinese labs
