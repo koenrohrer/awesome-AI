@@ -80,6 +80,7 @@ Per-provider deep dives: available models, context windows, pricing, strengths/w
 - **[Claude (Anthropic)](models/claude.md)** `[provider-doc]` — Opus/Sonnet/Haiku tiers, extended thinking, 90%-off prompt caching, strict tool use, long-context coding.
 - **[GPT (OpenAI)](models/gpt.md)** `[provider-doc]` — Broad multimodality, hosted tools (`web_search`, `code_interpreter`), o-series reasoning, Batch API discount.
 - **[Gemini (Google)](models/gemini.md)** `[provider-doc]` — 1M-token context, native multimodality (video/audio), explicit context caching, thinking budget control.
+- **[Gemma (Google DeepMind)](models/gemma.md)** `[provider-doc]` — Open Gemma 4 family (`E2B`, `E4B`, `26B A4B`, `31B`) for edge-to-workstation deployment.
 - **[Grok (xAI)](models/grok.md)** `[provider-doc]` — Closed API with OpenAI-compatible endpoint; integrated live web/X data; select older weights occasionally released.
 - **[Kimi (Moonshot AI)](models/kimi.md)** `[provider-doc]` — MoE flagship with long-context focus; selected releases published as open weights.
 - **[Qwen (Alibaba)](models/qwen.md)** `[provider-doc]` — The most consistently open-weight frontier-adjacent family; strong specialist variants (Coder, VL, Math, Audio).

@@ -44,6 +44,7 @@ Per-provider deep dives. One file per provider, structured identically so you ca
 
 ### Open-weight and Chinese labs
 
+- **[Gemma (Google DeepMind)](gemma.md)** `[provider-doc]` — Gemma 4 open models in `E2B`, `E4B`, `26B A4B`, and `31B` sizes for edge-to-workstation deployment.
 - **[Kimi (Moonshot AI)](kimi.md)** `[provider-doc]` — MoE flagship with long-context focus; selected releases published as open weights.
 - **[Qwen (Alibaba)](qwen.md)** `[provider-doc]` — The most consistently open-weight frontier-adjacent family; specialist variants (Coder, VL, Math, Audio).
 - **[DeepSeek](deepseek.md)** `[provider-doc]` — MoE + open-weight reasoning (R1); aggressive hosted-API pricing.
