@@ -16,6 +16,8 @@ Red-teaming, jailbreak resistance, and prompt injection. Tilted toward defensive
 
 Actual novel jailbreak prompts or uplift content. This section is about understanding and defending, not publishing attack recipes.
 
-## Status
+## Entries
 
-Seeding in v0.2.
+- **[Indirect Prompt Injection](indirect-prompt-injection.md)** `[paper]` — Greshake et al. 2023. The threat-model paper for agents that read untrusted content.
+- **[GCG: Universal Adversarial Attacks](gcg-attack.md)** `[paper]` — Zou et al. 2023. Automated jailbreak discovery; suffixes transfer across models.
+- **[Jailbroken: How Does LLM Safety Training Fail?](jailbreak-failure-modes.md)** `[paper]` — Wei et al. 2023. Framework for *why* jailbreaks work: competing objectives + mismatched generalization.
