@@ -21,7 +21,9 @@ Subtopics we'll cover as entries accumulate:
 
 - **[ReAct: Reasoning + Acting](react.md)** `[paper]` — Interleave Thought/Action/Observation; the pattern underlying most modern tool-using agents.
 - **[Toolformer](toolformer.md)** `[paper]` — Training-time tool use: the model learns when to emit calls via self-supervised filtering.
+- **[Plan-and-Solve prompting](plan-and-solve.md)** `[paper]` — Plan first, then execute; the planner/worker split underlying most agent frameworks.
 - **[Reflexion](reflexion.md)** `[paper]` — Verbal self-reflection after failures, kept in context for the next attempt.
+- **[Voyager](voyager.md)** `[paper]` — Open-ended agent loop: automatic curriculum + reusable skill library + environment-grounded feedback.
 
 ### Tool use (provider APIs)
 
@@ -31,6 +33,7 @@ Subtopics we'll cover as entries accumulate:
 ### Evaluation
 
 - **[SWE-Bench](swe-bench.md)** `[paper]` — Real GitHub issues as the eval; the single most-cited agent-coding benchmark.
+- **[GAIA: General AI Assistant benchmark](gaia.md)** `[paper]` — 466 multi-tool, multimodal questions; grades the whole agent stack, not just the model.
 
 ## Out of scope
 

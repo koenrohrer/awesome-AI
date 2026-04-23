@@ -40,14 +40,17 @@ Per-provider deep dives. One file per provider, structured identically so you ca
 - **[Claude (Anthropic)](claude.md)** `[provider-doc]` — Opus/Sonnet/Haiku, extended thinking, 90%-off prompt caching, strict tool use.
 - **[GPT (OpenAI)](gpt.md)** `[provider-doc]` — Broad multimodality, hosted tools, o-series reasoning, Batch API discount.
 - **[Gemini (Google)](gemini.md)** `[provider-doc]` — 1M-token context, native video/audio, explicit context caching, thinking budgets.
+- **[Grok (xAI)](grok.md)** `[provider-doc]` — OpenAI-compatible endpoint, integrated live X/web data, select older weights occasionally released.
 
 ### Open-weight and Chinese labs
 
 - **[Kimi (Moonshot AI)](kimi.md)** `[provider-doc]` — MoE flagship with long-context focus; selected releases published as open weights.
 - **[Qwen (Alibaba)](qwen.md)** `[provider-doc]` — The most consistently open-weight frontier-adjacent family; specialist variants (Coder, VL, Math, Audio).
 - **[DeepSeek](deepseek.md)** `[provider-doc]` — MoE + open-weight reasoning (R1); aggressive hosted-API pricing.
+- **[Llama (Meta)](llama.md)** `[provider-doc]` — Reference open-weight family; first-class support in every major open-source inference stack.
+- **[Mistral](mistral.md)** `[provider-doc]` — Dual-track proprietary + Apache-2.0 open-weight MoE; EU-based.
 
-More providers (Grok, Llama, Mistral, Phi) land in a later wave.
+More providers (Phi, Command R, Yi) land in a later wave.
 
 ## Editorial rules
 
