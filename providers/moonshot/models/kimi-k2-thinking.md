@@ -7,7 +7,7 @@
 - Provider: Moonshot AI
 - Model IDs: `kimi-k2-thinking`, `kimi-k2-thinking-turbo`
 - Tier: Dedicated reasoning line
-- Official docs: [thinking models guide](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model.en-US)
+- Official docs: [docs overview](https://platform.moonshot.ai/docs/overview)
 
 ## What it is
 
@@ -19,7 +19,7 @@ Moonshot does not currently publish a public system-card page for these models.
 
 ## Links
 
-- [Thinking models guide](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model.en-US)
+- [Docs overview](https://platform.moonshot.ai/docs/overview)
 
 ## Status
 

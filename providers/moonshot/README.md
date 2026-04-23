@@ -12,7 +12,7 @@
 | `kimi-k2-thinking` / `kimi-k2-thinking-turbo` | Dedicated reasoning line | Thinking-focused variants for deeper reasoning |
 | `kimi-k2-turbo-preview` | Faster preview tier | Speed-focused K2 path |
 
-Moonshot's docs split the story between the platform homepage, the K2.5 quickstart, and the thinking-model docs, so you usually need all three open at once.
+Moonshot's docs split the story between the platform homepage, the docs overview, pricing, and a smaller set of stable guide pages, so you usually need more than one tab open at once.
 
 ## Model pages
 
@@ -24,16 +24,15 @@ Moonshot's docs split the story between the platform homepage, the K2.5 quicksta
 
 - [Moonshot platform](https://platform.moonshot.ai/)
 - [Docs overview](https://platform.moonshot.ai/docs/overview)
-- [Kimi K2.5 quickstart](https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart)
-- [Using thinking models](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model.en-US)
+- [Use the Kimi vision model](https://platform.moonshot.ai/docs/guide/use-kimi-vision-model)
 - [Pricing](https://platform.moonshot.ai/docs/pricing/chat)
 
 Moonshot does not currently publish a public system-card hub comparable to Anthropic/OpenAI. The model quickstarts, pricing pages, and open-weight release pages are the primary sources.
 
 ## Strengths (cited)
 
-- **Strong current coding/agent focus.** The platform and K2.5 docs position Kimi explicitly for code generation, agent tasks, and tool use. [Platform homepage](https://platform.moonshot.ai/), [K2.5 quickstart](https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart).
-- **Multimodal plus thinking in one main model.** `kimi-k2.5` combines text+vision with toggleable thinking/non-thinking modes. [K2.5 quickstart](https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart), [thinking models guide](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model.en-US).
+- **Strong current coding/agent focus.** The platform homepage and docs overview position Kimi explicitly for code generation, agent tasks, and tool use. [Platform homepage](https://platform.moonshot.ai/), [Docs overview](https://platform.moonshot.ai/docs/overview).
+- **Multimodal plus thinking in one main model.** `kimi-k2.5` combines text+vision with toggleable thinking/non-thinking modes. [Docs overview](https://platform.moonshot.ai/docs/overview), [Use the Kimi vision model](https://platform.moonshot.ai/docs/guide/use-kimi-vision-model).
 - **Open-weight lineage still matters.** Moonshot continues to publish major Kimi releases through its [Hugging Face org](https://huggingface.co/moonshotai).
 - **Competitive cost profile.** The current platform pricing remains aggressive relative to Western frontier APIs. [Pricing](https://platform.moonshot.ai/docs/pricing/chat).
 
@@ -60,8 +59,6 @@ Moonshot does not currently publish a public system-card hub comparable to Anthr
 
 - [Moonshot AI platform](https://platform.moonshot.ai/)
 - [Docs overview](https://platform.moonshot.ai/docs/overview)
-- [K2.5 quickstart](https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart)
-- [Thinking models guide](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model.en-US)
 - [Use the Kimi vision model](https://platform.moonshot.ai/docs/guide/use-kimi-vision-model)
 - [Pricing](https://platform.moonshot.ai/docs/pricing/chat)
 - [Moonshot on Hugging Face](https://huggingface.co/moonshotai)

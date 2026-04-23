@@ -7,7 +7,7 @@
 - Provider: Moonshot AI
 - Model ID: `kimi-k2.5`
 - Tier: Multimodal generalist
-- Official docs: [K2.5 quickstart](https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart), [docs overview](https://platform.moonshot.ai/docs/overview)
+- Official docs: [docs overview](https://platform.moonshot.ai/docs/overview), [using Kimi vision model](https://platform.moonshot.ai/docs/guide/use-kimi-vision-model)
 
 ## What it is
 
@@ -19,9 +19,8 @@ Moonshot does not currently publish a public system-card page for K2.5.
 
 ## Links
 
-- [K2.5 quickstart](https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart)
+- [Docs overview](https://platform.moonshot.ai/docs/overview)
 - [Vision guide](https://platform.moonshot.ai/docs/guide/use-kimi-vision-model)
-- [Thinking models guide](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model.en-US)
 
 ## Status
 
