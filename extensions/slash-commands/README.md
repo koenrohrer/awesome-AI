@@ -8,4 +8,4 @@ Custom slash commands for Claude Code and similar tools — short, reusable invo
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

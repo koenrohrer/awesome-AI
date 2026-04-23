@@ -34,4 +34,4 @@ The point is not rigor in the academic sense — it's showing our work so you ca
 
 - "I found this prompt works well on Twitter" — no citation, out.
 - Long prompt libraries with no evidence — link out to them, don't absorb them.
-- Model-specific lore ("Claude loves XML tags") — goes in `models/claude.md` with its own citation, not here.
+- Model-specific lore ("Claude loves XML tags") — goes in `providers/anthropic/README.md` with its own citation, not here.

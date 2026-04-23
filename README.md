@@ -1,6 +1,6 @@
 # Awesome AI
 
-> A curated, **evidence-backed** guide to the AI landscape — prompting, agents, tool extensions, models, self-hosted setups, integrations, and education. Every entry carries a badge showing the evidence behind it. Nothing unlabeled.
+> A curated, **evidence-backed** guide to the AI landscape — prompting, agents, tool extensions, provider ecosystems, self-hosted setups, integrations, and education. Every entry carries a badge showing the evidence behind it. Nothing unlabeled.
 
 Most "awesome AI" lists are vibes-based link dumps. This one isn't. If a technique claims to improve outputs, there's a paper, an official provider doc, or a maintainer-run test backing it. If a tool is listed, it's maintained, used, and fits a specific problem. If a hardware spec is quoted, it cites a third-party source by name.
 
@@ -10,9 +10,9 @@ Most "awesome AI" lists are vibes-based link dumps. This one isn't. If a techniq
 - [Prompting](#prompting) — evidence-backed techniques
 - [Agents](#agents) — building autonomous agents
 - [Extensions](#extensions) — skills, hooks, plugins, MCP servers, subagents
-- [Models](#models) — per-provider deep dives
+- [Providers](#providers) — per-provider deep dives + product surfaces
 - [Self-hosted](#self-hosted) — runners, workflows, hardware
-- [Integrations](#integrations) — AI + non-AI (shell, CI/CD, no-code)
+- [Integrations](#integrations) — AI + non-AI (automations, shell, CI/CD, no-code)
 - [Learning](#learning) — papers, courses, architecture, safety
 - [Tools](#tools) — standalone AI apps
 - [Contributing](#contributing)
@@ -71,21 +71,21 @@ Make your existing AI tool do more. Each extension type is its own curated list:
 - **[Subagents](extensions/subagents/)** — specialized agent configurations
 - **[Slash commands](extensions/slash-commands/)** — custom commands
 
-*Seeding in v0.2.*
+*Scaffolded in v0.4. Subsection primers exist; curated entries are still being seeded.*
 
-## Models
+## Providers
 
-Per-provider deep dives: available models, context windows, pricing, strengths/weaknesses (cited), best-fit tasks. See [models/README.md](models/README.md).
+Per-provider deep dives: model families, context windows, pricing, strengths/weaknesses (cited), best-fit tasks, plus product-surface pages where a provider has distinct apps or runtimes. See [providers/README.md](providers/README.md).
 
-- **[Claude (Anthropic)](models/claude.md)** `[provider-doc]` — Opus/Sonnet/Haiku tiers, extended thinking, 90%-off prompt caching, strict tool use, long-context coding.
-- **[GPT (OpenAI)](models/gpt.md)** `[provider-doc]` — Broad multimodality, hosted tools (`web_search`, `code_interpreter`), o-series reasoning, Batch API discount.
-- **[Gemini (Google)](models/gemini.md)** `[provider-doc]` — 1M-token context, native multimodality (video/audio), explicit context caching, thinking budget control.
-- **[Grok (xAI)](models/grok.md)** `[provider-doc]` — Closed API with OpenAI-compatible endpoint; integrated live web/X data; select older weights occasionally released.
-- **[Kimi (Moonshot AI)](models/kimi.md)** `[provider-doc]` — MoE flagship with long-context focus; selected releases published as open weights.
-- **[Qwen (Alibaba)](models/qwen.md)** `[provider-doc]` — The most consistently open-weight frontier-adjacent family; strong specialist variants (Coder, VL, Math, Audio).
-- **[DeepSeek](models/deepseek.md)** `[provider-doc]` — MoE + open-weight reasoning (R1); aggressive hosted-API pricing.
-- **[Llama (Meta)](models/llama.md)** `[provider-doc]` — The reference open-weight family; first-class support in every open-source inference stack.
-- **[Mistral](models/mistral.md)** `[provider-doc]` — Dual track of proprietary flagships and Apache-2.0-licensed open-weight MoE releases; EU-based.
+- **[Anthropic](providers/anthropic/)** `[provider-doc]` — Claude model families plus Claude Code, Claude Desktop, and Claude Design.
+- **[OpenAI](providers/openai/)** `[provider-doc]` — GPT/o-series model lines plus Codex, ChatGPT Desktop, and image generation.
+- **[Google](providers/google/)** `[provider-doc]` — Gemini model families, long context, caching, and multimodal deployment guidance.
+- **[xAI](providers/xai/)** `[provider-doc]` — Grok model lines, API surface, and live-data positioning.
+- **[Moonshot AI](providers/moonshot/)** `[provider-doc]` — Kimi long-context models and open-weight releases.
+- **[Alibaba](providers/alibaba/)** `[provider-doc]` — Qwen general and specialist variants.
+- **[DeepSeek](providers/deepseek/)** `[provider-doc]` — V3, R1, Coder, and open-weight reasoning.
+- **[Meta](providers/meta/)** `[provider-doc]` — Llama-family open weights and adjacent safety surfaces.
+- **[Mistral](providers/mistral/)** `[provider-doc]` — proprietary platform + open-weight dual track.
 
 More providers (Phi, Command R, Yi) land in a later wave.
 
@@ -97,17 +97,18 @@ Running models locally.
 - **[Workflows](self-hosted/workflows/)** — local-first setups that work end-to-end
 - **[Hardware](self-hosted/hardware/)** — sourced hardware guides, `[sourced]` only
 
-*Seeding in v0.2.*
+*Scaffolded in v0.4. Section primers exist; sourced/tested entries are still being seeded.*
 
 ## Integrations
 
 **AI glued to non-AI systems.** This section is a genuine gap in the ecosystem — most lists stop at "here are 50 AI tools." This one shows you how to wire AI into what you already use.
 
+- **[Automations](integrations/automations/)** — scheduled and trigger-based routines that do useful work without a fresh prompt each time
 - **[CI/CD](integrations/ci-cd/)** — PR review bots, test generation, release-note automation
 - **[Shell](integrations/shell/)** — AI in shell scripts, git hooks, cron jobs
 - **[No-code](integrations/no-code/)** — n8n, Zapier, Make, and similar
 
-*Seeding in v0.2.*
+*Scaffolded in v0.4. Section primers exist; tested/vetted entries are still being seeded.*
 
 ## Learning
 
@@ -131,7 +132,7 @@ Foundations, not tips. Subsections: [papers](learning/papers/), [courses](learni
 
 Standalone AI apps that don't fit a category. See [tools/README.md](tools/README.md).
 
-*Seeding in v0.2.*
+*Scaffolded in v0.4. No vetted entries yet.*
 
 ## Contributing
 
@@ -140,6 +141,7 @@ Every contribution goes through a template that enforces the evidence bar for it
 Tracks and bars:
 
 - **Techniques** (`prompting/`, `agents/`) — `[paper]`, `[provider-doc]`, or `[tested]` only.
+- **Providers** (`providers/`) — official docs first; product-surface pages live under the provider that owns them.
 - **Tools** (`extensions/`, `tools/`) — maintained + used + scope-fit.
 - **Hardware** (`self-hosted/hardware/`) — third-party source cited by name.
 

@@ -1,6 +1,6 @@
-# Gemini (Google) `[provider-doc]`
+# Google `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify specs against [Google's Gemini models page](https://ai.google.dev/gemini-api/docs/models) before building a cost model.*
+*Last reviewed: 2026-04-22. Google's primary model family is Gemini. Verify specs against [Google's Gemini models page](https://ai.google.dev/gemini-api/docs/models) before building a cost model.*
 
 ## Current model lines
 

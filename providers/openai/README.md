@@ -1,6 +1,12 @@
-# GPT (OpenAI) `[provider-doc]`
+# OpenAI `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify specs against [OpenAI's models page](https://platform.openai.com/docs/models) before building a cost model.*
+*Last reviewed: 2026-04-23. OpenAI spans model families plus multiple first-party product surfaces. Verify specs against [OpenAI's models page](https://platform.openai.com/docs/models) before building a cost model.*
+
+## Product surfaces
+
+- **[Codex](codex.md)** — OpenAI's coding-agent surface for parallel software-engineering work and automations.
+- **[ChatGPT Desktop](chatgpt-desktop.md)** — desktop app surface for local workflows, screenshots, files, and IDE-connected chat.
+- **[Image generation](image-generation.md)** — GPT Image and related image-generation APIs/tools.
 
 ## Current model lines
 

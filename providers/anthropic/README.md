@@ -1,6 +1,12 @@
-# Claude (Anthropic) `[provider-doc]`
+# Anthropic `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Prices and context windows change; verify against [the Anthropic pricing page](https://www.anthropic.com/pricing) before building a cost model.*
+*Last reviewed: 2026-04-22. Anthropic's primary model family is Claude. Prices and context windows change; verify against [the Anthropic pricing page](https://www.anthropic.com/pricing) before building a cost model.*
+
+## Product surfaces
+
+- **[Claude Code](claude-code.md)** — terminal-native coding workflow with local tools, edits, tests, and permissions.
+- **[Claude Desktop](claude-desktop.md)** — desktop app surface with local MCP and desktop extensions.
+- **[Claude Design](claude-design.md)** — design/prototyping surface from Anthropic Labs.
 
 ## Current models
 

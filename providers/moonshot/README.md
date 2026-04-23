@@ -1,6 +1,6 @@
-# Kimi (Moonshot AI) `[provider-doc]`
+# Moonshot AI `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify against [Moonshot AI's platform](https://platform.moonshot.ai/) before building a cost model.*
+*Last reviewed: 2026-04-22. Moonshot's primary model family is Kimi. Verify against [Moonshot AI's platform](https://platform.moonshot.ai/) before building a cost model.*
 
 ## Current model lines
 

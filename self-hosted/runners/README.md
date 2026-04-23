@@ -13,4 +13,4 @@ Tools for running models on your own hardware: ollama, LMStudio, llama.cpp, vLLM
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

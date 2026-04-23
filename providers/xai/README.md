@@ -1,6 +1,6 @@
-# Grok (xAI) `[provider-doc]`
+# xAI `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify against [x.ai](https://x.ai/) and the [xAI API docs](https://docs.x.ai/) before building a cost model.*
+*Last reviewed: 2026-04-22. xAI's primary model family is Grok. Verify against [x.ai](https://x.ai/) and the [xAI API docs](https://docs.x.ai/) before building a cost model.*
 
 ## Current model lines
 

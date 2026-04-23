@@ -40,7 +40,7 @@ Every frontier-model tool-use API (Anthropic, OpenAI, Google) is a structured ve
 - **Tool-call loops.** Same action taken repeatedly because prior observations weren't retained.
 - **Reasoning drift.** Long thoughts that don't commit to a next action.
 
-The hardening patterns for these failure modes deserve their own entries — seeded in future v0.3+.
+The hardening patterns for these failure modes deserve their own entries — they belong in a future hardening pass.
 
 ## Related entries
 

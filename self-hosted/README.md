@@ -30,4 +30,4 @@ A single `runners/comparison.md` will table-compare ollama vs LMStudio vs llama.
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. Section primers exist; sourced/tested entries are still being seeded.
