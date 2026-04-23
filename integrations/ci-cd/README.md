@@ -10,4 +10,4 @@ AI in the pipeline: PR review bots, test generation, changelog generation, relea
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

@@ -17,7 +17,7 @@ Make your existing AI tool do more. Every entry is `[vetted-tool]` — maintaine
 
 ## Status
 
-Seeding in v0.2. Each subsection starts with its own README once we have 3+ vetted entries to put in it.
+Scaffolded in v0.4. Each subsection now has a README; vetted entries land once they clear the bar.
 
 ## Inclusion rule recap
 

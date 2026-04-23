@@ -4,6 +4,7 @@
 
 ## Sections
 
+- **[Automations](automations/)** — scheduled and trigger-based routines, background jobs, and recurring AI workflows
 - **[CI/CD](ci-cd/)** — PR review bots, test generation, release-note automation, changelog generation, flaky-test triage
 - **[Shell](shell/)** — AI in shell scripts, git hooks (pre-commit, prepare-commit-msg), cron jobs, tmux integrations
 - **[No-code](no-code/)** — n8n, Zapier, Make — prompt-driven flows that do real work
@@ -22,9 +23,10 @@
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. Section primers exist; tested/vetted entries are still being seeded.
 
 ## What doesn't belong here
 
 - Pure AI tools that happen to have a CLI — those live in `tools/`.
 - Chat-interface integrations — if the workflow is "open a chat, paste text, copy result," that's the chat app working as intended, not an integration.
+- First-party product overviews — those live under `providers/` when the main story is the provider-owned surface itself.

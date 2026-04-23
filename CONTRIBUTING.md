@@ -43,6 +43,7 @@ A hardware claim (spec, benchmark, compatibility note) with a named third-party 
 
 1. Open an issue using the template matching your track:
    - **Technique** → [Suggest a technique](.github/ISSUE_TEMPLATE/suggest-technique.yml)
+   - **Provider page / provider surface** → use the Technique template for now (until a dedicated provider template exists)
    - **Tool** → [Suggest a tool](.github/ISSUE_TEMPLATE/suggest-tool.yml)
    - **Hardware** → [Suggest a hardware entry](.github/ISSUE_TEMPLATE/suggest-hardware.yml)
 2. If the issue passes review, open a PR adding the entry. Use [PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md).
