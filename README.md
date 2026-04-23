@@ -75,7 +75,7 @@ Make your existing AI tool do more. Each extension type is its own curated list:
 
 ## Providers
 
-Per-provider deep dives: model families, context windows, pricing, strengths/weaknesses (cited), best-fit tasks, plus product-surface pages where a provider has distinct apps or runtimes. See [providers/README.md](providers/README.md).
+Per-provider deep dives: provider overviews, per-model pages for current first-class lines, context windows, pricing, strengths/weaknesses (cited), and product-surface pages where a provider has distinct apps or runtimes. See [providers/README.md](providers/README.md).
 
 - **[Anthropic](providers/anthropic/)** `[provider-doc]` — Claude model families plus Claude Code, Claude Desktop, and Claude Design.
 - **[OpenAI](providers/openai/)** `[provider-doc]` — GPT/o-series model lines plus Codex, ChatGPT Desktop, and image generation.
@@ -84,6 +84,7 @@ Per-provider deep dives: model families, context windows, pricing, strengths/wea
 - **[Moonshot AI](providers/moonshot/)** `[provider-doc]` — Kimi long-context models and open-weight releases.
 - **[Alibaba](providers/alibaba/)** `[provider-doc]` — Qwen general and specialist variants.
 - **[DeepSeek](providers/deepseek/)** `[provider-doc]` — V3, R1, Coder, and open-weight reasoning.
+- **[MiniMax](providers/minimax/)** `[provider-doc]` — M2.x text models, open-weight M1, and broader multimodal platform surfaces.
 - **[Meta](providers/meta/)** `[provider-doc]` — Llama-family open weights and adjacent safety surfaces.
 - **[Mistral](providers/mistral/)** `[provider-doc]` — proprietary platform + open-weight dual track.
 
