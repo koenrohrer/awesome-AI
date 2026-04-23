@@ -20,11 +20,11 @@ Standalone AI tools and apps that don't fit a more specific category. If a tool 
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No vetted entries yet.
 
 ## Examples of candidates the maintainer wants to vet
 
-(Unvetted until they pass the bar — listed here only to scope what v0.2 will evaluate.)
+(Unvetted until they pass the bar — listed here only to scope the next evaluation wave.)
 
 - Get-Shit-Done
 - OpenClaw

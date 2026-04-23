@@ -10,4 +10,4 @@ Hooks are how you teach a tool to enforce project conventions, inject context, o
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

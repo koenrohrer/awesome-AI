@@ -1,6 +1,6 @@
-# Llama (Meta) `[provider-doc]`
+# Meta `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify against [llama.com](https://www.llama.com/) and [Meta's Llama HuggingFace org](https://huggingface.co/meta-llama) before building a cost model.*
+*Last reviewed: 2026-04-22. Meta's primary open-weight family is Llama. Verify against [llama.com](https://www.llama.com/) and [Meta's Llama HuggingFace org](https://huggingface.co/meta-llama) before building a cost model.*
 
 ## Current model lines
 

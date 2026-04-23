@@ -8,4 +8,4 @@ Specialized agent configurations — a named role, its prompt, its tool allow-li
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.

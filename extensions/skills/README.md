@@ -10,4 +10,4 @@ A "skill" is a piece of documentation or configuration that teaches an AI tool h
 
 ## Status
 
-Seeding in v0.2.
+Scaffolded in v0.4. No curated entries yet.
