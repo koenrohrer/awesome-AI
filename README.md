@@ -1,4 +1,4 @@
-# Awesome AI
+![Awesome AI header](assets/awesome-ai-header.png)
 
 > A curated, **evidence-backed** guide to the AI landscape — prompting, agents, tool extensions, provider ecosystems, self-hosted setups, integrations, and education. Every entry carries a badge showing the evidence behind it. Nothing unlabeled.
 
@@ -29,7 +29,9 @@ Most "awesome AI" lists are vibes-based link dumps. This one isn't. If a techniq
 
 No entry is bare. If something doesn't carry a badge, it doesn't belong.
 
----
+<p align="center">
+  <img src="assets/readme-divider.png" alt="" width="860">
+</p>
 
 ## Prompting
 
