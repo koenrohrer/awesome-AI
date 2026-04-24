@@ -10,29 +10,29 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:36:25Z`; latest GitHub release page showed `openclaw 2026.4.23` published on April 24, 2026.
-- Usage evidence: Blocked for live inclusion. No maintainer-run task for this repo has been recorded.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
 - Docs/install: Official README recommends `npm install -g openclaw@latest` and `openclaw onboard --install-daemon`; it documents macOS, Linux, and Windows via WSL2.
 - License/pricing: MIT license; self-hosted. Model/provider and messaging-service costs depend on configured services.
-- Risks or caveats: Messaging gateways process untrusted inbound content. The official README explicitly calls out DM pairing/security defaults for real messaging surfaces.
+- Risks or caveats: Messaging gateways process untrusted inbound content. The official README explicitly calls out DM pairing/security defaults for real messaging surfaces. Maintainer impression: useful, but still clunky.
 
 ## Inclusion decision
 
-- Verdict: Test-first
-- Badge: None yet. Target badge is `[vetted-tool]` after maintainer usage is recorded.
-- Rationale: Maintained and scope-fit appear to pass, but OpenClaw is high-blast-radius because it connects models, user devices, messaging channels, skills, and optional automation.
+- Verdict: Include
+- Badge: `[vetted-tool]`
+- Rationale: Maintained, used by the maintainer on a real autonomous codebase-scanning/fix task, and scope-fit when limited to messaging-native codebase maintenance workflows.
 
 ## Maintainer decisions
 
 - Directory: `tools/`
 - Supportable claim: OpenClaw is a self-hosted personal AI assistant for messaging-native automation across user-owned devices.
-- Required maintainer test: Install in a disposable environment, configure one low-risk channel or local CLI path, run one bounded task, and record pairing, permission, and cleanup behavior.
+- Required maintainer test: Preserve the overnight codebase-scan/fix task notes: repository shape, scope constraints, channel/local path, outputs, accepted fixes, rejected fixes, pairing, permissions, and cleanup behavior.
 - Entry caveat: Must mention that inbound channel content is untrusted and that pairing/allowlist configuration is part of safe setup.
-- Follow-up questions: Which channel should be tested first: local CLI, Telegram, Slack, or Discord?
+- Follow-up questions: Should the public entry emphasize local/device ownership or messaging-native operation?
 
-## Draft entry after maintainer test
+## Draft entry
 
 - **[OpenClaw](https://github.com/openclaw/openclaw)** `[vetted-tool]` — Self-hosted personal assistant for messaging-native automation on user-owned devices.
-  - *Last commit:* 2026-04-24. *Used for:* maintainer-run task to be filled before promotion. *Scope:* messaging-native personal automation.
+  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* messaging-native codebase maintenance.
   - *Gotcha:* Treat inbound DMs and connected channel content as untrusted input.
 
 ## Sources

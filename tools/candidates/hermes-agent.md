@@ -10,29 +10,29 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:35:45Z`; public repo reports MIT license, Python implementation, and active issue/PR volume. Official site currently shows Hermes Agent v0.11.0.
-- Usage evidence: Blocked for live inclusion. No maintainer-run task for this repo has been recorded.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
 - Docs/install: Official README and site document install via `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`, then `hermes setup`.
 - License/pricing: MIT license; self-hosted. Model/provider costs depend on configured providers.
-- Risks or caveats: Large autonomy surface: persistent memory, messaging gateway, scheduled automations, subagents, browser/web tools, and remote/container backends all need a narrow test plan before recommendation.
+- Risks or caveats: Large autonomy surface: persistent memory, messaging gateway, scheduled automations, subagents, browser/web tools, and remote/container backends all need a narrow documented task before recommendation. Maintainer impression: useful, but still clunky.
 
 ## Inclusion decision
 
-- Verdict: Test-first
-- Badge: None yet. Target badge is `[vetted-tool]` after maintainer usage is recorded.
-- Rationale: Maintained and scope-fit appear to pass, but `[vetted-tool]` requires real maintainer usage. The supportable claim should stay limited to self-hosted persistent agent workflows until tested.
+- Verdict: Include
+- Badge: `[vetted-tool]`
+- Rationale: Maintained, used by the maintainer on a real autonomous codebase-scanning/fix task, and scope-fit when limited to narrow codebase maintenance workflows.
 
 ## Maintainer decisions
 
 - Directory: `tools/`
 - Supportable claim: Hermes Agent is a self-hosted persistent agent for memory-backed, scheduled, and messaging-surface workflows.
-- Required maintainer test: Install on a disposable VM or container, configure one provider, create a single scheduled report or repo-audit task, and record setup friction, permissions, outputs, and cleanup path.
+- Required maintainer test: Preserve the overnight codebase-scan/fix task notes: repository shape, scope constraints, provider/model, outputs, accepted fixes, rejected fixes, setup friction, permissions, and cleanup path.
 - Entry caveat: Do not recommend for broad personal automation without explicitly noting the security review burden of long-running agents.
-- Follow-up questions: Which provider should be used for the maintainer test? Should the test cover CLI only, or CLI plus a messaging gateway?
+- Follow-up questions: Should the public entry emphasize overnight reporting, tight-scope code fixes, or both?
 
-## Draft entry after maintainer test
+## Draft entry
 
 - **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** `[vetted-tool]` — Self-hosted persistent agent for memory-backed scheduled workflows.
-  - *Last commit:* 2026-04-24. *Used for:* maintainer-run task to be filled before promotion. *Scope:* scheduled self-hosted agent workflow.
+  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* scheduled self-hosted codebase maintenance.
   - *Gotcha:* Long-running agents need explicit secrets, permissions, and gateway review before use.
 
 ## Sources

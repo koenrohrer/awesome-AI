@@ -10,29 +10,29 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:33:04Z`; GitHub releases showed v0.70.2 published on April 24, 2026.
-- Usage evidence: Blocked for live inclusion. No maintainer-run task for this repo has been recorded.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
 - Docs/install: Official site documents `npm install -g @mariozechner/pi-coding-agent`; repo points readers to `packages/coding-agent` for installation and usage.
 - License/pricing: MIT license; users bring model/provider credentials.
-- Risks or caveats: Pi intentionally omits built-in plan mode, subagents, permission popups, background bash, and MCP. Those can be built or installed as extensions, but they are not core defaults.
+- Risks or caveats: Pi intentionally omits built-in plan mode, subagents, permission popups, background bash, and MCP. Those can be built or installed as extensions, but they are not core defaults. Maintainer impression: useful, but still clunky.
 
 ## Inclusion decision
 
-- Verdict: Test-first
-- Badge: None yet. Target badge is `[vetted-tool]` after maintainer usage is recorded.
-- Rationale: Maintained and scope-fit appear to pass. The likely live entry should focus on Pi as a minimal coding harness, not as a general-purpose assistant.
+- Verdict: Include
+- Badge: `[vetted-tool]`
+- Rationale: Maintained, used by the maintainer on a real autonomous codebase-scanning/fix task, and scope-fit when limited to customizable terminal coding-agent workflows.
 
 ## Maintainer decisions
 
 - Directory: `tools/`
 - Supportable claim: Pi is a minimal terminal coding agent for developers who want to control prompts, extensions, skills, and provider routing.
-- Required maintainer test: Install the coding agent, run one small repository-edit task in print/JSON or interactive mode, record model/provider setup, output quality, and where missing defaults mattered.
+- Required maintainer test: Preserve the overnight codebase-scan/fix task notes: repository shape, prompt/constraints, provider/model setup, mode used, outputs, accepted fixes, rejected fixes, and where missing defaults mattered.
 - Entry caveat: Must say that common agent features are intentionally left to extensions or user-built workflows.
-- Follow-up questions: Should the maintainer test cover the interactive TUI, print/JSON mode, or SDK embedding?
+- Follow-up questions: Which mode was used for the overnight codebase-scan/fix task: interactive TUI, print/JSON mode, or SDK embedding?
 
-## Draft entry after maintainer test
+## Draft entry
 
 - **[Pi Agent](https://github.com/badlogic/pi-mono)** `[vetted-tool]` — Minimal terminal coding harness for custom provider, prompt, skill, and extension workflows.
-  - *Last commit:* 2026-04-24. *Used for:* maintainer-run task to be filled before promotion. *Scope:* customizable terminal coding agent.
+  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* customizable terminal coding agent.
   - *Gotcha:* Common workflow features are intentionally extension territory, not built-in defaults.
 
 ## Sources

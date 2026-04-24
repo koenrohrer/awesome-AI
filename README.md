@@ -144,7 +144,10 @@ Foundations, not tips. Subsections: [papers](learning/papers/), [courses](learni
 
 Standalone AI apps that don't fit a category. See [tools/README.md](tools/README.md).
 
-*Scaffolded in v0.4. No vetted entries yet.*
+- **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Self-hosted persistent agent for memory-backed scheduled codebase maintenance.
+- **[OpenClaw](https://github.com/openclaw/openclaw)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Self-hosted personal assistant for messaging-native codebase maintenance.
+- **[OpenShell](https://github.com/NVIDIA/OpenShell)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Policy-governed sandbox runtime for constraining autonomous coding agents.
+- **[Pi Agent](https://github.com/badlogic/pi-mono)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Minimal terminal coding harness for custom provider, prompt, skill, and extension workflows.
 
 ## Contributing
 

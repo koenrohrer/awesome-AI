@@ -10,29 +10,29 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:30:18Z`; official repo reports Apache-2.0 license and active issue/PR volume.
-- Usage evidence: Blocked for live inclusion. No maintainer-run task for this repo has been recorded.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
 - Docs/install: Official README documents binary install via `curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh` and PyPI install via `uv tool install -U openshell`.
 - License/pricing: Apache-2.0 license. Requires Docker for the quickstart; GPU support requires NVIDIA drivers and NVIDIA Container Toolkit.
-- Risks or caveats: Official README labels the project "Alpha software -- single-player mode" and warns to expect rough edges. GPU passthrough is also marked experimental.
+- Risks or caveats: Official README labels the project "Alpha software -- single-player mode" and warns to expect rough edges. GPU passthrough is also marked experimental. Maintainer impression: useful, but still clunky.
 
 ## Inclusion decision
 
-- Verdict: Test-first
-- Badge: None yet. Target badge is `[vetted-tool]` after maintainer usage is recorded.
-- Rationale: Maintained and sharply scoped, but the project self-identifies as alpha. It should be tested as a sandboxing/runtime tool, not as a production security guarantee.
+- Verdict: Include
+- Badge: `[vetted-tool]`
+- Rationale: Maintained, used by the maintainer on real autonomous codebase-scanning/fix work, and scope-fit as a sandbox runtime for constrained agent execution.
 
 ## Maintainer decisions
 
 - Directory: `tools/`
 - Supportable claim: OpenShell provides policy-governed sandboxes for running agents such as Claude Code, OpenCode, Codex, Copilot CLI, OpenClaw, and Ollama.
-- Required maintainer test: Create a sandbox for one supported agent, apply a read-only GitHub API policy, verify an allowed GET and blocked POST, then record logs and cleanup behavior.
+- Required maintainer test: Preserve the overnight codebase-scan/fix task notes: agent used, sandbox policy, allowed and blocked operations, outputs, accepted fixes, rejected fixes, logs, and cleanup behavior.
 - Entry caveat: Must say alpha and not production-ready; policy coverage depends on the agent and sandbox image.
-- Follow-up questions: Should this be tested with Codex, Claude Code, or OpenClaw first?
+- Follow-up questions: Which agent was used inside OpenShell during the overnight codebase-scan/fix task?
 
-## Draft entry after maintainer test
+## Draft entry
 
 - **[OpenShell](https://github.com/NVIDIA/OpenShell)** `[vetted-tool]` — Policy-governed sandbox runtime for constraining autonomous coding agents.
-  - *Last commit:* 2026-04-24. *Used for:* maintainer-run task to be filled before promotion. *Scope:* sandboxed agent execution.
+  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* sandboxed agent execution.
   - *Gotcha:* Alpha software; treat policies as a tested constraint layer, not a production security guarantee.
 
 ## Sources
