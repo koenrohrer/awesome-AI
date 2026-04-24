@@ -22,13 +22,14 @@ Standalone AI tools and apps that don't fit a more specific category. If a tool 
 
 Scaffolded in v0.4. No vetted entries yet.
 
-## Examples of candidates the maintainer wants to vet
+## Candidate briefs
 
-(Unvetted until they pass the bar — listed here only to scope the next evaluation wave.)
+Unvetted until they pass the bar — listed here only to scope the next evaluation wave. Candidate briefs are not live recommendations.
 
-- Get-Shit-Done
-- OpenClaw
-- Hermes Agent
+- [Hermes Agent](candidates/hermes-agent.md)
+- [OpenClaw](candidates/openclaw.md)
+- [OpenShell](candidates/openshell.md)
+- [Pi Agent](candidates/pi-agent.md)
 
 ## What doesn't belong
 
