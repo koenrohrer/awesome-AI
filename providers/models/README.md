@@ -8,6 +8,7 @@
 - **Docs only** means the provider documents the model, but the repo has not expanded it into a dedicated page yet.
 - **Product-only / API soon** means the provider has announced availability in a product surface but not a generally callable API model at review time.
 - Every row uses official provider docs or official provider release posts as evidence.
+- Model comparisons should use tables by default. Benchmark rows belong here only when they name the benchmark, source/date, and methodology; avoid flattening incompatible benchmark runs into a ranking.
 
 ## Anthropic
 

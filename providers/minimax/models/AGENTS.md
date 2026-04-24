@@ -7,3 +7,5 @@ This directory contains MiniMax model-line pages.
 - Verify callable names, context limits, pricing, and release status against current MiniMax docs.
 - Cite release notes or model docs for capability claims.
 - Distinguish hosted text tiers from open-weight releases such as MiniMax M1.
+- Use tables by default for comparable model facts and comparisons.
+- Include benchmark tables only when the benchmark has a named source, date, and methodology.
