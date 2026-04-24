@@ -75,11 +75,11 @@ Make your existing AI tool do more. Each extension type is its own curated list:
 
 ## Providers
 
-Per-provider deep dives: provider overviews, per-model pages for current first-class lines, context windows, pricing, strengths/weaknesses (cited), and product-surface pages where a provider has distinct apps or runtimes. See [providers/README.md](providers/README.md).
+Per-provider deep dives: provider overviews, a cross-provider [model directory](providers/models/), per-model pages for current first-class lines, context windows, pricing, strengths/weaknesses (cited), and product-surface pages where a provider has distinct apps or runtimes. See [providers/README.md](providers/README.md).
 
 - **[Anthropic](providers/anthropic/)** `[provider-doc]` — Claude model families plus Claude Code, Claude Desktop, and Claude Design.
-- **[OpenAI](providers/openai/)** `[provider-doc]` — GPT/o-series model lines plus Codex, ChatGPT Desktop, and image generation.
-- **[Google](providers/google/)** `[provider-doc]` — Gemini model families, long context, caching, and multimodal deployment guidance.
+- **[OpenAI](providers/openai/)** `[provider-doc]` — GPT-5.5/GPT-5.4 model lines plus Codex, ChatGPT Desktop, and image generation.
+- **[Google](providers/google/)** `[provider-doc]` — Gemini/Gemma model families plus Antigravity, Stitch, and multimodal deployment guidance.
 - **[xAI](providers/xai/)** `[provider-doc]` — Grok model lines, API surface, and live-data positioning.
 - **[Moonshot AI](providers/moonshot/)** `[provider-doc]` — Kimi long-context models and open-weight releases.
 - **[Alibaba](providers/alibaba/)** `[provider-doc]` — Qwen general and specialist variants.
