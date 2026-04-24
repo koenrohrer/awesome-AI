@@ -131,6 +131,15 @@ Foundations, not tips. Subsections: [papers](learning/papers/), [courses](learni
 - **[GCG: Universal Adversarial Attacks](learning/safety/gcg-attack.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Zou et al. 2023. Automated jailbreak discovery; suffixes transfer across models.
 - **[Jailbroken: How Does LLM Safety Training Fail?](learning/safety/jailbreak-failure-modes.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Wei et al. 2023. The framework for understanding *why* jailbreaks work (competing objectives, mismatched generalization).
 
+### Architecture — systems concepts
+
+- **[Retrieval-augmented generation (RAG)](learning/architecture/rag.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Retrieve external evidence, then condition generation on it.
+- **[KV cache and PagedAttention](learning/architecture/kv-cache.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Reuse attention keys and values during decoding; key serving bottleneck.
+- **[Mixture-of-experts (MoE)](learning/architecture/mixture-of-experts.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Add sparse capacity by routing tokens through selected experts.
+- **[Fine-tuning and LoRA](learning/architecture/fine-tuning-lora.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Adapt model behavior with full or parameter-efficient training.
+- **[Tokenization: BPE and SentencePiece](learning/architecture/tokenization.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Map raw text into subword token IDs.
+- **[TurboQuant](learning/architecture/turboquant.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Compress high-dimensional vectors for KV cache and vector search.
+
 ## Tools
 
 Standalone AI apps that don't fit a category. See [tools/README.md](tools/README.md).
