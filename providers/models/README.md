@@ -1,6 +1,6 @@
 # Provider Model Directory `[provider-doc]`
 
-*Last reviewed: 2026-04-23. This is a cross-provider map of documented model surface area. The per-provider model pages remain the source of record; this directory exists so readers can find all seeded model lines from one place.*
+*Last reviewed: 2026-05-03. This is a cross-provider map of documented model surface area. The per-provider model pages remain the source of record; this directory exists so readers can find all seeded model lines from one place.*
 
 ## Scope
 
@@ -58,6 +58,8 @@
 
 | Model line | Repo coverage | Evidence |
 |---|---|---|
+| [DeepSeek-V4-Pro](../deepseek/models/deepseek-v4-pro.md) | Full page | `[provider-doc]` [DeepSeek V4 release](https://api-docs.deepseek.com/news/news260424), [models and pricing](https://api-docs.deepseek.com/quick_start/pricing/) |
+| [DeepSeek-V4-Flash](../deepseek/models/deepseek-v4-flash.md) | Full page | `[provider-doc]` [DeepSeek V4 release](https://api-docs.deepseek.com/news/news260424), [models and pricing](https://api-docs.deepseek.com/quick_start/pricing/) |
 | [deepseek-chat](../deepseek/models/deepseek-chat.md) | Full page | `[provider-doc]` [DeepSeek models and pricing](https://api-docs.deepseek.com/quick_start/pricing/) |
 | [deepseek-reasoner](../deepseek/models/deepseek-reasoner.md) | Full page | `[provider-doc]` [DeepSeek models and pricing](https://api-docs.deepseek.com/quick_start/pricing/) |
 | [DeepSeek-V3.2](../deepseek/models/deepseek-v3-2.md) | Full page | `[provider-doc]` [DeepSeek change log](https://api-docs.deepseek.com/updates/) |
