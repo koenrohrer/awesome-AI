@@ -1,20 +1,24 @@
 # DeepSeek `[provider-doc]`
 
-*Last reviewed: 2026-04-23. DeepSeek's hosted API has converged on a simpler two-alias model surface even while the open-weight release story keeps moving. Verify against the live [models and pricing page](https://api-docs.deepseek.com/quick_start/pricing/) and [change log](https://api-docs.deepseek.com/updates/).*
+*Last reviewed: 2026-05-03. DeepSeek V4 Preview launched on April 24, 2026 with new hosted model IDs and open weights. Verify against the live [models and pricing page](https://api-docs.deepseek.com/quick_start/pricing/), [change log](https://api-docs.deepseek.com/updates/), and [V4 release note](https://api-docs.deepseek.com/news/news260424).*
 
 ## Current model lines
 
 | Surface | Backing model | Role | Notable feature |
 |---|---|---|---|
-| `deepseek-chat` | DeepSeek-V3.2 (non-thinking) | General chat | Tool calls, JSON output, lower-cost path |
-| `deepseek-reasoner` | DeepSeek-V3.2 (thinking) | Reasoning | Thinking mode with much larger output ceiling |
-| DeepSeek-V3.2 | Open-weight flagship | General + agent use | Official open-weight release |
+| `deepseek-v4-pro` | DeepSeek-V4-Pro | Flagship hosted + open-weight model | 1.6T total / 49B active params; 1M context |
+| `deepseek-v4-flash` | DeepSeek-V4-Flash | Faster hosted + open-weight model | 284B total / 13B active params; 1M context |
+| `deepseek-chat` | `deepseek-v4-flash` non-thinking mode | Legacy compatibility alias | Deprecated; retires July 24, 2026 |
+| `deepseek-reasoner` | `deepseek-v4-flash` thinking mode | Legacy compatibility alias | Deprecated; retires July 24, 2026 |
+| DeepSeek-V3.2 | Prior open-weight flagship | General + agent use | Superseded by V4 Preview |
 | DeepSeek-R1 | Open-weight reasoning family | Reasoning | First major open-weight reasoning breakout |
 
-The public API docs now explicitly state that `deepseek-chat` and `deepseek-reasoner` both map to DeepSeek-V3.2, rather than separate branded API models.
+DeepSeek's API docs now list `deepseek-v4-pro` and `deepseek-v4-flash` as the current model IDs. The older `deepseek-chat` and `deepseek-reasoner` names remain compatibility aliases for V4-Flash non-thinking and thinking modes until July 24, 2026.
 
 ## Model pages
 
+- [DeepSeek-V4-Pro](models/deepseek-v4-pro.md)
+- [DeepSeek-V4-Flash](models/deepseek-v4-flash.md)
 - [deepseek-chat](models/deepseek-chat.md)
 - [deepseek-reasoner](models/deepseek-reasoner.md)
 - [DeepSeek-V3.2](models/deepseek-v3-2.md)
@@ -24,6 +28,9 @@ The public API docs now explicitly state that `deepseek-chat` and `deepseek-reas
 
 - [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/)
 - [Change log](https://api-docs.deepseek.com/updates/)
+- [DeepSeek V4 Preview release](https://api-docs.deepseek.com/news/news260424)
+- [DeepSeek V4 open weights](https://huggingface.co/collections/deepseek-ai/deepseek-v4)
+- [DeepSeek V4 technical report](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)
 - [DeepSeek-V3.2 release](https://api-docs.deepseek.com/news/news251201)
 - [DeepSeek on Hugging Face](https://huggingface.co/deepseek-ai)
 
@@ -31,14 +38,15 @@ DeepSeek does not currently publish public “system cards” in the same style 
 
 ## Strengths (cited)
 
-- **Simple hosted API surface.** Two aliases cover the main hosted paths: chat and reasoner. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
+- **Large open-weight V4 release.** V4-Pro is documented at 1.6T total / 49B active parameters, while V4-Flash is documented at 284B total / 13B active parameters. [DeepSeek V4 Preview release](https://api-docs.deepseek.com/news/news260424).
+- **1M-token context on current hosted IDs.** The pricing page lists 1M context length for both `deepseek-v4-pro` and `deepseek-v4-flash`. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
 - **Open-weight frontier-adjacent releases.** DeepSeek still publishes major flagship weights openly on [Hugging Face](https://huggingface.co/deepseek-ai).
-- **Reasoning baked into tool use.** DeepSeek's V3.2 release notes call out thinking integrated with tool-use. [DeepSeek-V3.2 release](https://api-docs.deepseek.com/news/news251201).
+- **Reasoning and tool-use modes on V4.** Both V4 hosted IDs support thinking and non-thinking modes, JSON output, tool calls, and OpenAI/Anthropic-compatible API surfaces. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/), [thinking mode](https://api-docs.deepseek.com/guides/thinking_mode).
 - **Aggressive pricing.** The current published API pricing remains unusually low. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
 
 ## Weaknesses (cited)
 
-- **Hosted surface is narrower than the open-weight brand story suggests.** The public API is effectively two aliases, not a broad branded family menu.
+- **Legacy aliases are now migration paths.** `deepseek-chat` and `deepseek-reasoner` are compatibility names for V4-Flash modes and are scheduled to retire on July 24, 2026. [Change log](https://api-docs.deepseek.com/updates/).
 - **Documentation depth still lags the Western incumbents.** Advanced agent/framework details remain thinner.
 - **Policy and deployment constraints matter.** Some teams will prefer self-hosting or third-party hosting for governance reasons rather than calling DeepSeek directly.
 
@@ -46,13 +54,13 @@ DeepSeek does not currently publish public “system cards” in the same style 
 
 - Cost-sensitive hosted inference
 - Open-weight reasoning and research workloads
-- Agent systems that want separate chat vs reasoner routing with minimal model-selection complexity
+- Long-context agent workloads that can use the 1M-token V4 context window
 - Benchmarks and experiments where open release artifacts matter
 
 ## Provider-specific quirks
 
-- **Do not assume the app/web naming maps to the API.** The pricing page explicitly says the API surface differs from app/web branding.
-- **Thinking is routed via `deepseek-reasoner`.** You are not selecting a separate branded “R1” API model for the main hosted path.
+- **Use the V4 IDs for new integrations.** `deepseek-chat` and `deepseek-reasoner` are deprecated compatibility aliases, not the current primary IDs.
+- **Thinking is mode-controlled.** V4 supports thinking and non-thinking behavior through request parameters rather than separate reasoning-only model families.
 - **Release notes matter.** DeepSeek quietly changes what the aliases point to; monitor the [change log](https://api-docs.deepseek.com/updates/).
 
 ## Official docs
@@ -66,4 +74,4 @@ DeepSeek does not currently publish public “system cards” in the same style 
 
 ## Status
 
-`[provider-doc]`. This page now reflects the current hosted aliases (`deepseek-chat`, `deepseek-reasoner`) and the underlying DeepSeek-V3.2 mapping documented by DeepSeek itself.
+`[provider-doc]`. This page now reflects the DeepSeek V4 Preview hosted IDs, open-weight release, 1M context claim, and deprecation path for `deepseek-chat` / `deepseek-reasoner` documented by DeepSeek itself.

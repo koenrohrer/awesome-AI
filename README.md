@@ -85,7 +85,7 @@ Per-provider deep dives: provider overviews, a cross-provider [model directory](
 - **[xAI](providers/xai/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Grok model lines, API surface, and live-data positioning.
 - **[Moonshot AI](providers/moonshot/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Kimi long-context models and open-weight releases.
 - **[Alibaba](providers/alibaba/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Qwen general and specialist variants.
-- **[DeepSeek](providers/deepseek/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — V3, R1, Coder, and open-weight reasoning.
+- **[DeepSeek](providers/deepseek/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — V4, R1, and open-weight long-context reasoning.
 - **[MiniMax](providers/minimax/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — M2.x text models, open-weight M1, and broader multimodal platform surfaces.
 - **[Meta](providers/meta/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Llama-family open weights and adjacent safety surfaces.
 - **[Mistral](providers/mistral/)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — proprietary platform + open-weight dual track.

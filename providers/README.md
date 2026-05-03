@@ -30,7 +30,7 @@ providers/
 
 - **[Moonshot AI](moonshot/)** `[provider-doc]` — Kimi long-context models and open-weight releases.
 - **[Alibaba](alibaba/)** `[provider-doc]` — Qwen general and specialist variants.
-- **[DeepSeek](deepseek/)** `[provider-doc]` — V3, R1, Coder, and open-weight reasoning.
+- **[DeepSeek](deepseek/)** `[provider-doc]` — V4, R1, and open-weight long-context reasoning.
 - **[MiniMax](minimax/)** `[provider-doc]` — M2.x text models, open-weight M1, and broader multimodal platform surfaces.
 - **[Meta](meta/)** `[provider-doc]` — Llama-family open weights and adjacent safety surfaces.
 - **[Mistral](mistral/)** `[provider-doc]` — proprietary platform + open-weight dual track.
