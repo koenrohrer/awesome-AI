@@ -6,6 +6,7 @@ The best explainers for foundational AI/LLM architectures -- transformers, retri
 
 - **[Retrieval-augmented generation (RAG)](rag.md)** `[paper]` — Retrieve external evidence, then condition generation on it; useful when parametric memory is stale or incomplete.
 - **[KV cache and PagedAttention](kv-cache.md)** `[paper]` — Reuse attention keys and values during decoding; the main memory bottleneck for long-context serving.
+- **[Multi-token prediction (MTP)](multi-token-prediction.md)** `[paper]` — Draft and verify several future tokens per decoding step to reduce autoregressive latency.
 - **[Mixture-of-experts (MoE)](mixture-of-experts.md)** `[paper]` — Route tokens through a sparse subset of experts to add capacity without activating every parameter.
 - **[Fine-tuning and LoRA](fine-tuning-lora.md)** `[paper]` — Adapt a pretrained model to a task or domain; LoRA makes that adaptation parameter-efficient.
 - **[Tokenization: BPE and SentencePiece](tokenization.md)** `[paper]` — Split text into subword units; tokenization defines the model's vocabulary and cost surface.
@@ -17,4 +18,4 @@ A link belongs here only if it is considered a definitive or near-definitive tre
 
 ## Status
 
-Seeded with paper-backed primers in v0.5. Diffusion, RLHF architecture, DPO architecture, context extension, speculative decoding, and quantized weight formats are still open.
+Seeded with paper-backed primers in v0.5. Diffusion, RLHF architecture, DPO architecture, context extension, and quantized weight formats are still open.
