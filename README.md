@@ -135,6 +135,7 @@ Foundations, not tips. Subsections: [papers](learning/papers/), [courses](learni
 
 - **[Retrieval-augmented generation (RAG)](learning/architecture/rag.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Retrieve external evidence, then condition generation on it.
 - **[KV cache and PagedAttention](learning/architecture/kv-cache.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Reuse attention keys and values during decoding; key serving bottleneck.
+- **[Multi-token prediction (MTP)](learning/architecture/multi-token-prediction.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Draft and verify several future tokens per decoding step.
 - **[Mixture-of-experts (MoE)](learning/architecture/mixture-of-experts.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Add sparse capacity by routing tokens through selected experts.
 - **[Fine-tuning and LoRA](learning/architecture/fine-tuning-lora.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Adapt model behavior with full or parameter-efficient training.
 - **[Tokenization: BPE and SentencePiece](learning/architecture/tokenization.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Map raw text into subword token IDs.
