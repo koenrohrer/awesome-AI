@@ -34,6 +34,7 @@ Subtopics we'll cover as entries accumulate:
 
 - **[SWE-Bench](swe-bench.md)** `[paper]` — Real GitHub issues as the eval; the single most-cited agent-coding benchmark.
 - **[GAIA: General AI Assistant benchmark](gaia.md)** `[paper]` — 466 multi-tool, multimodal questions; grades the whole agent stack, not just the model.
+- **[WebArena](webarena.md)** `[paper]` — Realistic web-agent benchmark over functional sites for measuring task-completion behavior.
 
 ## Out of scope
 

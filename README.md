@@ -59,6 +59,7 @@ Building agents — not using them. See [agents/README.md](agents/README.md).
 - **[Voyager](agents/voyager.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Open-ended Minecraft agent: automatic curriculum + reusable skill library + environment-grounded feedback.
 - **[SWE-Bench](agents/swe-bench.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — The benchmark to cite when evaluating code-operating agents on real GitHub issues.
 - **[GAIA: General AI Assistant benchmark](agents/gaia.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — 466 real-world multi-tool, multimodal questions; grades the whole agent stack, not just the model.
+- **[WebArena](agents/webarena.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Realistic web-agent benchmark over functional sites for measuring task-completion behavior.
 - **[Tool use (Anthropic / Claude)](agents/tool-use-anthropic.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Claude's structured tool-use API: schemas, `tool_use` blocks, parallel calls.
 - **[Tool use (OpenAI)](agents/tool-use-openai.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — OpenAI function calling + hosted tools (`web_search`, `code_interpreter`, etc.).
 
