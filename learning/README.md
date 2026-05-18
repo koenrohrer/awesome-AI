@@ -28,6 +28,10 @@ Same as the rest of the repo:
 - **[Tokenization: BPE and SentencePiece](architecture/tokenization.md)** `[paper]` — Map raw text into subword token IDs.
 - **[TurboQuant](architecture/turboquant.md)** `[paper]` — Compress high-dimensional vectors for KV cache and vector search.
 
+## Safety — defensive threat models
+
+- **[Sleeper Agents](safety/sleeper-agents.md)** `[paper]` — Backdoored LLM behaviors can persist through standard safety training.
+
 ## Status
 
 Partially seeded in v0.5. `papers/`, `architecture/`, and `safety/` are live; `courses/` is still being seeded.

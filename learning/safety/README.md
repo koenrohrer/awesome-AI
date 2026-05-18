@@ -21,3 +21,4 @@ Actual novel jailbreak prompts or uplift content. This section is about understa
 - **[Indirect Prompt Injection](indirect-prompt-injection.md)** `[paper]` — Greshake et al. 2023. The threat-model paper for agents that read untrusted content.
 - **[GCG: Universal Adversarial Attacks](gcg-attack.md)** `[paper]` — Zou et al. 2023. Automated jailbreak discovery; suffixes transfer across models.
 - **[Jailbroken: How Does LLM Safety Training Fail?](jailbreak-failure-modes.md)** `[paper]` — Wei et al. 2023. Framework for *why* jailbreaks work: competing objectives + mismatched generalization.
+- **[Sleeper Agents](sleeper-agents.md)** `[paper]` — Hubinger et al. 2024. Backdoored LLM behaviors can persist through standard safety training.

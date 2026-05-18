@@ -130,6 +130,7 @@ Foundations, not tips. Subsections: [papers](learning/papers/), [courses](learni
 - **[Indirect Prompt Injection](learning/safety/indirect-prompt-injection.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Greshake et al. 2023. The foundational framing of the injection threat when agents read untrusted content.
 - **[GCG: Universal Adversarial Attacks](learning/safety/gcg-attack.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Zou et al. 2023. Automated jailbreak discovery; suffixes transfer across models.
 - **[Jailbroken: How Does LLM Safety Training Fail?](learning/safety/jailbreak-failure-modes.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Wei et al. 2023. The framework for understanding *why* jailbreaks work (competing objectives, mismatched generalization).
+- **[Sleeper Agents](learning/safety/sleeper-agents.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Hubinger et al. 2024. Backdoored LLM behaviors can persist through standard safety training.
 
 ### Architecture — systems concepts
 
