@@ -12,6 +12,7 @@ This is the flagship section of the repo. It's where vague folk wisdom gets filt
 - **[Self-refine](self-refine.md)** `[paper]` — Generate, then critique, then revise — improves quality where the model can recognize its own errors.
 - **[Tree of Thoughts](tree-of-thoughts.md)** `[paper]` — CoT generalized to a tree with search; for problems where one reasoning path isn't enough.
 - **[Least-to-most prompting](least-to-most.md)** `[paper]` — Decompose to subproblems, solve sequentially with accumulating context.
+- **[Program-aided prompting](program-aided.md)** `[paper]` — Generate executable reasoning steps, then let an interpreter handle exact computation.
 - **[Prompt chaining](prompt-chaining.md)** `[provider-doc]` — Break complex tasks into multiple focused prompts; provider-recommended default for non-trivial workflows.
 - **[Extended thinking / reasoning modes](extended-thinking.md)** `[provider-doc]` — Provider-native reasoning-token budgets on Claude, OpenAI o-series, and Gemini.
 - **[Prompt caching](prompt-caching.md)** `[provider-doc]` — Reuse a static prefix across requests to cut input-token cost ~90% and reduce latency materially.
