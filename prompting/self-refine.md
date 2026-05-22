@@ -2,7 +2,7 @@
 
 ## One-sentence pitch
 
-Have the model critique its own output and produce a revised version — iterative self-critique lifts quality on tasks where the model can recognize its own errors after the fact.
+Have the model critique its own output and produce a revised version. The cited paper reports quality gains on tasks where the model can identify its own errors after the fact.
 
 ## Evidence
 
@@ -10,12 +10,12 @@ Have the model critique its own output and produce a revised version — iterati
 
 ## What the paper shows
 
-Prompting a model in three phases — **generate** an initial output, **feedback** (critique it), **refine** (produce a revised version using the feedback) — improves quality across seven tasks (dialogue response, code optimization, code readability, math reasoning, acronym generation, constrained generation, sentiment reversal). The gains are strongest on tasks where errors are recognizable by the same model that generated them.
+Prompting a model in three phases — **generate** an initial output, **feedback** (critique it), **refine** (produce a revised version using the feedback) — improves quality across seven tasks (dialogue response, code optimization, code readability, math reasoning, acronym generation, constrained generation, sentiment reversal). Gains are largest on tasks where the same model can identify the errors it generated.
 
 ## Practical rules
 
 - **Use distinct prompts per phase.** One prompt to generate, one to critique, one to refine. Mixing them in a single long prompt performs worse in the paper's ablations.
-- **Structured critique beats free-form.** Ask for specific failure categories (correctness, completeness, style) rather than "what's wrong with this?"
+- **Use structured critique.** Ask for specific failure categories (correctness, completeness, style) rather than "what's wrong with this?"
 - **Stop early.** Most gain comes in the first refinement pass. Past 2–3 iterations, improvements plateau and cost stacks up.
 - **Know when the model can't self-critique.** If the task requires ground truth the model doesn't have (e.g., factual recall outside its training), self-refine can confidently produce a worse answer.
 

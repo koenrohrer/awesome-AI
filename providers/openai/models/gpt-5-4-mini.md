@@ -13,11 +13,11 @@
 
 ## What it is
 
-GPT-5.4 mini is OpenAI's strongest mini model yet for coding, computer use, and subagents. It is designed as the faster, cheaper companion to GPT-5.4.
+GPT-5.4 mini is OpenAI's mini tier for coding, computer use, and subagents. It is designed as the faster, cheaper companion to GPT-5.4.
 
 ## Official system card in Markdown
 
-OpenAI does not currently publish a separate public system card just for GPT-5.4 mini.
+OpenAI does not currently publish a separate public system card for GPT-5.4 mini.
 
 ### Relevant official coverage in Markdown
 

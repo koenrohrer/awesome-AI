@@ -6,7 +6,7 @@
 
 | Model | Role | Notable feature |
 |---|---|---|
-| `kimi-k2.6` | Current flagship | Latest Kimi text model, stronger long-horizon coding and agent execution |
+| `kimi-k2.6` | Current top text tier | Latest Kimi text model, stronger long-horizon coding and agent execution |
 | `kimi-k2.5` | Multimodal generalist | Text + vision, thinking/non-thinking modes, agent tasks |
 | `kimi-k2` / `kimi-k2-0905-preview` | Base K2 line | Strong code and agent performance; open-weight lineage |
 | `kimi-k2-thinking` / `kimi-k2-thinking-turbo` | Dedicated reasoning line | Thinking-focused variants for deeper reasoning |
@@ -42,7 +42,7 @@ Moonshot does not currently publish a public system-card hub comparable to Anthr
 - **Western tooling support still lags.** OpenAI-compatible endpoints help, but ecosystem defaults still skew toward OpenAI/Anthropic/Google.
 - **Preview-heavy naming.** Moonshot keeps several preview and turbo names in circulation, which makes production pinning more important.
 
-## Best-fit tasks
+## Fits
 
 - Agentic coding and tool-use workflows
 - Cost-sensitive long-context tasks

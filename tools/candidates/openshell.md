@@ -10,10 +10,10 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:30:18Z`; official repo reports Apache-2.0 license and active issue/PR volume.
-- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful with setup friction.
 - Docs/install: Official README documents binary install via `curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh` and PyPI install via `uv tool install -U openshell`.
 - License/pricing: Apache-2.0 license. Requires Docker for the quickstart; GPU support requires NVIDIA drivers and NVIDIA Container Toolkit.
-- Risks or caveats: Official README labels the project "Alpha software -- single-player mode" and warns to expect rough edges. GPU passthrough is also marked experimental. Maintainer impression: useful, but still clunky.
+- Risks or caveats: Official README labels the project "Alpha software -- single-player mode" and warns to expect rough edges. GPU passthrough is also marked experimental. Maintainer impression: useful with setup friction.
 
 ## Inclusion decision
 
@@ -26,7 +26,7 @@
 - Directory: `tools/`
 - Supportable claim: OpenShell provides policy-governed sandboxes for running agents such as Claude Code, OpenCode, Codex, Copilot CLI, OpenClaw, and Ollama.
 - Required maintainer test: Preserve the overnight codebase-scan/fix task notes: agent used, sandbox policy, allowed and blocked operations, outputs, accepted fixes, rejected fixes, logs, and cleanup behavior.
-- Entry caveat: Must say alpha and not production-ready; policy coverage depends on the agent and sandbox image.
+- Entry caveat: Must say alpha and not ready for production use; policy coverage depends on the agent and sandbox image.
 - Follow-up questions: Which agent was used inside OpenShell during the overnight codebase-scan/fix task?
 
 ## Draft entry

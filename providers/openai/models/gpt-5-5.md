@@ -6,7 +6,7 @@
 
 - Provider: OpenAI
 - Model ID: `gpt-5.5` when API access launches
-- Tier: Current product flagship for ChatGPT and Codex; API announced as coming soon
+- Tier: Current top product tier for ChatGPT and Codex; API announced as coming soon
 - Context window: 1M tokens announced for the upcoming API model; Codex product surface uses 400K context
 - Official docs: [Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/), [GPT-5.5 system card](https://openai.com/index/gpt-5-5-system-card/)
 

@@ -2,7 +2,7 @@
 
 ## One-sentence pitch
 
-Sample multiple chain-of-thought reasoning paths and take the majority vote — beats single-sample CoT on reasoning benchmarks, especially when the task has a discrete answer space.
+Sample multiple chain-of-thought reasoning paths and take the majority vote. The cited paper reports higher accuracy than single-sample CoT on reasoning benchmarks with discrete answer spaces.
 
 ## Evidence
 

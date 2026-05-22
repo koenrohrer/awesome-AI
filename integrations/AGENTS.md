@@ -11,5 +11,5 @@ This directory covers AI wired into existing non-AI systems and workflows.
 ## Entry Guidance
 
 - Name the non-AI surface being integrated with.
-- Explain the real workflow improvement, not just that AI is present.
+- Explain the workflow improvement, not the mere presence of AI.
 - Include honest operational caveats: auth, secrets, review gates, latency, and failure modes.

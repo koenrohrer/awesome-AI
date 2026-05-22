@@ -6,7 +6,7 @@
 
 - Provider: Anthropic
 - Model ID: `claude-opus-4-6`
-- Tier: Prior flagship, still active
+- Tier: Prior top Opus tier, still active
 - Context window: 1M tokens
 - Max output: 128K tokens
 - Official docs: [models overview](https://platform.claude.com/docs/en/about-claude/models/overview), [launch announcement](https://www.anthropic.com/news/claude-opus-4-6?id=ClaudeOpus4.6)

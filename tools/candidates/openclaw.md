@@ -10,10 +10,10 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:36:25Z`; latest GitHub release page showed `openclaw 2026.4.23` published on April 24, 2026.
-- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful with setup friction.
 - Docs/install: Official README recommends `npm install -g openclaw@latest` and `openclaw onboard --install-daemon`; it documents macOS, Linux, and Windows via WSL2.
 - License/pricing: MIT license; self-hosted. Model/provider and messaging-service costs depend on configured services.
-- Risks or caveats: Messaging gateways process untrusted inbound content. The official README explicitly calls out DM pairing/security defaults for real messaging surfaces. Maintainer impression: useful, but still clunky.
+- Risks or caveats: Messaging gateways process untrusted inbound content. The official README explicitly calls out DM pairing/security defaults for real messaging surfaces. Maintainer impression: useful with setup friction.
 
 ## Inclusion decision
 

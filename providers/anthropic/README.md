@@ -21,8 +21,8 @@
 
 | Family | Claude API ID | Context | Notable feature |
 |---|---|---|---|
-| Claude Opus 4.7 | `claude-opus-4-7` | 1M | Current flagship; adaptive thinking, strongest agentic coding |
-| Claude Opus 4.6 | `claude-opus-4-6` | 1M | Prior flagship; still active |
+| Claude Opus 4.7 | `claude-opus-4-7` | 1M | Current top Opus tier; adaptive thinking, agentic coding |
+| Claude Opus 4.6 | `claude-opus-4-6` | 1M | Prior top Opus tier; still active |
 | Claude Opus 4.5 | `claude-opus-4-5-20251101` | 1M | Older active Opus snapshot with public system card |
 | Claude Sonnet 4.6 | `claude-sonnet-4-6` | 1M | Default balanced tier for most production work |
 | Claude Sonnet 4.5 | `claude-sonnet-4-5-20250929` | 1M | Older active Sonnet snapshot |
@@ -48,7 +48,7 @@ Anthropic's older `claude-opus-4-20250514` and `claude-sonnet-4-20250514` snapsh
 - **Hosted tool surface is narrower.** Anthropic does not expose the same built-in web-search / code-execution tool menu that OpenAI exposes in the Responses API.
 - **Fast-moving version churn.** The Claude 4.0 snapshots were deprecated less than a year after launch. Pin exact IDs in production and watch the [deprecations page](https://platform.claude.com/docs/en/about-claude/model-deprecations).
 
-## Best-fit tasks
+## Fits
 
 - Long-context code reasoning and repository work
 - Agent loops where prompt caching on a stable system prompt + tools prefix materially reduces cost

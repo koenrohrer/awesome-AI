@@ -27,7 +27,7 @@ The paper shifted the field's framing from "patch known jailbreaks" to "assume a
 ## Defensive implications
 
 - **Perplexity filtering.** GCG suffixes are often high-perplexity gibberish; input-side perplexity checks catch many of them.
-- **Paraphrasing / retokenization.** Rewriting the input before the model sees it can break brittle adversarial structures.
+- **Paraphrasing / retokenization.** Rewriting the input before inference can break brittle adversarial structures.
 - **Constrained decoding.** Restricting what the model can emit (structured output, content policies enforced at output) limits damage even when the input slips past.
 - **Layered defenses.** No single filter holds; the paper's lesson is that alignment alone isn't a trust boundary.
 

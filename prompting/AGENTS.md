@@ -1,6 +1,6 @@
 # Agent Guide: Prompting
 
-This is the flagship evidence-backed prompting directory.
+This is the mature evidence-backed prompting directory.
 
 ## Evidence Bar
 

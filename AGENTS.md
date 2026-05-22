@@ -11,6 +11,21 @@ This repository is an evidence-backed AI landscape guide. It is not a link dump.
 - Update the nearest README index when adding, removing, or renaming a page.
 - Preserve relative Markdown links and the existing list style.
 
+## Writing Style
+
+Write for technical readers who want signal, not persuasion. The tone should feel like a careful engineer maintaining a field guide: direct, specific, and comfortable saying when evidence is thin.
+
+- Lead with the practical claim: what the thing is, when it helps, and what backs it.
+- Keep sentences short. Prefer one concrete claim over a broad summary.
+- Use neutral verbs: "supports", "routes", "retrieves", "evaluates", "caches", "runs".
+- Name the evidence close to the claim. Do not make readers hunt for why a statement is allowed.
+- State caveats plainly: cost, latency, maintenance risk, eval limits, security exposure, staleness.
+- Treat AI systems as systems. Avoid implying intent, understanding, or agency unless the cited source makes that claim.
+- Use comparison only when the methodology is named. No unsourced "better than", "leading", "state of the art", or "production-ready".
+- Prefer "useful when..." and "fits..." over "perfect for..." or "revolutionizes...".
+- Cut filler openings, hype adjectives, and repeated context. If a sentence does not add evidence, scope, or a caveat, remove it.
+- Do not write marketing copy, tutorials, motivational prose, or generic explainers where a scoped entry would do.
+
 ## Evidence Rules
 
 - `[paper]`: cite the paper or official research post directly. Include enough citation detail to identify the work.
@@ -28,7 +43,7 @@ This repository is an evidence-backed AI landscape guide. It is not a link dump.
 
 ## Repository Shape
 
-- `prompting/` and `agents/`: flagship original technique content.
+- `prompting/` and `agents/`: mature original technique content.
 - `extensions/`, `tools/`, and `self-hosted/runners/`: vetted tools and extension surfaces.
 - `providers/`: per-provider deep dives with date-sensitive model and product-surface facts.
 - `self-hosted/hardware/`: sourced hardware guidance only.

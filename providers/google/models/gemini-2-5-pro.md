@@ -6,7 +6,7 @@
 
 - Provider: Google
 - Model ID: `gemini-2.5-pro`
-- Tier: Flagship hosted Gemini model
+- Tier: Main hosted Gemini Pro model
 - Context window: 1,048,576 tokens
 - Official docs: [Gemini models page](https://ai.google.dev/gemini-api/docs/models)
 

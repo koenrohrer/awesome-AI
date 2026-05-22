@@ -1,6 +1,6 @@
 # Integrations
 
-**AI glued to the non-AI systems you already use.** This section is a genuine gap in the awesome-AI ecosystem — most lists stop at "here are 50 AI tools." This one shows how to wire AI into existing workflows.
+AI wired into non-AI systems: CI pipelines, shell workflows, automations, no-code flows, and recurring jobs.
 
 ## Sections
 
@@ -19,7 +19,7 @@
 
 ## Why this section exists
 
-"I want to use AI in X" where X is not a chat window. The gap between "I have an AI tool" and "my real workflow gets better" is where most AI projects die. This section is the map of that gap.
+This section covers workflows where AI is one step in a larger operational path, not the whole product surface.
 
 ## Status
 

@@ -2,7 +2,7 @@
 
 ## One-sentence pitch
 
-Constraining the model's output to a JSON schema eliminates parsing errors and materially reduces hallucinated or missing fields compared to "please return JSON" instructions alone.
+Constraining output to a JSON schema reduces malformed JSON and unsupported or missing fields compared with "please return JSON" instructions alone.
 
 ## Evidence
 
@@ -33,4 +33,4 @@ Unconstrained "return JSON" prompting relies on the model *remembering* to emit 
 
 ## Status
 
-`[provider-doc]`. Comparative accuracy claims (how much better than "please return JSON" prompting) are not precisely quantified here — upgrade path is a `[tested]` evaluation comparing unconstrained vs constrained on the same task.
+`[provider-doc]`. Comparative accuracy claims are not quantified here; upgrading this entry requires a `[tested]` evaluation comparing unconstrained and schema-constrained output on the same task.

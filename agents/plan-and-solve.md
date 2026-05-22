@@ -11,13 +11,13 @@ Prompt the model to first generate a plan, then execute each step of the plan �
 ## The recipe
 
 1. **Plan.** Prompt: "Let's first understand the problem and devise a plan to solve the problem. Then, let's carry out the plan and solve the problem step by step."
-2. **Solve.** Continue generation; the model executes the plan it just wrote.
+2. **Solve.** Continue generation using the plan as the next-step scaffold.
 
 A stronger variant — **PS+** — adds explicit error-reduction cues: "Pay attention to calculation", "extract relevant variables", "consider dimensions/units".
 
 ## What the paper shows
 
-On GSM8K, AQuA, SVAMP, AddSub, and similar reasoning benchmarks, Plan-and-Solve consistently beats zero-shot CoT ("Let's think step by step"). The gap is largest on problems where calculation errors or missed subproblems dominate — the explicit plan reduces skip-ahead mistakes.
+On GSM8K, AQuA, SVAMP, AddSub, and similar reasoning benchmarks, Plan-and-Solve reports higher accuracy than zero-shot CoT ("Let's think step by step"). The gap is largest when calculation errors or missed subproblems dominate; the explicit plan reduces skip-ahead mistakes.
 
 ## Why it matters for agents
 

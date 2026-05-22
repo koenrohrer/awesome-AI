@@ -2,7 +2,7 @@
 
 ## One-sentence pitch
 
-Teach a model to call APIs via self-supervised training — the model learns *when* to emit a tool call from training data augmented with candidate calls it filters itself.
+Train a model to call APIs from self-supervised data. Candidate tool calls are generated, filtered by loss improvement, and used for fine-tuning.
 
 ## Evidence
 
@@ -10,11 +10,11 @@ Teach a model to call APIs via self-supervised training — the model learns *wh
 
 ## What the paper shows
 
-Given an unlabeled dataset, a base LM can (1) generate candidate API calls at positions in text, (2) execute them, (3) keep only calls that reduce the model's perplexity on subsequent tokens, and (4) fine-tune on the filtered data. The resulting model learns to call calculators, Wikipedia, translators, and calendars on its own — outperforming much larger models on math and QA benchmarks.
+Given an unlabeled dataset, a base LM can (1) generate candidate API calls at positions in text, (2) execute them, (3) keep only calls that reduce perplexity on subsequent tokens, and (4) fine-tune on the filtered data. The resulting model reports stronger math and QA benchmark results than larger baselines without those tool-use traces.
 
 ## Why it matters
 
-ReAct and API-calling patterns work at *inference* time — clever prompting of a general-purpose model. Toolformer demonstrates tool use as a *training-time* capability: the model learns when each tool is useful and emits calls reflexively rather than being prompted through a loop.
+ReAct and API-calling patterns work at *inference* time through prompting and tool orchestration. Toolformer demonstrates tool use as a *training-time* capability: tool-call behavior is learned from filtered examples rather than added only by an external loop.
 
 Modern frontier models ship with tool-use behavior baked in from post-training (RLHF/RLAIF on tool-augmented tasks). Toolformer is the canonical citation for that approach.
 

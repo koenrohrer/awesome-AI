@@ -21,7 +21,7 @@ On Game of 24 (combinatorial math), Creative Writing, and Mini Crosswords — ta
 
 ## Practical rules
 
-- **The evaluator matters more than the generator.** If the LM can't score partial states well, the tree has no useful signal to search on — and you're just burning calls.
+- **The evaluator controls search quality.** If the LM cannot score partial states well, the tree has no useful signal to search on and call count rises without a clear benefit.
 - **Use BFS for breadth-critical problems, DFS for depth-critical.** Game-of-24 is BFS-friendly (wide candidate space, shallow solution depth); crosswords are DFS-friendly.
 - **Cost explodes fast.** A branching factor of 5 over 4 steps is 625 LM calls per problem. ToT is for problems where single-path CoT demonstrably fails — not for routine use.
 - **Prune aggressively.** Keep only top-k candidates per state. The paper keeps 1–5 depending on task.

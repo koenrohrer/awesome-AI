@@ -35,7 +35,7 @@ The architectural idea is that task adaptation often lives in a low-dimensional 
 ## Related entries
 
 - `learning/architecture/rag.md` — prefer retrieval when the problem is changing knowledge.
-- `learning/papers/instructgpt.md` — instruction tuning and RLHF are alignment-stage training, not just app-level fine-tuning.
+- `learning/papers/instructgpt.md` — instruction tuning and RLHF are alignment-stage training, not app-level fine-tuning alone.
 - `prompting/few-shot.md` — examples in context are the lightest-weight adaptation path.
 
 ## Status

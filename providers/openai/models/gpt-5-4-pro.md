@@ -6,7 +6,7 @@
 
 - Provider: OpenAI
 - Model ID: `gpt-5.4-pro`
-- Tier: Max-compute flagship
+- Tier: Max-compute API tier
 - Context window: 1.05M tokens
 - Official docs: [model page](https://developers.openai.com/api/docs/models/gpt-5.4-pro), [launch post](https://openai.com/index/introducing-gpt-5-4/)
 - Closest public system card docs: [GPT-5.4 Thinking system card](https://openai.com/index/gpt-5-4-thinking-system-card)

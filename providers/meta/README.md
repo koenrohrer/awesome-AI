@@ -1,12 +1,12 @@
 # Meta `[provider-doc]`
 
-*Last reviewed: 2026-04-23. Meta's public Llama 4 release that developers can actually use today is centered on Scout and Maverick, plus new safety-side releases like Llama Guard 4 and Prompt Guard 2. Verify against the official [meta-llama Hugging Face org](https://huggingface.co/meta-llama).*
+*Last reviewed: 2026-04-23. Meta's public Llama 4 release for developers is centered on Scout and Maverick, plus safety-side releases like Llama Guard 4 and Prompt Guard 2. Verify against the official [meta-llama Hugging Face org](https://huggingface.co/meta-llama).*
 
 ## Current model lines
 
 | Line | Role | Notable feature |
 |---|---|---|
-| Llama 4 Maverick | Flagship open-weight multimodal model | 17B active / ~400B total, 1M context |
+| Llama 4 Maverick | Higher-capacity open-weight multimodal model | 17B active / ~400B total, 1M context |
 | Llama 4 Scout | Efficient open-weight multimodal model | 17B active / ~109B total, 10M context |
 | Llama Guard 4 | Multimodal safety classifier | 12B safeguard model derived from the Llama 4 stack |
 | Llama Prompt Guard 2 | Prompt-attack classifier | 86M and 22M prompt-injection / jailbreak filters |
@@ -43,7 +43,7 @@ Meta does not publish Llama safety documentation under a “system card” hub c
 - **No first-party hosted inference API.** You self-host or choose a third-party host, so pricing and reliability vary by vendor.
 - **Prompt format and deployment details vary by model.** The right template and quantization path matter more than many teams expect.
 
-## Best-fit tasks
+## Fits
 
 - Self-hosted or third-party-hosted multimodal inference
 - Teams that want first-party open weights plus first-party safety models
@@ -52,7 +52,7 @@ Meta does not publish Llama safety documentation under a “system card” hub c
 
 ## Provider-specific quirks
 
-- **Scout and Maverick are not interchangeable.** Scout prioritizes accessibility and extreme context; Maverick is the heavier flagship.
+- **Scout and Maverick are not interchangeable.** Scout prioritizes accessibility and extreme context; Maverick is the heavier model.
 - **Safety models are part of the story.** For production use, Meta increasingly expects teams to combine Llama with Llama Guard / Prompt Guard.
 - **Check the exact model card.** Context, supported languages, and quantization details differ by artifact.
 

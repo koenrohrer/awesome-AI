@@ -6,12 +6,12 @@
 
 - Provider: MiniMax
 - Model ID: `MiniMax-M2.7`
-- Tier: Current flagship text model
+- Tier: Current top text model
 - Official docs: [platform overview](https://platform.minimaxi.com/), [release notes](https://platform.minimaxi.com/docs/release-notes/models)
 
 ## What it is
 
-MiniMax M2.7 is MiniMax's newest flagship text model and the top current text release on the platform overview.
+MiniMax M2.7 is MiniMax's newest top text model on the platform overview.
 
 ## Public system card availability
 
