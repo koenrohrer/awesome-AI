@@ -17,7 +17,7 @@ Lu et al. (2022) show that shuffling the order of the same examples can swing ac
 
 ## Practical rules
 
-- **Pick representative examples.** Examples should cover the range of inputs you expect, not just the easy cases.
+- **Pick representative examples.** Examples should cover the expected input range, including difficult cases.
 - **Order matters.** Put the hardest example last (closest to the query) — models attend more to recent context.
 - **Avoid label imbalance.** If you're classifying and 7 of 8 examples are class A, the model will bias toward A.
 - **Beware format leakage.** The model will mimic surface-level formatting of your examples — make sure the format you demonstrate is the one you want back.

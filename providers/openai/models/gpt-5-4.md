@@ -6,7 +6,7 @@
 
 - Provider: OpenAI
 - Model ID: `gpt-5.4`
-- Tier: Current flagship
+- Tier: Current main API tier
 - Context window: 1.05M tokens
 - Max output: 128K tokens
 - Official docs: [model page](https://developers.openai.com/api/docs/models/gpt-5.4), [launch post](https://openai.com/index/introducing-gpt-5-4/)
@@ -14,7 +14,7 @@
 
 ## What it is
 
-GPT-5.4 is OpenAI's flagship API model for complex professional work, coding, and agentic workflows. OpenAI documents it as the default choice for complex reasoning and coding.
+GPT-5.4 is OpenAI's main API model for complex professional work, coding, and agentic workflows. OpenAI documents it as the default choice for complex reasoning and coding.
 
 ## Official system card in Markdown
 

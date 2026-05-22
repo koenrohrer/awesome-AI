@@ -2,7 +2,7 @@
 
 ## One-sentence TL;DR
 
-Introduces the **Transformer** — an architecture built entirely on self-attention with no recurrence or convolutions. Sets the foundation for essentially every modern LLM.
+Introduces the **Transformer**, an architecture built on self-attention without recurrence or convolutions. This is the core architecture citation for transformer-based LLMs.
 
 ## Citation
 

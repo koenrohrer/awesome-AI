@@ -10,7 +10,7 @@ When the same long prefix (system prompt, tool definitions, reference docs) appe
 - **OpenAI:** [Prompt caching — OpenAI docs](https://platform.openai.com/docs/guides/prompt-caching) — automatic caching on eligible long prompts with up to 50% cost savings on cached input tokens and latency reduction.
 - **Google:** [Context caching — Gemini docs](https://ai.google.dev/gemini-api/docs/caching) — explicit cache creation with a minimum size (model-dependent) and a configurable TTL.
 
-## What caching actually does
+## What caching does
 
 Every provider implements it slightly differently, but the pattern is:
 
@@ -27,7 +27,7 @@ Every provider implements it slightly differently, but the pattern is:
 ## When it doesn't
 
 - **One-off requests.** The write premium is a net loss.
-- **Rapidly changing prefixes.** If your "static" section actually changes, you pay writes repeatedly.
+- **Rapidly changing prefixes.** If the "static" section changes often, writes repeat and savings shrink.
 - **Below minimum cache size.** Small prompts don't qualify on some providers.
 
 ## Measurement

@@ -14,7 +14,7 @@ On compositional generalization benchmarks (SCAN, DROP, GSM8K), chain-of-thought
 1. **Decomposition** — prompt the model to list subproblems.
 2. **Sequential solve** — solve subproblems one at a time, appending each solution to the context of the next.
 
-The decomposition-and-sequence structure generalizes to harder instances than CoT does — with the same model, same examples, significantly higher accuracy on out-of-distribution instances.
+The cited experiments report higher accuracy than CoT on harder out-of-distribution instances using the same model and examples.
 
 ## Why it matters
 

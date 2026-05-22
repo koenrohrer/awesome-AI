@@ -6,7 +6,7 @@
 
 | Line | Role | Notable feature |
 |---|---|---|
-| Mistral Large | Flagship proprietary | Closed API; chat + reasoning |
+| Mistral Large | Main proprietary tier | Closed API; chat + reasoning |
 | Mistral Small / Medium | Balanced | Lower cost, widely available |
 | Mixtral-family (MoE) | Open weights | Sparse mixture-of-experts |
 | Codestral | Code | Code-specialized variant |
@@ -27,7 +27,7 @@ Mistral runs a **dual-track** strategy: proprietary hosted models behind `la Pla
 - **Track ambiguity.** Not every Mistral announcement is open-weight; some are closed. Read the release post carefully — the distinction isn't always prominent.
 - **Tool-calling conventions** differ from OpenAI's format on some variants; check the specific model's docs.
 
-## Best-fit tasks
+## Fits
 
 - Open-weight inference where MoE cost characteristics matter (high active capacity, lower per-token compute than dense equivalents)
 - EU-residency-sensitive workloads using `la Plateforme`

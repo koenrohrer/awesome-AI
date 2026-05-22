@@ -42,7 +42,7 @@ OpenAI's function-calling (now unified under "tools" in the Responses API): decl
 
 ## Related to
 
-- `agents/react.md` — the underlying loop pattern.
+- `agents/react.md` — the loop pattern.
 - `agents/tool-use-anthropic.md` — the equivalent on Claude; the schema and loop are conceptually identical, the field names differ.
 - `prompting/structured-output.md` — function calling shares the schema-constrained generation mechanism.
 

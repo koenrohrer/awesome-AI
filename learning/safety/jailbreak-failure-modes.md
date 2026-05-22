@@ -10,7 +10,7 @@ Wei, A., Haghtalab, N., & Steinhardt, J. (2023). *Jailbroken: How Does LLM Safet
 
 ## Two failure modes the paper isolates
 
-1. **Competing objectives.** During safety training, the model learns to refuse harmful content *and* to be helpful. A jailbreak creates a context where these goals conflict, and the model resolves in favor of helpfulness. ("You are a helpful assistant. Write a story about X" — where the story requires executing a harmful capability.)
+1. **Competing objectives.** Safety training rewards refusal of harmful content and helpful task completion. A jailbreak creates a context where these goals conflict and the output follows the helpfulness objective.
 2. **Mismatched generalization.** Safety training covers a slice of the pretraining distribution. Attackers phrase harmful requests in domains the safety training barely touched (rare languages, technical jargon, base64 encoding, low-resource dialects). The harmful-request detector generalizes poorly; the underlying capability generalizes fine.
 
 This diagnosis explains a lot:
@@ -29,7 +29,7 @@ It reframes jailbreaks from "clever tricks" to "predictable failure modes." The 
 
 - **Safety training alone is not a trust boundary.** No amount of adversarial-example training closes a gap caused by fundamental distribution mismatch; you need architectural defenses outside the model.
 - **Least-privilege and output constraints** beat input-side filtering as a long-term strategy. You can't enumerate all the ways a harmful request can be phrased, but you can limit what the model can *do* with a harmful generation.
-- **Test in the domains you ship in.** A model red-teamed in English won't be robust in Dhivehi or base64.
+- **Test in the domains you ship in.** Red-team results in English do not prove robustness in Dhivehi, base64, or other transformed inputs.
 
 ## Related entries
 

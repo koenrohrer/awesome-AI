@@ -13,7 +13,7 @@
 
 ## What it is
 
-Claude Sonnet 4.6 is Anthropic's current balanced production tier. Anthropic positions it as the best speed/intelligence tradeoff across coding, computer use, long-context reasoning, and general professional work.
+Claude Sonnet 4.6 is Anthropic's current balanced production tier. Anthropic positions it as the speed/intelligence tradeoff tier for coding, computer use, long-context reasoning, and general professional work.
 
 ## Official system card in Markdown
 

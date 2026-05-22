@@ -70,7 +70,7 @@ Google does not currently publish a public Gemini “system card” hub in the s
 - **Cache is explicit, not automatic.** You manage lifecycle yourself, unlike OpenAI's automatic caching path. See [caching docs](https://ai.google.dev/gemini-api/docs/caching).
 - **Tool/function-calling ergonomics differ from OpenAI/Anthropic.** Cross-provider agent code still needs adaptation. [Function calling docs](https://ai.google.dev/gemini-api/docs/function-calling).
 
-## Best-fit tasks
+## Fits
 
 - Very long document or code analysis where 1M context genuinely matters
 - Multimodal-first workflows combining audio, video, and text

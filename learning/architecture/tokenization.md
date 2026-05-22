@@ -32,7 +32,7 @@ Modern LLM tokenizers vary by provider and model family, but the core tradeoff r
 
 - You are counting context budget or pricing long prompts.
 - You are building multilingual or code-heavy applications.
-- You are debugging weird failures around spacing, casing, emojis, or structured output.
+- You are debugging failures around spacing, casing, emojis, or structured output.
 
 ## Related entries
 

@@ -2,6 +2,12 @@
 
 Thank you for considering a contribution. This list has an opinionated editorial bar. Entries that don't clear the bar get closed, not merged — please read this document before opening a PR.
 
+## AI-maintained experiment
+
+This repository is intentionally written and maintained by an AI agent as an experiment in fully agent-maintained project work. The human maintainer sets direction and decides what changes land; the agent writes, organizes, revises, and maintains the repository content.
+
+Contributions are still reviewed against the same evidence contract below. AI authorship is a maintenance disclosure, not a substitute for sources, tests, or badge requirements.
+
 ## The core rule
 
 **Every entry carries a badge. No entry is bare.**
@@ -31,7 +37,7 @@ A maintainer ran it and recorded before/after output.
 ### `[vetted-tool]`
 A tool that meets **all three**:
 1. **Maintained** — at least one commit in the last 90 days.
-2. **Used** — the submitter has actually run it on a real task, not just read the README. Describe the task briefly.
+2. **Used** — the submitter has run it on a real task, not only read the README. Describe the task briefly.
 3. **Scope-fit** — the submission names one specific problem it solves well. "General purpose" is not a scope.
 
 ### `[sourced]`
@@ -63,7 +69,7 @@ Keep the one-sentence pitch under 140 characters. If you need more, write a subp
 - **Un-evidenced tips.** "I find X works well" without a paper, doc, or test.
 - **Link dumps.** Bulk submissions of many links at once without per-entry justification.
 - **Self-promotion with no track record.** New tools with no adoption and no tests.
-- **Vibes-based model rankings.** "Kimi is better than Claude for writing" — unless you cite an eval, it's out.
+- **Unsourced model rankings.** "Kimi is better than Claude for writing" — unless you cite an eval, it's out.
 - **Anything that duplicates an existing entry.** Improve the existing entry instead.
 
 ## Staleness
@@ -79,7 +85,7 @@ If you notice an entry has gone stale, open an issue — don't wait for the cron
 
 Maintainers review for:
 1. Does it carry a valid badge?
-2. Does the evidence actually support the one-sentence pitch?
+2. Does the evidence support the one-sentence pitch?
 3. Is it a duplicate?
 4. Does it fit the category?
 

@@ -29,14 +29,14 @@ Every frontier-model tool-use API (Anthropic, OpenAI, Google) is a structured ve
 
 ## Practical rules
 
-- **Make thoughts a first-class field.** Giving the model a dedicated "thinking" slot per step beats cramming reasoning into the action arguments.
+- **Make reasoning traces a first-class field.** A dedicated reasoning slot keeps intermediate state separate from action arguments.
 - **Keep the observation concise.** A 10k-token tool response pollutes every subsequent loop step's context. Summarize or index.
 - **Bound the loop.** Set a max step count. Otherwise a confused agent will thrash indefinitely.
 - **Separate "plan" from "act" prompts when deep.** For deep task trees, a ReAct step that kicks off a planner subprocess outperforms one flat loop.
 
 ## Known failure modes
 
-- **Premature conclusion.** Model decides it has the answer before enough tool calls.
+- **Premature conclusion.** The loop stops before enough tool calls.
 - **Tool-call loops.** Same action taken repeatedly because prior observations weren't retained.
 - **Reasoning drift.** Long thoughts that don't commit to a next action.
 

@@ -25,10 +25,10 @@
 
 | Line | Role | Notable feature |
 |---|---|---|
-| GPT-5.5 | Current ChatGPT/Codex flagship; API soon | Stronger agentic coding, computer use, research, and document/spreadsheet work |
+| GPT-5.5 | Current ChatGPT/Codex top tier; API soon | Stronger agentic coding, computer use, research, and document/spreadsheet work |
 | GPT-5.5 Pro | Higher-compute ChatGPT tier; API soon | Harder-question / higher-accuracy path |
-| GPT-5.4 | Current API flagship | 1.05M context, native computer use, default API starting point |
-| GPT-5.4 Pro | Max-compute API flagship | Slower, more expensive, deeper reasoning path |
+| GPT-5.4 | Current main API tier | 1.05M context, native computer use, default API starting point |
+| GPT-5.4 Pro | Max-compute API tier | Slower, more expensive, deeper reasoning path |
 | GPT-5.4 mini / nano | Fast and cheap GPT-5.4-class models | Strong fit for subagents, coding helpers, high-volume tasks |
 | GPT-5.3 Instant | Fast GPT-5-series conversational model | Better web-search flow and lower latency than heavier models |
 | GPT-5.3-Codex / GPT-5.2-Codex / GPT-5-Codex | Agentic coding | Codex-tuned coding models with long-horizon tool use |
@@ -56,11 +56,11 @@ OpenAI does not currently expose a separate public system-card page for every AP
 
 ## Weaknesses (cited)
 
-- **Catalog sprawl.** OpenAI now has overlapping mainline GPT-5, GPT-5.4 variants, Codex variants, and specialized models; model choice is less obvious than “just use the flagship.” The [models page](https://developers.openai.com/api/docs/models) is authoritative.
+- **Catalog breadth.** OpenAI has overlapping mainline GPT-5, GPT-5.4 variants, Codex variants, and specialized models. The [models page](https://developers.openai.com/api/docs/models) is authoritative.
 - **Feature support varies by alias.** `gpt-5.4-pro` supports a narrower subset of structured-output/tooling features than `gpt-5.4`, and Codex-optimized models differ again. Always check the per-model page.
-- **Safety docs do not map 1:1 to every alias.** You often need to read a flagship system card plus addenda and launch posts to understand a family.
+- **Safety docs do not map 1:1 to every alias.** You often need to read the family system card plus addenda and launch posts.
 
-## Best-fit tasks
+## Fits
 
 - Multimodal agent workflows that need hosted tools rather than self-hosted infrastructure
 - Coding agents that mix planning, computer use, and repo edits

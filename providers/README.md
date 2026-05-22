@@ -39,7 +39,7 @@ More providers (Phi, Command R, Yi) land in a later wave.
 
 ## Editorial rules
 
-- Provider overview pages stay comparable across vendors: current model lines, strengths, weaknesses, best-fit tasks, quirks, docs.
+- Provider overview pages stay comparable across vendors: current model lines, strengths, weaknesses, fit guidance, quirks, docs.
 - When a provider has enough active model surface area to justify it, add `models/*.md` pages for individual model lines and link them from the provider README.
 - Product-specific subpages exist only when the surface is operationally different enough to deserve its own curation track.
 - Every concrete strength/weakness claim still needs a citation. Product pages can start as primers, then accumulate cited entries.
