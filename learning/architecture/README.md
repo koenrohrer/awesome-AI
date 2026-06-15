@@ -1,12 +1,13 @@
 # Architecture explainers
 
-Source-backed explainers for foundational AI/LLM architecture topics: transformers, retrieval, KV cache, mixture-of-experts, fine-tuning, tokenization, quantization, and related systems concepts.
+Source-backed explainers for foundational AI/LLM architecture topics: transformers, retrieval, KV cache, sparse attention, mixture-of-experts, fine-tuning, tokenization, quantization, and related systems concepts.
 
 ## Entries
 
 - **[Retrieval-augmented generation (RAG)](rag.md)** `[paper]` — Retrieve external evidence, then condition generation on it; useful when parametric memory is stale or incomplete.
 - **[KV cache and PagedAttention](kv-cache.md)** `[paper]` — Reuse attention keys and values during decoding; the main memory bottleneck for long-context serving.
 - **[Multi-token prediction (MTP)](multi-token-prediction.md)** `[paper]` — Draft and verify several future tokens per decoding step to reduce autoregressive latency.
+- **[Native Sparse Attention / DeepSeek Sparse Attention](native-sparse-attention.md)** `[paper]` — Train sparse long-context attention paths around GPU-friendly block access.
 - **[Mixture-of-experts (MoE)](mixture-of-experts.md)** `[paper]` — Route tokens through a sparse subset of experts to add capacity without activating every parameter.
 - **[Fine-tuning and LoRA](fine-tuning-lora.md)** `[paper]` — Adapt a pretrained model to a task or domain; LoRA makes that adaptation parameter-efficient.
 - **[Tokenization: BPE and SentencePiece](tokenization.md)** `[paper]` — Split text into subword units; tokenization defines the model's vocabulary and cost surface.
