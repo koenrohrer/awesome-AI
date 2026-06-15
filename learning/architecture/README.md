@@ -7,7 +7,10 @@ Source-backed explainers for foundational AI/LLM architecture topics: transforme
 - **[Retrieval-augmented generation (RAG)](rag.md)** `[paper]` — Retrieve external evidence, then condition generation on it; useful when parametric memory is stale or incomplete.
 - **[KV cache and PagedAttention](kv-cache.md)** `[paper]` — Reuse attention keys and values during decoding; the main memory bottleneck for long-context serving.
 - **[Disaggregated LLM serving](disaggregated-llm-serving.md)** `[paper]` — Split prefill and decode workers, then transfer KV cache across serving resources.
+- **[Multi-head latent attention (MLA)](multi-head-latent-attention.md)** `[paper]` — Compress cached keys and values into latent vectors to reduce long-context decoding memory.
 - **[Multi-token prediction (MTP)](multi-token-prediction.md)** `[paper]` — Draft and verify several future tokens per decoding step to reduce autoregressive latency.
+- **[Kimi Linear / Kimi Delta Attention (KDA)](kimi-linear.md)** `[paper]` — Mix KDA and MLA layers to reduce long-context cache and decode costs.
+- **[Native Sparse Attention / DeepSeek Sparse Attention](native-sparse-attention.md)** `[paper]` — Train sparse long-context attention paths around GPU-friendly block access.
 - **[Mixture-of-experts (MoE)](mixture-of-experts.md)** `[paper]` — Route tokens through a sparse subset of experts to add capacity without activating every parameter.
 - **[Fine-tuning and LoRA](fine-tuning-lora.md)** `[paper]` — Adapt a pretrained model to a task or domain; LoRA makes that adaptation parameter-efficient.
 - **[Tokenization: BPE and SentencePiece](tokenization.md)** `[paper]` — Split text into subword units; tokenization defines the model's vocabulary and cost surface.

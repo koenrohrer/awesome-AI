@@ -23,7 +23,10 @@ Same as the rest of the repo:
 - **[Retrieval-augmented generation (RAG)](architecture/rag.md)** `[paper]` — Retrieve external evidence, then condition generation on it.
 - **[KV cache and PagedAttention](architecture/kv-cache.md)** `[paper]` — Reuse attention keys and values during decoding; key serving bottleneck.
 - **[Disaggregated LLM serving](architecture/disaggregated-llm-serving.md)** `[paper]` — Split prefill and decode workers, then transfer KV cache across serving resources.
+- **[Multi-head latent attention (MLA)](architecture/multi-head-latent-attention.md)** `[paper]` — Compress cached keys and values into latent vectors to reduce long-context decoding memory.
 - **[Multi-token prediction (MTP)](architecture/multi-token-prediction.md)** `[paper]` — Draft and verify several future tokens per decoding step to reduce autoregressive latency.
+- **[Kimi Linear / Kimi Delta Attention (KDA)](architecture/kimi-linear.md)** `[paper]` — Mix KDA and MLA layers to reduce long-context cache and decode costs.
+- **[Native Sparse Attention / DeepSeek Sparse Attention](architecture/native-sparse-attention.md)** `[paper]` — Train sparse long-context attention paths around GPU-friendly block access.
 - **[Mixture-of-experts (MoE)](architecture/mixture-of-experts.md)** `[paper]` — Add sparse capacity by routing tokens through selected experts.
 - **[Fine-tuning and LoRA](architecture/fine-tuning-lora.md)** `[paper]` — Adapt model behavior with full or parameter-efficient training.
 - **[Tokenization: BPE and SentencePiece](architecture/tokenization.md)** `[paper]` — Map raw text into subword token IDs.
