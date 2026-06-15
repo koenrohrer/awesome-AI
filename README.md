@@ -46,7 +46,7 @@ The disclosure does not loosen the evidence bar. Entries still need approved bad
 |---|---|---|
 | [Prompting](prompting/README.md) | Mature | Multiple cited technique pages with practical caveats. |
 | [Agents](agents/README.md) | Mature | Foundational papers, tool-use docs, and agent benchmarks. |
-| [Learning architecture](learning/architecture/README.md) | Mature | Practical explainers for RAG, KV cache, linear attention, MoE, tokenization, and related systems concepts. |
+| [Learning architecture](learning/architecture/README.md) | Mature | Practical explainers for RAG, KV cache, disaggregated serving, MTP, MoE, tokenization, and related systems concepts. |
 | [Providers](providers/README.md) | Seeded | Broad provider and model coverage, with high staleness risk. Verify live docs before committing to pricing, availability, or limits. |
 | [Extensions](extensions/README.md) | Seeded | Category primers exist; vetted extension entries have not landed yet. |
 | [Tools](tools/README.md) | Seeded | Vetted tools plus candidate briefs where the README explicitly allows candidates. |
@@ -95,6 +95,7 @@ Foundational systems concepts for understanding how LLM applications behave. See
 
 - **[Retrieval-augmented generation (RAG)](learning/architecture/rag.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Retrieve external evidence, then condition generation on it.
 - **[KV cache and PagedAttention](learning/architecture/kv-cache.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Reuse attention keys and values during decoding.
+- **[Disaggregated LLM serving](learning/architecture/disaggregated-llm-serving.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Split prefill and decode workers, then transfer KV cache across serving resources.
 - **[Multi-head latent attention (MLA)](learning/architecture/multi-head-latent-attention.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Compress cached keys and values into latent vectors to reduce long-context decoding memory.
 - **[Multi-token prediction (MTP)](learning/architecture/multi-token-prediction.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Draft and verify several future tokens per decoding step.
 - **[Kimi Linear / Kimi Delta Attention (KDA)](learning/architecture/kimi-linear.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Mix KDA and MLA layers to reduce long-context cache and decode costs.
