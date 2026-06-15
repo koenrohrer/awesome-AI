@@ -3,6 +3,7 @@
     { "pattern": "^http://localhost" },
     { "pattern": "^https://github.com/koenrohrer/awesome-AI/discussions" },
     { "pattern": "^https://ai\\.google\\.dev" },
+    { "pattern": "^https://platform\\.deepseek\\.com/?$" },
     { "pattern": "^https://(www\\.)?x\\.ai" }
   ],
   "retryOn429": true,
