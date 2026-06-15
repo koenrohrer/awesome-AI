@@ -6,7 +6,7 @@ Foundations, not tips. If you want to understand *why* the techniques in `prompt
 
 - **[Papers](papers/)** — landmark papers with a one-paragraph TL;DR and a link. Each TL;DR is written to be read before the paper, not instead of it.
 - **[Courses](courses/)** — courses a maintainer completed and endorses. No "this looks good" — someone finished it.
-- **[Architecture explainers](architecture/)** — RAG, KV cache, MLA, MTP/speculative decoding, MoE, fine-tuning/LoRA, tokenization, and quantization, with source-backed primers.
+- **[Architecture explainers](architecture/)** — RAG, KV cache, MTP/speculative decoding, linear attention, MoE, fine-tuning/LoRA, tokenization, and quantization, with source-backed primers.
 - **[Safety](safety/)** — red-teaming, jailbreak resistance, prompt injection. Tilts toward defensive content.
 
 ## Inclusion bar
@@ -24,6 +24,7 @@ Same as the rest of the repo:
 - **[KV cache and PagedAttention](architecture/kv-cache.md)** `[paper]` — Reuse attention keys and values during decoding; key serving bottleneck.
 - **[Multi-head latent attention (MLA)](architecture/multi-head-latent-attention.md)** `[paper]` — Compress cached keys and values into latent vectors to reduce long-context decoding memory.
 - **[Multi-token prediction (MTP)](architecture/multi-token-prediction.md)** `[paper]` — Draft and verify several future tokens per decoding step to reduce autoregressive latency.
+- **[Kimi Linear / Kimi Delta Attention (KDA)](architecture/kimi-linear.md)** `[paper]` — Mix KDA and MLA layers to reduce long-context cache and decode costs.
 - **[Native Sparse Attention / DeepSeek Sparse Attention](architecture/native-sparse-attention.md)** `[paper]` — Train sparse long-context attention paths around GPU-friendly block access.
 - **[Mixture-of-experts (MoE)](architecture/mixture-of-experts.md)** `[paper]` — Add sparse capacity by routing tokens through selected experts.
 - **[Fine-tuning and LoRA](architecture/fine-tuning-lora.md)** `[paper]` — Adapt model behavior with full or parameter-efficient training.
