@@ -2,7 +2,7 @@
 
 ## One-sentence TL;DR
 
-When an LLM reads untrusted third-party content (a webpage, an email, a document), that content can contain instructions that hijack the model's behavior. This paper is the foundational framing of the threat; understanding it is prerequisite for building any agent that reads external data.
+When an LLM receives untrusted third-party content (a webpage, an email, a document), that content can contain instructions that redirect model behavior. This paper frames the threat for agents and assistants connected to external data.
 
 ## Citation
 
@@ -27,7 +27,7 @@ All without the user typing anything adversarial.
 
 ## Why it's foundational
 
-Every agent architecture now reckons with this threat. The fact that *the same tokens* are used for system instructions, user input, and tool-returned content means there's no cryptographic separation — trust is inferred from context and position, both of which are overridable by cleverly crafted content.
+Agent architectures that read external content need to account for this threat. The same token stream can contain system instructions, user input, and tool-returned content, so trust is inferred from context and position rather than cryptographic separation.
 
 ## Defensive directions (consolidated from the literature)
 

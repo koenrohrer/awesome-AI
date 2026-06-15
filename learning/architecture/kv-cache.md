@@ -23,7 +23,7 @@ That matters because live serving workloads are dynamic: requests enter and leav
 ## Why it matters
 
 - KV cache is often the limiting resource for long-context inference.
-- Serving throughput is not just "model speed"; it is also memory allocation, batching, and cache reuse.
+- Serving throughput depends on more than model speed; memory allocation, batching, and cache reuse also matter.
 - Techniques like prefix caching, paged attention, speculative decoding, and KV quantization all build on this same bottleneck.
 
 ## Read it when

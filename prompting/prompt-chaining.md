@@ -2,13 +2,13 @@
 
 ## One-sentence pitch
 
-Break a complex task into multiple sequential prompts — each one focused, each output feeding the next — instead of cramming everything into one mega-prompt. Provider docs consistently recommend this as a default pattern for non-trivial workflows.
+Break a complex task into multiple sequential prompts, with each output feeding the next step. Provider docs recommend this pattern for workflows that need intermediate validation or transformation.
 
 ## Evidence
 
 - **Anthropic:** [Chain complex prompts — Claude docs](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts) — official guide with examples.
 - **OpenAI:** [Prompting strategies — OpenAI docs](https://platform.openai.com/docs/guides/prompt-engineering) — recommends breaking complex tasks into simpler subtasks.
-- **LangChain, LlamaIndex, and related frameworks** are largely prompt-chaining abstractions by a different name — the pattern is the underlying primitive.
+- **LangChain, LlamaIndex, and related frameworks** often package prompt chaining as a workflow primitive.
 
 ## Why it works
 

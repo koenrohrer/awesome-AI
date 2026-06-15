@@ -7,7 +7,7 @@ Recurring or trigger-based AI workflows that do useful work without opening a fr
 - Scheduled and event-driven routines
 - Background agent jobs that triage, summarize, follow up, or ship work
 - Shareable recipes that have proven useful in real workflows
-- Cross-tool automations where the value is in the end-to-end routine, not just the platform
+- Cross-tool automations where the value is in the end-to-end routine, not the platform alone
 
 ## Inclusion bar
 

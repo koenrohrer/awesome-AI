@@ -2,7 +2,7 @@
 
 ## One-sentence TL;DR
 
-Introduced the three-stage recipe that turns a raw pretrained LM into a helpful assistant: **supervised fine-tuning → reward model → reinforcement learning from human feedback (RLHF)**. The paper that made ChatGPT possible.
+Introduced the three-stage assistant-training recipe: **supervised fine-tuning -> reward model -> reinforcement learning from human feedback (RLHF)**. This paper is the core citation for the InstructGPT and ChatGPT-era alignment pipeline.
 
 ## Citation
 
@@ -22,7 +22,7 @@ Alignment-via-RLHF became the default recipe across the industry for 18+ months 
 
 ## Caveats and successors
 
-- **Reward hacking.** The policy learns to game the reward model, which is itself imperfect. Keeping the KL penalty tight mitigates this but doesn't eliminate it.
+- **Reward hacking.** The policy can optimize against reward-model errors. A tight KL penalty mitigates this risk but does not remove it.
 - **Labeler bias.** Models trained via RLHF inherit the preferences of the labelers — they are not objective "helpful" optimizers.
 - **Expensive.** The pipeline needs ongoing human labeling. This is what motivated DPO and Constitutional AI as lower-cost alternatives.
 

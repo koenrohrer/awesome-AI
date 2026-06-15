@@ -10,10 +10,10 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:35:45Z`; public repo reports MIT license, Python implementation, and active issue/PR volume. Official site currently shows Hermes Agent v0.11.0.
-- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful with setup friction.
 - Docs/install: Official README and site document install via `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`, then `hermes setup`.
 - License/pricing: MIT license; self-hosted. Model/provider costs depend on configured providers.
-- Risks or caveats: Large autonomy surface: persistent memory, messaging gateway, scheduled automations, subagents, browser/web tools, and remote/container backends all need a narrow documented task before recommendation. Maintainer impression: useful, but still clunky.
+- Risks or caveats: Large autonomy surface: persistent memory, messaging gateway, scheduled automations, subagents, browser/web tools, and remote/container backends all need a narrow documented task before recommendation. Maintainer impression: useful with setup friction.
 
 ## Inclusion decision
 

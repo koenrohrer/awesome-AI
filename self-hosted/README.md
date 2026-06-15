@@ -5,7 +5,7 @@ Running AI locally or on your own infra.
 ## Sections
 
 - **[Runners](runners/)** — ollama, LMStudio, llama.cpp, vLLM, Jan, GPT4All. `[vetted-tool]` entries.
-- **[Workflows](workflows/)** — local-first setups that work end-to-end (not "here's a docker-compose; good luck"). `[tested]` when a maintainer has run it.
+- **[Workflows](workflows/)** — local-first setups a maintainer has run end to end. `[tested]` when outputs and caveats are recorded.
 - **[Hardware](hardware/)** — sourced hardware guides. `[sourced]` entries only — every spec cites a named third-party source.
 
 ## Hardware rule

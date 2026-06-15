@@ -1,6 +1,6 @@
 # Self-hosted workflows
 
-Local-first AI setups that work end-to-end — not "here's a docker-compose, good luck." A workflow belongs here if a maintainer has run the whole loop on their own machine.
+Local-first AI setups that a maintainer has run end to end on their own machine.
 
 ## Inclusion bar
 

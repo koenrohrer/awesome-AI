@@ -10,10 +10,10 @@
 ## Evidence snapshot
 
 - Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:33:04Z`; GitHub releases showed v0.70.2 published on April 24, 2026.
-- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful but clunky.
+- Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful with setup friction.
 - Docs/install: Official site documents `npm install -g @mariozechner/pi-coding-agent`; repo points readers to `packages/coding-agent` for installation and usage.
 - License/pricing: MIT license; users bring model/provider credentials.
-- Risks or caveats: Pi intentionally omits built-in plan mode, subagents, permission popups, background bash, and MCP. Those can be built or installed as extensions, but they are not core defaults. Maintainer impression: useful, but still clunky.
+- Risks or caveats: Pi intentionally omits built-in plan mode, subagents, permission popups, background bash, and MCP. Those can be built or installed as extensions, but they are not core defaults. Maintainer impression: useful with setup friction.
 
 ## Inclusion decision
 

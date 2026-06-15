@@ -1,6 +1,6 @@
 # Agents
 
-Building autonomous agents. Same evidence bar as `prompting/` — only `[paper]`, `[provider-doc]`, or `[tested]` entries belong here.
+Building autonomous agents. This section uses the same evidence bar as `prompting/`: `[paper]`, `[provider-doc]`, or `[tested]`.
 
 ## Scope
 
@@ -19,9 +19,9 @@ Subtopics we'll cover as entries accumulate:
 
 ### Patterns
 
-- **[ReAct: Reasoning + Acting](react.md)** `[paper]` — Interleave Thought/Action/Observation; the pattern underlying most modern tool-using agents.
-- **[Toolformer](toolformer.md)** `[paper]` — Training-time tool use: the model learns when to emit calls via self-supervised filtering.
-- **[Plan-and-Solve prompting](plan-and-solve.md)** `[paper]` — Plan first, then execute; the planner/worker split underlying most agent frameworks.
+- **[ReAct: Reasoning + Acting](react.md)** `[paper]` — Interleave reasoning traces, actions, and observations in a tool-use loop.
+- **[Toolformer](toolformer.md)** `[paper]` — Training-time tool-use behavior from self-supervised API-call filtering.
+- **[Plan-and-Solve prompting](plan-and-solve.md)** `[paper]` — Plan first, then execute; useful when a flat prompt skips subproblems.
 - **[Reflexion](reflexion.md)** `[paper]` — Verbal self-reflection after failures, kept in context for the next attempt.
 - **[Voyager](voyager.md)** `[paper]` — Open-ended agent loop: automatic curriculum + reusable skill library + environment-grounded feedback.
 
@@ -32,10 +32,10 @@ Subtopics we'll cover as entries accumulate:
 
 ### Evaluation
 
-- **[SWE-Bench](swe-bench.md)** `[paper]` — Real GitHub issues as the eval; the single most-cited agent-coding benchmark.
-- **[GAIA: General AI Assistant benchmark](gaia.md)** `[paper]` — 466 multi-tool, multimodal questions; grades the whole agent stack, not just the model.
+- **[SWE-Bench](swe-bench.md)** `[paper]` — Real GitHub issues for evaluating coding-agent scaffolds.
+- **[GAIA: General AI Assistant benchmark](gaia.md)** `[paper]` — 466 multi-tool, multimodal questions for evaluating model plus scaffold behavior.
 
 ## Out of scope
 
 - Agent product reviews — those belong in `tools/`.
-- "Is AutoGPT back?" hot takes — if there's a paper or eval, it belongs here; otherwise it doesn't.
+- Trend commentary without a paper, provider doc, or maintainer-run test.

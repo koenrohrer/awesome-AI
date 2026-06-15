@@ -10,7 +10,7 @@ An LLM-powered agent that plays Minecraft with no predefined goals — proposing
 
 ## The three components
 
-1. **Automatic curriculum.** The LLM proposes the next task for the agent to pursue based on what it already knows. No human-specified goals — the agent explores by choosing its own next challenge.
+1. **Automatic curriculum.** The LLM proposes the next task from current agent state. No human-specified goal is required for each step.
 2. **Skill library.** When the agent solves a task, the solution is stored as reusable code (a function). Future tasks retrieve relevant skills by semantic similarity and compose them.
 3. **Iterative prompting with environment feedback.** When code fails in the game environment, the error is fed back into the LLM, which revises the skill — a tight execute-observe-fix loop.
 

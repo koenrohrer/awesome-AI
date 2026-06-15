@@ -20,7 +20,7 @@ This section is a source-backed markdown digest, not a verbatim transcription of
 
 ### Capability and product summary
 
-- Anthropic described Opus 4.5 as its best model at release time for coding, agents, computer use, and deep research.
+- Anthropic described Opus 4.5 as its top model at release time for coding, agents, computer use, and deep research.
 - The model report and launch material position it as a major step up for software engineering and office-work tasks like slides and spreadsheets.
 
 ### Safety and deployment summary

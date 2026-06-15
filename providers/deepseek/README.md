@@ -6,11 +6,11 @@
 
 | Surface | Backing model | Role | Notable feature |
 |---|---|---|---|
-| `deepseek-v4-pro` | DeepSeek-V4-Pro | Flagship hosted + open-weight model | 1.6T total / 49B active params; 1M context |
+| `deepseek-v4-pro` | DeepSeek-V4-Pro | Top hosted + open-weight model | 1.6T total / 49B active params; 1M context |
 | `deepseek-v4-flash` | DeepSeek-V4-Flash | Faster hosted + open-weight model | 284B total / 13B active params; 1M context |
 | `deepseek-chat` | `deepseek-v4-flash` non-thinking mode | Legacy compatibility alias | Deprecated; retires July 24, 2026 |
 | `deepseek-reasoner` | `deepseek-v4-flash` thinking mode | Legacy compatibility alias | Deprecated; retires July 24, 2026 |
-| DeepSeek-V3.2 | Prior open-weight flagship | General + agent use | Superseded by V4 Preview |
+| DeepSeek-V3.2 | Prior open-weight top tier | General + agent use | Superseded by V4 Preview |
 | DeepSeek-R1 | Open-weight reasoning family | Reasoning | First major open-weight reasoning breakout |
 
 DeepSeek's API docs now list `deepseek-v4-pro` and `deepseek-v4-flash` as the current model IDs. The older `deepseek-chat` and `deepseek-reasoner` names remain compatibility aliases for V4-Flash non-thinking and thinking modes until July 24, 2026.
@@ -40,7 +40,7 @@ DeepSeek does not currently publish public “system cards” in the same style 
 
 - **Large open-weight V4 release.** V4-Pro is documented at 1.6T total / 49B active parameters, while V4-Flash is documented at 284B total / 13B active parameters. [DeepSeek V4 Preview release](https://api-docs.deepseek.com/news/news260424).
 - **1M-token context on current hosted IDs.** The pricing page lists 1M context length for both `deepseek-v4-pro` and `deepseek-v4-flash`. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
-- **Open-weight frontier-adjacent releases.** DeepSeek still publishes major flagship weights openly on [Hugging Face](https://huggingface.co/deepseek-ai).
+- **Open-weight frontier-adjacent releases.** DeepSeek still publishes major model weights openly on [Hugging Face](https://huggingface.co/deepseek-ai).
 - **Reasoning and tool-use modes on V4.** Both V4 hosted IDs support thinking and non-thinking modes, JSON output, tool calls, and OpenAI/Anthropic-compatible API surfaces. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/), [thinking mode](https://api-docs.deepseek.com/guides/thinking_mode).
 - **Aggressive pricing.** The current published API pricing remains unusually low. [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/).
 
@@ -50,7 +50,7 @@ DeepSeek does not currently publish public “system cards” in the same style 
 - **Documentation depth still lags the Western incumbents.** Advanced agent/framework details remain thinner.
 - **Policy and deployment constraints matter.** Some teams will prefer self-hosting or third-party hosting for governance reasons rather than calling DeepSeek directly.
 
-## Best-fit tasks
+## Fits
 
 - Cost-sensitive hosted inference
 - Open-weight reasoning and research workloads

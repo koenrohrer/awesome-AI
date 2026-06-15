@@ -6,12 +6,12 @@
 
 - Provider: Moonshot AI
 - Model ID: `kimi-k2.6`
-- Tier: Current flagship
+- Tier: Current top text tier
 - Official docs: [platform homepage](https://platform.moonshot.ai/), [docs overview](https://platform.moonshot.ai/docs/overview)
 
 ## What it is
 
-Kimi K2.6 is Moonshot's latest flagship text model, positioned around stronger long-term code generation and better autonomous agent execution.
+Kimi K2.6 is Moonshot's latest top text model, positioned around stronger long-term code generation and autonomous agent execution.
 
 ## Public system card availability
 

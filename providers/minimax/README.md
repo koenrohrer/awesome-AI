@@ -1,12 +1,12 @@
 # MiniMax `[provider-doc]`
 
-*Last reviewed: 2026-04-23. MiniMax's public platform now spans a newer M2.7 flagship, multiple M2.x text variants, and separate audio/video/image stacks. Verify current text-model availability against the live [platform overview](https://platform.minimaxi.com/) and [API overview](https://platform.minimaxi.com/docs/api-reference/api-overview).*
+*Last reviewed: 2026-04-23. MiniMax's public platform spans the newer M2.7 top text tier, multiple M2.x text variants, and separate audio/video/image stacks. Verify current text-model availability against the live [platform overview](https://platform.minimaxi.com/) and [API overview](https://platform.minimaxi.com/docs/api-reference/api-overview).*
 
 ## Current model lines
 
 | Line | Role | Notable feature |
 |---|---|---|
-| MiniMax M2.7 | Current flagship text model | Newest text release; positioned around self-iteration and stronger general capability |
+| MiniMax M2.7 | Current top text model | Newest text release; positioned around self-iteration and stronger general capability |
 | MiniMax M2.5 / M2.5-highspeed | Main production text tier | 204,800-token limit, strong coding/tool-use/productivity story |
 | MiniMax M2.1 / M2.1-highspeed | Coding-focused text tier | Strong multilingual programming emphasis |
 | MiniMax M2 | Older agent/coding text tier | Positioned for efficient coding and agent workflows |
@@ -34,7 +34,7 @@ MiniMax does not currently publish a public system-card hub in the Anthropic/Ope
 
 ## Strengths (cited)
 
-- **Current text lineup is broad.** MiniMax now has M2.7, M2.5, M2.1, and older M2 tiers in public docs, rather than a single flagship. [Platform overview](https://platform.minimaxi.com/), [API overview](https://platform.minimaxi.com/docs/api-reference/api-overview).
+- **Current text lineup is broad.** MiniMax documents M2.7, M2.5, M2.1, and older M2 tiers. [Platform overview](https://platform.minimaxi.com/), [API overview](https://platform.minimaxi.com/docs/api-reference/api-overview).
 - **Strong coding and agent positioning.** The API docs explicitly frame the text models around coding, tool calling, and agent workflows. [API overview](https://platform.minimaxi.com/docs/api-reference/api-overview).
 - **Open-weight reasoning side path exists.** MiniMax-M1 gives the provider an open-weight research/deployment story in addition to hosted APIs. [MiniMax M1 announcement](https://www.minimax.io/news/minimaxm1).
 - **Broader multimodal platform coverage.** MiniMax also runs first-party speech, video, image, and music model surfaces, even though this page focuses on text.
@@ -42,10 +42,10 @@ MiniMax does not currently publish a public system-card hub in the Anthropic/Ope
 ## Weaknesses (cited)
 
 - **English-language documentation is thinner.** The clearest current docs are still often in Chinese, especially for release notes and pricing details.
-- **Product and API naming do not map cleanly.** The flagship cards on the overview page and the API-supported names are related but not identical.
+- **Product and API naming do not map cleanly.** Overview-page cards and API-supported names are related but not identical.
 - **Western framework mindshare is still limited.** Integration usually happens through compatibility layers rather than first-class framework defaults.
 
-## Best-fit tasks
+## Fits
 
 - Coding and agent workflows where MiniMax's text tiers are cost-competitive
 - Multilingual development workloads

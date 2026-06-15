@@ -6,7 +6,7 @@ Foundations, not tips. If you want to understand *why* the techniques in `prompt
 
 - **[Papers](papers/)** — landmark papers with a one-paragraph TL;DR and a link. Each TL;DR is written to be read before the paper, not instead of it.
 - **[Courses](courses/)** — courses a maintainer completed and endorses. No "this looks good" — someone finished it.
-- **[Architecture explainers](architecture/)** — RAG, KV cache, MLA, MTP/speculative decoding, MoE, fine-tuning/LoRA, tokenization, quantization. Links to the best source-backed primer for each, not yet-another-blog-post.
+- **[Architecture explainers](architecture/)** — RAG, KV cache, MLA, MTP/speculative decoding, MoE, fine-tuning/LoRA, tokenization, and quantization, with source-backed primers.
 - **[Safety](safety/)** — red-teaming, jailbreak resistance, prompt injection. Tilts toward defensive content.
 
 ## Inclusion bar

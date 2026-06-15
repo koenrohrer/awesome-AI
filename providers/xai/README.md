@@ -6,13 +6,13 @@
 
 | Line | Role | Notable feature |
 |---|---|---|
-| Grok 4.20 | Current flagship | 2M context, reasoning, structured outputs, tool calling |
-| Grok 4 Fast (reasoning) | Fast/cheap reasoning tier | 2M context, lower cost than flagship |
+| Grok 4.20 | Current top tier | 2M context, reasoning, structured outputs, tool calling |
+| Grok 4 Fast (reasoning) | Fast/cheap reasoning tier | 2M context, lower cost than Grok 4.20 |
 | Grok 4 Fast (non-reasoning) | Lower-latency general tier | 2M context without reasoning path |
 | Grok Code Fast 1 | Coding tier | 256K context, code-editor and agent fit |
 | Grok 3 / Grok 3 mini | Older API line | Legacy models still listed for migration contexts |
 
-The xAI docs now treat Grok 4.20 as the newest flagship and keep Grok 3-era models around mainly as migration baselines.
+The xAI docs treat Grok 4.20 as the newest top tier and keep Grok 3-era models mainly as migration baselines.
 
 ## Model pages
 
@@ -40,11 +40,11 @@ xAI does not currently publish a public “system card” hub in the Anthropic/O
 
 ## Weaknesses (cited)
 
-- **Documentation depth still lags the top three incumbents.** The docs are better than before, but the ecosystem remains thinner than OpenAI/Anthropic/Google for advanced agent-framework support.
+- **Documentation depth still lags OpenAI, Anthropic, and Google.** The ecosystem remains thinner for advanced agent-framework support.
 - **Consumer/API surface mismatch remains real.** Capabilities discussed for grok.com or X do not always map cleanly to API features.
 - **Versioning churn.** xAI is iterating rapidly from Grok 3 to Grok 4 to Grok 4.20 and Grok 4 Fast; integration code should pin explicit model IDs.
 
-## Best-fit tasks
+## Fits
 
 - Teams that want OpenAI-compatible integration with another frontier vendor
 - Workflows that benefit from first-party live/web/X search positioning

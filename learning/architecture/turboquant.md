@@ -30,7 +30,7 @@ Treat those as paper/provider claims until reproduced in the specific runtime, m
 
 - KV cache, not model weights, can dominate memory use at long context.
 - Quantizing the cache is a different problem from quantizing weights.
-- Deployment value depends on kernel support and integration into inference engines, not just the algorithm.
+- Deployment value depends on kernel support and inference-engine integration, not the algorithm alone.
 
 ## Read it when
 
@@ -46,4 +46,4 @@ Treat those as paper/provider claims until reproduced in the specific runtime, m
 
 ## Status
 
-`[paper]`. Current as of 2026-04-24; re-check framework support before presenting TurboQuant as production-ready.
+`[paper]`. Current as of 2026-04-24; re-check framework support before presenting TurboQuant as ready for production use.

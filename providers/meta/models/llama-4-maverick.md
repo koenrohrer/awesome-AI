@@ -6,13 +6,13 @@
 
 - Provider: Meta
 - Model family: Llama 4 Maverick
-- Tier: Flagship current Llama 4 release
+- Tier: Higher-capacity current Llama 4 release
 - Context window: 1M tokens
 - Official docs: [official model card](https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E)
 
 ## What it is
 
-Llama 4 Maverick is Meta's heavier current Llama 4 release for stronger multimodal inference than Scout.
+Llama 4 Maverick is Meta's heavier current Llama 4 release for multimodal inference.
 
 ## Public system card availability
 

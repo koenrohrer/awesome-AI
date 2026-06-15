@@ -383,7 +383,7 @@ When reviewing an agent PR, the maintainer confirms:
 For Watchlist PRs, add:
 
 8. **Add PR** — `originated_by` and every `referencer_url` trace back to `.watchlist/sources.yml`; the artifact URL resolves; the entry is in the correct `<category>/watchlist.md`.
-9. **Graduation PR** — the triggering hard-evidence source (`[paper]` / `[provider-doc]` / `[tested]`) is genuine and actually supports the claim; the `watchlist.md` line is removed in the same PR.
+9. **Graduation PR** — the triggering hard-evidence source (`[paper]` / `[provider-doc]` / `[tested]`) is genuine and supports the claim; the `watchlist.md` line is removed in the same PR.
 10. **Prune PR** — 7-day last-call has elapsed; prune reason matches the evidence; if `contradicted`, the `<category>/graveyard.md` line exists.
 
 The checklist fits on a post-it deliberately. If review gets complicated, the PR is too big — ask the agent to split it.
@@ -604,7 +604,7 @@ The maintainer applies exactly one label when closing an agent PR. The agent rea
 | `duplicate-of-N` | Already covered by entry or PR #N. |
 | `contradicted` | Evidence against the pattern landed before merge. |
 | `stretched-bar` | Would require redefining `[emerging]` to admit. |
-| `source-degraded` | The originating source in `.watchlist/sources.yml` is producing slop; feeds into source-health metric (§12.4). |
+| `source-degraded` | The originating source in `.watchlist/sources.yml` is producing low-quality candidates; feeds into source-health metric (§12.4). |
 
 ### 12.7 Accepted losses
 
@@ -619,7 +619,7 @@ These are acknowledged, not bugs to be fixed by bending the bar.
 ### 12.8 Add/prune asymmetry (editorial)
 
 - **Add PRs get a liberal bar.** A wrong `[emerging]` entry = one noisy Watchlist line you later prune. Bias toward proposing.
-- **Prune PRs get a strict bar.** Removing a valid entry deletes information the community relied on. Require explicit cited evidence + the 7-day last-call window. Never skip the window, even when the evidence feels airtight.
+- **Prune PRs get a strict bar.** Removing a valid entry deletes information the community relied on. Require explicit cited evidence plus the 7-day last-call window. Never skip the window, even when the evidence appears conclusive.
 
 ### 12.9 Launch waves
 

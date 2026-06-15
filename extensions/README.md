@@ -22,5 +22,5 @@ Scaffolded in v0.4. Each subsection now has a README; vetted entries land once t
 ## Inclusion rule recap
 
 1. **Maintained** — commit within 90 days.
-2. **Used** — a maintainer ran it on a real task (not just read the README).
+2. **Used** — a maintainer ran it on a real task, not only read the README.
 3. **Scope-fit** — it names one specific problem. "General assistant" is not a scope.

@@ -1,6 +1,6 @@
 # Architecture explainers
 
-The best explainers for foundational AI/LLM architectures -- transformers, retrieval, KV cache, mixture-of-experts, fine-tuning, tokenization, quantization, and similar.
+Source-backed explainers for foundational AI/LLM architecture topics: transformers, retrieval, KV cache, mixture-of-experts, fine-tuning, tokenization, quantization, and related systems concepts.
 
 ## Entries
 
