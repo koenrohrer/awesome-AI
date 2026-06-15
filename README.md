@@ -95,8 +95,10 @@ Foundational systems concepts for understanding how LLM applications behave. See
 
 - **[Retrieval-augmented generation (RAG)](learning/architecture/rag.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Retrieve external evidence, then condition generation on it.
 - **[KV cache and PagedAttention](learning/architecture/kv-cache.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Reuse attention keys and values during decoding.
+- **[Multi-head latent attention (MLA)](learning/architecture/multi-head-latent-attention.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Compress cached keys and values into latent vectors to reduce long-context decoding memory.
 - **[Multi-token prediction (MTP)](learning/architecture/multi-token-prediction.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Draft and verify several future tokens per decoding step.
 - **[Kimi Linear / Kimi Delta Attention (KDA)](learning/architecture/kimi-linear.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Mix KDA and MLA layers to reduce long-context cache and decode costs.
+- **[Native Sparse Attention / DeepSeek Sparse Attention](learning/architecture/native-sparse-attention.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Train sparse long-context attention paths around GPU-friendly block access.
 - **[Mixture-of-experts (MoE)](learning/architecture/mixture-of-experts.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Route tokens through selected experts to add sparse capacity.
 - **[Fine-tuning and LoRA](learning/architecture/fine-tuning-lora.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Adapt a pretrained model to a task or domain.
 - **[Tokenization: BPE and SentencePiece](learning/architecture/tokenization.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Map text into subword token IDs.
