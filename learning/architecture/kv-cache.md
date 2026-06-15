@@ -35,6 +35,7 @@ That matters because live serving workloads are dynamic: requests enter and leav
 ## Related entries
 
 - `learning/architecture/turboquant.md` — compresses KV cache vectors rather than paging them.
+- `learning/architecture/disaggregated-llm-serving.md` — moves KV cache between prefill and decode resources.
 - `learning/papers/attention-is-all-you-need.md` — the attention mechanism that creates keys and values.
 - `self-hosted/runners/README.md` — where runner-specific serving tradeoffs will land.
 
