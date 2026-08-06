@@ -9,7 +9,7 @@
 
 ## Evidence snapshot
 
-- Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:35:45Z`; public repo reports MIT license, Python implementation, and active issue/PR volume. Official site currently shows Hermes Agent v0.11.0.
+- Maintenance: Active. The latest default-branch commit was `01a1037` at `2026-08-06T00:21:01Z`; the repository remains under the NousResearch organization with an MIT license.
 - Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful with setup friction.
 - Docs/install: Official README and site document install via `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`, then `hermes setup`.
 - License/pricing: MIT license; self-hosted. Model/provider costs depend on configured providers.
@@ -32,7 +32,7 @@
 ## Draft entry
 
 - **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** `[vetted-tool]` — Self-hosted persistent agent for memory-backed scheduled workflows.
-  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* scheduled self-hosted codebase maintenance.
+  - *Last commit:* 2026-08-06. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* scheduled self-hosted codebase maintenance.
   - *Gotcha:* Long-running agents need explicit secrets, permissions, and gateway review before use.
 
 ## Sources
@@ -40,3 +40,4 @@
 - Official repo: https://github.com/NousResearch/hermes-agent
 - Official site: https://hermes-agent.nousresearch.com/
 - GitHub API check: https://api.github.com/repos/NousResearch/hermes-agent
+- Latest verified commit: https://github.com/NousResearch/hermes-agent/commit/01a1037d1e6d7b6eb96a786ef282c3aea4818194

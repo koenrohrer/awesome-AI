@@ -9,7 +9,7 @@
 
 ## Evidence snapshot
 
-- Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:30:18Z`; official repo reports Apache-2.0 license and active issue/PR volume.
+- Maintenance: Active. The latest default-branch commit was `d2c44b0` at `2026-08-05T23:16:59Z`; the official repository reports an Apache-2.0 license.
 - Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful with setup friction.
 - Docs/install: Official README documents binary install via `curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh` and PyPI install via `uv tool install -U openshell`.
 - License/pricing: Apache-2.0 license. Requires Docker for the quickstart; GPU support requires NVIDIA drivers and NVIDIA Container Toolkit.
@@ -32,7 +32,7 @@
 ## Draft entry
 
 - **[OpenShell](https://github.com/NVIDIA/OpenShell)** `[vetted-tool]` — Policy-governed sandbox runtime for constraining autonomous coding agents.
-  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* sandboxed agent execution.
+  - *Last commit:* 2026-08-05. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* sandboxed agent execution.
   - *Gotcha:* Alpha software; treat policies as a tested constraint layer, not a production security guarantee.
 
 ## Sources
@@ -41,3 +41,4 @@
 - Official docs: https://docs.nvidia.com/openshell/about/supported-agents
 - NVIDIA product page: https://build.nvidia.com/openshell
 - GitHub API check: https://api.github.com/repos/NVIDIA/OpenShell
+- Latest verified commit: https://github.com/NVIDIA/OpenShell/commit/d2c44b0e5393e3746eae5783aa99ac31be08daae

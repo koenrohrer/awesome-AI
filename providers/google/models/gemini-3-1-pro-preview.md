@@ -1,14 +1,14 @@
 # Gemini 3.1 Pro Preview `[provider-doc]`
 
-*Last reviewed: 2026-04-23.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
 - Provider: Google
-- Model ID: verify against the live Gemini models page before production use
+- Model ID: `gemini-3.1-pro-preview`
 - Tier: Current Gemini 3-series preview reasoning model
-- Context window: 1M input tokens on the current Gemini 3-series docs
-- Official docs: [Gemini models page](https://ai.google.dev/gemini-api/docs/models), [Gemini 3 developer guide](https://ai.google.dev/gemini-api/docs/gemini-3)
+- Context window: 1,048,576 input / 65,536 output tokens
+- Official docs: [model page](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview), [Gemini models page](https://ai.google.dev/gemini-api/docs/models)
 
 ## What it is
 
@@ -16,13 +16,14 @@ Gemini 3.1 Pro Preview is the current Pro-class Gemini 3-series preview model li
 
 ## Integration notes
 
-- Treat the live models page as authoritative for the exact callable model string.
+- The model remains preview; preview endpoints can change and receive at least two weeks' deprecation notice under Google's documented lifecycle policy.
 - Gemini 3-series models use `thinking_level` controls rather than the older `thinking_budget` path.
 - Google's Gemini 3 guide documents 1M input context, 64K output, thought signatures, and tool-support differences versus Gemini 2.5.
 
 ## Links
 
 - [Gemini models page](https://ai.google.dev/gemini-api/docs/models)
+- [Model page](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview)
 - [Gemini 3 developer guide](https://ai.google.dev/gemini-api/docs/gemini-3)
 - [Gemini deprecations](https://ai.google.dev/gemini-api/docs/deprecations)
 

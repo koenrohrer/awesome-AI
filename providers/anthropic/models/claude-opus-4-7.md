@@ -1,12 +1,12 @@
 # Claude Opus 4.7 `[provider-doc]`
 
-*Last reviewed: 2026-04-23.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
 - Provider: Anthropic
 - Model ID: `claude-opus-4-7`
-- Tier: Current top Opus tier
+- Tier: Older active Opus tier; Opus 5 is current
 - Context window: 1M tokens
 - Max output: 128K tokens
 - Official docs: [models overview](https://platform.claude.com/docs/en/about-claude/models/overview), [What's new in Claude Opus 4.7](https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7)
@@ -14,7 +14,7 @@
 
 ## What it is
 
-Claude Opus 4.7 is Anthropic's most capable generally available Claude model. Anthropic positions it as the top Claude tier for complex reasoning, agentic coding, long-horizon work, and higher-fidelity vision tasks.
+Claude Opus 4.7 is an older active Opus model for complex reasoning, agentic coding, long-horizon work, and vision tasks. Opus 5 is the current Opus tier.
 
 ## Official system card in Markdown
 
@@ -22,7 +22,7 @@ This section is a markdown digest of Anthropic's official system-card material a
 
 ### Capability and product summary
 
-- Opus 4.7 is the current top Claude API model for advanced software-engineering and knowledge-work tasks.
+- Opus 4.7 preceded Opus 5 as Anthropic's top API model for advanced software-engineering and knowledge-work tasks.
 - Anthropic documents 1M-token context, 128K-token max output, adaptive thinking, and a new `xhigh` effort level.
 - The release notes call out stronger long-running task execution, better self-verification, and improved high-resolution image support.
 
@@ -34,7 +34,7 @@ This section is a markdown digest of Anthropic's official system-card material a
 
 ### Integration notes
 
-- Prefer `claude-opus-4-7` over older Opus snapshots for new work.
+- Start new Opus evaluations with Opus 5; retain `claude-opus-4-7` where its behavior is already evaluated or pinned.
 - Review the migration notes if you previously depended on explicit thinking budgets or non-default sampling controls.
 
 ## Links
@@ -46,4 +46,4 @@ This section is a markdown digest of Anthropic's official system-card material a
 
 ## Status
 
-`[provider-doc]`.
+`[provider-doc]`. Active older model; last reviewed 2026-08-06.

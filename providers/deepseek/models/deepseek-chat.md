@@ -1,20 +1,20 @@
 # deepseek-chat `[provider-doc]`
 
-*Last reviewed: 2026-05-03.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
 - Provider: DeepSeek
 - Model ID: `deepseek-chat`
-- Current status: Legacy compatibility alias
-- Backing model: `deepseek-v4-flash` non-thinking mode
-- Context window: 1M tokens
-- Retirement: July 24, 2026
-- Official docs: [models and pricing](https://api-docs.deepseek.com/quick_start/pricing/)
+- Current status: Retired and inaccessible
+- Final mapping: `deepseek-v4-flash` non-thinking mode
+- Retirement: July 24, 2026 at 15:59 UTC
+- Replacement: `deepseek-v4-flash`
+- Official docs: [V4 release note](https://api-docs.deepseek.com/news/news260424/)
 
 ## What it is
 
-`deepseek-chat` is now a compatibility alias for `deepseek-v4-flash` in non-thinking mode. New integrations should use `deepseek-v4-flash` directly.
+`deepseek-chat` was a compatibility alias for `deepseek-v4-flash` in non-thinking mode. DeepSeek scheduled the alias to become inaccessible after July 24, 2026 at 15:59 UTC, and the current pricing page no longer lists it. Use `deepseek-v4-flash` for new and migrated integrations.
 
 ## Public system card availability
 
@@ -24,8 +24,8 @@ DeepSeek does not currently publish a public system-card hub. Use the pricing pa
 
 - [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/)
 - [Change log](https://api-docs.deepseek.com/updates/)
-- [DeepSeek V4 Preview release](https://api-docs.deepseek.com/news/news260424)
+- [DeepSeek V4 Preview release](https://api-docs.deepseek.com/news/news260424/)
 
 ## Status
 
-`[provider-doc]`.
+`[provider-doc]`. Historical alias; retired.

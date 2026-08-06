@@ -32,6 +32,12 @@ Google's May 2026 release post reports up to a 3x Gemma 4 inference speedup from
 - Dense models often benefit more cleanly than MoE models because verifying multiple tokens reuses the same dense weights.
 - Short completions and low-acceptance tasks have less room to amortize drafter overhead.
 
+## Kimi K3 architecture note
+
+Moonshot AI's Kimi K3 technical-report architecture table lists one MTP layer for both Kimi K2 and Kimi K3. That establishes the architectural component, but it does not by itself establish a portable serving speedup; runtime support, draft acceptance, batch shape, and hardware still determine the realized result.
+
+**Source:** Moonshot AI, *Kimi K3: Open Frontier Intelligence.* (2026). [Technical report](https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf)
+
 ## Read it when
 
 - You are evaluating "tokens per second" claims for local or hosted inference.
@@ -43,6 +49,7 @@ Google's May 2026 release post reports up to a 3x Gemma 4 inference speedup from
 - `learning/architecture/kv-cache.md` — speculative drafters still depend on efficient cache reuse.
 - `learning/architecture/mixture-of-experts.md` — MoE routing changes the economics of verifying multiple drafted tokens.
 - `providers/google/models/gemma-4.md` — Google-specific Gemma 4 deployment notes.
+- `providers/moonshot/models/kimi-k3.md` — Kimi K3 model and release details.
 
 ## Official implementation notes
 
@@ -51,4 +58,4 @@ Google's May 2026 release post reports up to a 3x Gemma 4 inference speedup from
 
 ## Status
 
-`[paper]`. Current as of 2026-05-13; re-check runtime support before presenting an MTP speedup as available in a specific serving stack.
+`[paper]`. Last reviewed 2026-08-06; re-check runtime support before presenting an MTP speedup as available in a specific serving stack.

@@ -6,6 +6,8 @@ Source-backed explainers for foundational AI/LLM architecture topics: transforme
 
 - **[Retrieval-augmented generation (RAG)](rag.md)** `[paper]` — Retrieve external evidence, then condition generation on it; useful when parametric memory is stale or incomplete.
 - **[KV cache and PagedAttention](kv-cache.md)** `[paper]` — Reuse attention keys and values during decoding; the main memory bottleneck for long-context serving.
+- **[Context Folding](context-folding.md)** `[paper]` — Branch into subtasks, then fold completed trajectories out of the active context.
+- **[Agent harnesses](agent-harnesses.md)** `[provider-doc]` — Runtime boundaries for tools, permissions, state, isolation, evaluation, and recovery.
 - **[Disaggregated LLM serving](disaggregated-llm-serving.md)** `[paper]` — Split prefill and decode workers, then transfer KV cache across serving resources.
 - **[Multi-head latent attention (MLA)](multi-head-latent-attention.md)** `[paper]` — Compress cached keys and values into latent vectors to reduce long-context decoding memory.
 - **[Multi-token prediction (MTP)](multi-token-prediction.md)** `[paper]` — Draft and verify several future tokens per decoding step to reduce autoregressive latency.

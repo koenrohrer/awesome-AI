@@ -1,18 +1,18 @@
 # Grok 4 Fast (non-reasoning) `[provider-doc]`
 
-*Last reviewed: 2026-04-23.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
 - Provider: xAI
 - Model ID: `grok-4-fast-non-reasoning`
-- Tier: Fast non-reasoning model
-- Context window: 2,000,000 tokens
+- Lifecycle: Retired May 15, 2026; the slug redirects to `grok-4.3` with reasoning disabled
+- Original context window: 2,000,000 tokens; the redirected replacement differs
 - Official docs: [models and pricing](https://docs.x.ai/developers/models)
 
 ## What it is
 
-Grok 4 Fast (non-reasoning) is the lower-latency Grok 4 Fast variant for workloads that do not need the reasoning mode.
+Grok 4 Fast (non-reasoning) is a retired model ID retained for migration history. Continuing to send the old slug invokes and bills the `grok-4.3` replacement, not the original model.
 
 ## Public system card availability
 
@@ -21,6 +21,7 @@ xAI does not currently publish a separate public system card for this model.
 ## Links
 
 - [Models and pricing](https://docs.x.ai/developers/models)
+- [May 15, 2026 retirement guide](https://docs.x.ai/developers/migration/may-15-retirement)
 
 ## Status
 

@@ -21,6 +21,14 @@ The original sparsely-gated MoE layer showed the capacity/computation idea. Swit
 
 That simplified version is the clearest starting point for understanding why many modern frontier and open-weight models advertise huge parameter counts while activating only a fraction per token.
 
+## Kimi K3 case study
+
+The Kimi K3 technical report describes Stable LatentMoE, which projects the 7,168-dimensional hidden state into a 3,584-dimensional latent space before the expert layers. Its architecture table lists 896 routed experts with 16 active per token, two shared experts, 2.8 trillion total parameters, and 104 billion active parameters. This is a concrete example of why total and active parameter counts must be reported separately.
+
+The same report presents the latent projection and training recipe as stability and efficiency improvements. Treat those conclusions as author-reported until they are reproduced independently.
+
+**Source:** Moonshot AI, *Kimi K3: Open Frontier Intelligence.* (2026). [Technical report](https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf)
+
 ## Read it when
 
 - You see a model report "total parameters" and "active parameters" separately.
@@ -31,8 +39,9 @@ That simplified version is the clearest starting point for understanding why man
 
 - `learning/papers/scaling-laws.md` — explains why adding capacity matters.
 - `providers/models/README.md` — model directories often need to distinguish dense and sparse lines.
+- `providers/moonshot/models/kimi-k3.md` — hosted, open-weight, and report-backed Kimi K3 details.
 - `self-hosted/hardware/README.md` — MoE inference has memory and routing implications beyond raw parameter count.
 
 ## Status
 
-`[paper]`.
+`[paper]`. Last reviewed 2026-08-06.

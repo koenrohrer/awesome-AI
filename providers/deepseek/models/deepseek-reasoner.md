@@ -1,20 +1,20 @@
 # deepseek-reasoner `[provider-doc]`
 
-*Last reviewed: 2026-05-03.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
 - Provider: DeepSeek
 - Model ID: `deepseek-reasoner`
-- Current status: Legacy compatibility alias
-- Backing model: `deepseek-v4-flash` thinking mode
-- Context window: 1M tokens
-- Retirement: July 24, 2026
-- Official docs: [models and pricing](https://api-docs.deepseek.com/quick_start/pricing/)
+- Current status: Retired and inaccessible
+- Final mapping: `deepseek-v4-flash` thinking mode
+- Retirement: July 24, 2026 at 15:59 UTC
+- Replacement: `deepseek-v4-flash` with thinking mode
+- Official docs: [V4 release note](https://api-docs.deepseek.com/news/news260424/)
 
 ## What it is
 
-`deepseek-reasoner` is now a compatibility alias for `deepseek-v4-flash` in thinking mode. New integrations should use V4 model IDs and control thinking mode through request parameters.
+`deepseek-reasoner` was a compatibility alias for `deepseek-v4-flash` in thinking mode. DeepSeek scheduled the alias to become inaccessible after July 24, 2026 at 15:59 UTC, and the current pricing page no longer lists it. Use `deepseek-v4-flash` and select thinking mode through request parameters.
 
 ## Public system card availability
 
@@ -24,8 +24,9 @@ DeepSeek does not currently publish a public system-card page for this model.
 
 - [Models and pricing](https://api-docs.deepseek.com/quick_start/pricing/)
 - [Thinking mode](https://api-docs.deepseek.com/guides/thinking_mode)
-- [DeepSeek V4 Preview release](https://api-docs.deepseek.com/news/news260424)
+- [Change log](https://api-docs.deepseek.com/updates/)
+- [DeepSeek V4 Preview release](https://api-docs.deepseek.com/news/news260424/)
 
 ## Status
 
-`[provider-doc]`.
+`[provider-doc]`. Historical alias; retired.

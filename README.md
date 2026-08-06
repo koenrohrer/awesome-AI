@@ -45,8 +45,8 @@ The disclosure does not loosen the evidence bar. Entries still need approved bad
 | Section | Maturity | What to expect |
 |---|---|---|
 | [Prompting](prompting/README.md) | Mature | Multiple cited technique pages with practical caveats. |
-| [Agents](agents/README.md) | Mature | Foundational papers, tool-use docs, and agent benchmarks. |
-| [Learning architecture](learning/architecture/README.md) | Mature | Practical explainers for RAG, KV cache, disaggregated serving, MTP, MoE, tokenization, and related systems concepts. |
+| [Agents](agents/README.md) | Mature | Agent loops, workflow graphs, foundational papers, tool-use docs, and evaluation methods. |
+| [Learning architecture](learning/architecture/README.md) | Mature | Practical explainers for model, serving, context-management, and agent-runtime architecture. |
 | [Providers](providers/README.md) | Seeded | Broad provider and model coverage, with high staleness risk. Verify live docs before committing to pricing, availability, or limits. |
 | [Extensions](extensions/README.md) | Seeded | Category primers exist; vetted extension entries have not landed yet. |
 | [Tools](tools/README.md) | Seeded | Vetted tools plus candidate briefs where the README explicitly allows candidates. |
@@ -79,6 +79,8 @@ Evidence-backed techniques for improving model outputs. See [prompting/README.md
 
 Agent-building patterns, tool-use docs, and evaluation references. See [agents/README.md](agents/README.md).
 
+- **[Agent loop](agents/agent-loop.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Bound repeated planning, action, observation, evaluation, and stopping.
+- **[Graph-structured orchestration](agents/graph-structured-orchestration.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Make branches, cycles, fan-out, handoffs, and recovery explicit.
 - **[ReAct: Reasoning + Acting](agents/react.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Interleave reasoning, actions, and observations for tool-using agents.
 - **[Toolformer](agents/toolformer.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Training-time tool-use behavior from self-supervised filtering.
 - **[Plan-and-Solve prompting](agents/plan-and-solve.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Plan first, then execute.
@@ -93,6 +95,7 @@ Agent-building patterns, tool-use docs, and evaluation references. See [agents/R
 
 Foundational systems concepts for understanding how LLM applications behave. See [learning/architecture/README.md](learning/architecture/README.md).
 
+- **[Agent harnesses](learning/architecture/agent-harnesses.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Bound tools, permissions, state, isolation, evaluation, and recovery.
 - **[Retrieval-augmented generation (RAG)](learning/architecture/rag.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Retrieve external evidence, then condition generation on it.
 - **[KV cache and PagedAttention](learning/architecture/kv-cache.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Reuse attention keys and values during decoding.
 - **[Disaggregated LLM serving](learning/architecture/disaggregated-llm-serving.md)** ![paper](assets/badges/paper.svg)<!-- [paper] --> — Split prefill and decode workers, then transfer KV cache across serving resources.
@@ -112,16 +115,16 @@ Foundational systems concepts for understanding how LLM applications behave. See
 Provider and model pages are useful starting points, but they are date-sensitive. Check official docs before acting on pricing, context windows, model availability, or product limits. See [providers/README.md](providers/README.md).
 
 - **[Provider model directory](providers/models/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Cross-provider map of seeded model pages and docs-only model lines.
-- **[Anthropic](providers/anthropic/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Claude model families and Anthropic-specific product surfaces.
-- **[OpenAI](providers/openai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — GPT model lines plus Codex, ChatGPT Desktop, and image-generation surfaces.
-- **[Google](providers/google/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Gemini/Gemma models and Google-specific product surfaces.
-- **[xAI](providers/xai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Grok models, API surface, and live-data positioning.
-- **[Moonshot AI](providers/moonshot/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Kimi long-context models and open-weight releases.
-- **[Alibaba](providers/alibaba/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Qwen general and specialist variants.
-- **[DeepSeek](providers/deepseek/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Reasoning and open-weight long-context model pages.
-- **[MiniMax](providers/minimax/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — M2.x text models, open-weight M1, and multimodal platform surfaces.
-- **[Meta](providers/meta/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Llama-family open weights and adjacent safety surfaces.
-- **[Mistral](providers/mistral/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Proprietary platform plus open-weight track.
+- **[Anthropic](providers/anthropic/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Claude API, limited-access models, and product surfaces.
+- **[OpenAI](providers/openai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — GPT model lines plus Codex, ChatGPT Desktop, and image generation.
+- **[Google](providers/google/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Gemini/Gemma models, preview Computer Use, and product surfaces.
+- **[xAI](providers/xai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Grok 4.5, Grok Build, and historical migration coverage.
+- **[Moonshot AI](providers/moonshot/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted and open-weight Kimi model lines.
+- **[Alibaba](providers/alibaba/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted Qwen 3.7/3.8 and open-weight model families.
+- **[DeepSeek](providers/deepseek/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — V4 hosted/open-weight lines and retired legacy aliases.
+- **[MiniMax](providers/minimax/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — M3, maintained M2.x tiers, and multimodal platform surfaces.
+- **[Meta](providers/meta/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Llama open weights plus hosted Muse model and media surfaces.
+- **[Mistral](providers/mistral/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — General models plus OCR, proof, and robotics specialists.
 
 #### Extensions
 

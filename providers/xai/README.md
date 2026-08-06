@@ -1,30 +1,38 @@
 # xAI `[provider-doc]`
 
-*Last reviewed: 2026-04-23. xAI's API catalog is moving quickly; verify against the live [docs overview](https://docs.x.ai/docs) and [models and pricing page](https://docs.x.ai/developers/models) before making cost or migration decisions.*
+*Last reviewed: 2026-08-06. The official documentation now uses the SpaceXAI name while retaining `x.ai` domains and API endpoints. This catalog is date-stamped, not a ranking; verify against the live [models page](https://docs.x.ai/developers/models) before making cost or migration decisions.*
+
+## Product surfaces
+
+- **[Grok Build](grok-build.md)** — coding agent with interactive, headless, and Agent Client Protocol interfaces.
 
 ## Current model lines
 
 | Line | Role | Notable feature |
 |---|---|---|
-| Grok 4.20 | Current top tier | 2M context, reasoning, structured outputs, tool calling |
-| Grok 4 Fast (reasoning) | Fast/cheap reasoning tier | 2M context, lower cost than Grok 4.20 |
-| Grok 4 Fast (non-reasoning) | Lower-latency general tier | 2M context without reasoning path |
-| Grok Code Fast 1 | Coding tier | 256K context, code-editor and agent fit |
-| Grok 3 / Grok 3 mini | Older API line | Legacy models still listed for migration contexts |
+| Grok 4.5 | Current general and coding tier | 500K context, text+image input, configurable reasoning, server tools |
 
-The xAI docs treat Grok 4.20 as the newest top tier and keep Grok 3-era models mainly as migration baselines.
+The current models page directs code and chat workloads to Grok 4.5. Older pages remain below as historical and migration coverage; verify retirement status before using their IDs.
 
 ## Model pages
 
+- [Grok 4.5](models/grok-4-5.md)
+
+### Available previous generation
+
 - [Grok 4.20](models/grok-4-20.md)
+
+### Retired aliases
+
 - [Grok 4 Fast (reasoning)](models/grok-4-fast-reasoning.md)
 - [Grok 4 Fast (non-reasoning)](models/grok-4-fast-non-reasoning.md)
 - [Grok Code Fast 1](models/grok-code-fast-1.md)
 
-## Model docs
+## Current and historical model docs
 
 - [xAI docs overview](https://docs.x.ai/docs)
 - [Models and pricing](https://docs.x.ai/developers/models)
+- [Grok 4.5 model page](https://docs.x.ai/developers/models/grok-4.5)
 - [Grok 4 model page](https://docs.x.ai/developers/models/grok-4)
 - [Grok 4 Fast reasoning model page](https://docs.x.ai/developers/models/grok-4-fast-reasoning)
 - [Grok 3 mini model page](https://docs.x.ai/developers/models/grok-3-mini)
@@ -34,27 +42,27 @@ xAI does not currently publish a public “system card” hub in the Anthropic/O
 ## Strengths (cited)
 
 - **OpenAI-compatible API surface.** xAI exposes a familiar API shape, lowering integration friction for teams already wired for OpenAI-style clients. [Docs overview](https://docs.x.ai/docs).
-- **Very large context windows on current top tiers.** Grok 4.20 and Grok 4 Fast publish 2M context in the current docs. [Docs overview](https://docs.x.ai/docs), [models page](https://docs.x.ai/developers/models).
+- **Large current context window.** Grok 4.5 publishes a 500K-token context window. [Models page](https://docs.x.ai/developers/models).
 - **Built-in live/search positioning.** xAI continues to push web/X search and code execution as first-party tools. [Tools overview](https://docs.x.ai/docs).
-- **Clear coding-specific tier.** `grok-code-fast-1` exists as a documented coding model rather than expecting one general model to do everything.
+- **Separate coding-agent surface.** Grok Build wraps the model with repository tools, permissions, extensions, and subagents. [Grok Build docs](https://docs.x.ai/build/overview).
 
 ## Weaknesses (cited)
 
-- **Documentation depth still lags OpenAI, Anthropic, and Google.** The ecosystem remains thinner for advanced agent-framework support.
-- **Consumer/API surface mismatch remains real.** Capabilities discussed for grok.com or X do not always map cleanly to API features.
-- **Versioning churn.** xAI is iterating rapidly from Grok 3 to Grok 4 to Grok 4.20 and Grok 4 Fast; integration code should pin explicit model IDs.
+- **Live information is opt-in.** The base model has a February 1, 2026 cutoff; current information requires web or X search. [Models page](https://docs.x.ai/developers/models).
+- **Aliases can move.** `-latest` aliases can change; consistency-sensitive integrations should pin dated versions when available. [Models page](https://docs.x.ai/developers/models).
+- **Retired slugs can still resolve.** Several Grok 4 Fast and code IDs redirect to replacements with different behavior and pricing. [Retirement guide](https://docs.x.ai/developers/migration/may-15-retirement).
 
 ## Fits
 
 - Teams that want OpenAI-compatible integration with another frontier vendor
 - Workflows that benefit from first-party live/web/X search positioning
-- Large-context agent tasks where 2M context is materially useful
-- Coding agents that prefer a dedicated code model rather than a generalist
+- Large-context agent tasks where 500K context is materially useful
+- Coding workflows that need a first-party terminal agent as well as a model API
 
 ## Provider-specific quirks
 
-- **Reasoning vs non-reasoning split matters.** Grok 4 Fast has separate reasoning and non-reasoning variants.
-- **Grok 4 differs from Grok 3 on parameters.** xAI explicitly notes migration differences on the models page.
+- **Reasoning is configurable.** Grok 4.5 exposes low, medium, and high reasoning effort.
+- **Live data requires tools.** Web and X search must be enabled; the base model does not automatically receive current events.
 - **Model docs are more useful than blog posts.** For xAI, the live docs page carries more operational value than announcements.
 
 ## Official docs and resources
@@ -65,4 +73,4 @@ xAI does not currently publish a public “system card” hub in the Anthropic/O
 
 ## Status
 
-`[provider-doc]`. This page now names the concrete Grok 4.20 / Grok 4 Fast / Grok Code Fast lineup reflected in xAI's public docs.
+`[provider-doc]`. This page reflects Grok 4.5 as the current documented API model and Grok Build as its distinct coding-agent surface.
