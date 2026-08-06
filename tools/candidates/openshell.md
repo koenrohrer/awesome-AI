@@ -39,6 +39,5 @@
 
 - Official repo: https://github.com/NVIDIA/OpenShell
 - Official docs: https://docs.nvidia.com/openshell/about/supported-agents
-- NVIDIA product page: https://build.nvidia.com/openshell
 - GitHub API check: https://api.github.com/repos/NVIDIA/OpenShell
 - Latest verified commit: https://github.com/NVIDIA/OpenShell/commit/d2c44b0e5393e3746eae5783aa99ac31be08daae
