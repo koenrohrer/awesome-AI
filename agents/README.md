@@ -19,6 +19,8 @@ Subtopics we'll cover as entries accumulate:
 
 ### Patterns
 
+- **[Agent loop](agent-loop.md)** `[provider-doc]` — Bound repeated planning, action, observation, evaluation, and stopping.
+- **[Graph-structured orchestration](graph-structured-orchestration.md)** `[provider-doc]` — Make branches, cycles, fan-out, handoffs, and recovery routes explicit.
 - **[ReAct: Reasoning + Acting](react.md)** `[paper]` — Interleave reasoning traces, actions, and observations in a tool-use loop.
 - **[Toolformer](toolformer.md)** `[paper]` — Training-time tool-use behavior from self-supervised API-call filtering.
 - **[Plan-and-Solve prompting](plan-and-solve.md)** `[paper]` — Plan first, then execute; useful when a flat prompt skips subproblems.
@@ -34,6 +36,7 @@ Subtopics we'll cover as entries accumulate:
 
 - **[SWE-Bench](swe-bench.md)** `[paper]` — Real GitHub issues for evaluating coding-agent scaffolds.
 - **[GAIA: General AI Assistant benchmark](gaia.md)** `[paper]` — 466 multi-tool, multimodal questions for evaluating model plus scaffold behavior.
+- **[TraceLab](tracelab.md)** `[paper]` — Coding-agent trajectories for workload characterization and harness evaluation.
 
 ## Out of scope
 

@@ -1,6 +1,6 @@
 # Claude Opus 4.5 `[provider-doc]`
 
-*Last reviewed: 2026-04-23.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
@@ -12,7 +12,7 @@
 
 ## What it is
 
-Claude Opus 4.5 is the November 2025 Opus release that preceded Opus 4.6 and 4.7. Anthropic positioned it as a top-tier coding, agent, and computer-use model and still exposes it as an active snapshot.
+Claude Opus 4.5 is the November 2025 Opus release that preceded later Opus 4.x releases and Opus 5. Anthropic positioned it as a top-tier coding, agent, and computer-use model and still exposes it as an active snapshot.
 
 ## Official system card in Markdown
 
@@ -31,7 +31,7 @@ This section is a source-backed markdown digest, not a verbatim transcription of
 ### Integration notes
 
 - Treat Opus 4.5 as a pinned older snapshot rather than the default Opus choice.
-- If you want the latest Anthropic behavior, prefer Opus 4.7.
+- Start new Opus evaluations with Opus 5; retain Opus 4.5 only where its pinned behavior is already evaluated.
 
 ## Links
 
@@ -42,4 +42,4 @@ This section is a source-backed markdown digest, not a verbatim transcription of
 
 ## Status
 
-`[provider-doc]`.
+`[provider-doc]`. Active older snapshot; last reviewed 2026-08-06.

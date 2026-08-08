@@ -1,6 +1,6 @@
 # DeepSeek-V4-Pro `[provider-doc]`
 
-*Last reviewed: 2026-05-03.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
@@ -20,6 +20,8 @@ DeepSeek-V4-Pro is the larger DeepSeek V4 Preview model, positioned by DeepSeek 
 
 The V4 release note and pricing page document both thinking and non-thinking modes for the current V4 API surface. DeepSeek also publishes V4 open weights and a technical report through its Hugging Face organization.
 
+DeepSeek's July 31 update changed only the V4-Flash API. DeepSeek still described the official V4-Pro release as forthcoming, so this page retains the preview lifecycle label.
+
 ## Public system card availability
 
 DeepSeek does not currently publish a public system-card page for V4-Pro.
@@ -31,7 +33,7 @@ DeepSeek does not currently publish a public system-card page for V4-Pro.
 - [Thinking mode](https://api-docs.deepseek.com/guides/thinking_mode)
 - [Open weights collection](https://huggingface.co/collections/deepseek-ai/deepseek-v4)
 - [DeepSeek-V4-Pro model card](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)
-- [Technical report](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)
+- [Technical report](https://arxiv.org/abs/2606.19348)
 
 ## Status
 

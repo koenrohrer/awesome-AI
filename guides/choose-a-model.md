@@ -2,7 +2,7 @@
 
 ## The Short Version
 
-Start by naming the job before naming the model. A model choice is usually a bundle of tradeoffs: task shape, latency, cost, context length, tool support, structured-output reliability, deployment control, safety review, and vendor churn.
+Start by naming the job before naming the model. Compare candidates on stable dimensions: availability, lifecycle state, modality, tool surface, hosting model, openness, context strategy, and latency/cost tier.
 
 Use the provider pages as a map, not a ranking. They collect official docs and model pages, but provider catalogs move quickly.
 
@@ -28,7 +28,13 @@ Use this when you need to compare model options for a product or workflow and wa
 
 **Task type.** Separate open-ended writing, structured extraction, code work, tool-using agents, multimodal analysis, and retrieval-backed QA. A model that is convenient for chat may not expose the right schema, tool, or multimodal surface.
 
+**Availability and lifecycle.** Distinguish generally available, preview, limited-access, product-only, API, third-party hosted, open-weight, deprecated, and retired releases. A family name does not prove that one exact ID is available in the surface or region you need.
+
+**Modality.** Record accepted inputs and generated outputs separately. Image understanding, native audio, image generation, video generation, and computer control are different capabilities even when they share a product name.
+
 **Provider surface.** Decide whether you need an API model, a product surface, an agent runtime, open weights, or local deployment. The provider overviews distinguish these where the repo has coverage.
+
+**Openness and hosting.** An open-weight release is not the same as an open-source training stack, and a hosted endpoint does not imply downloadable weights. Verify the license, artifacts, serving requirements, and first- or third-party host separately.
 
 **Context strategy.** Long context can simplify prototypes, but it is not a substitute for retrieval, summarization, or cache-aware design. Use the RAG, KV cache, tokenization, and prompt-caching entries to decide what belongs in the prompt.
 
@@ -38,6 +44,8 @@ Use this when you need to compare model options for a product or workflow and wa
 
 **Latency and cost.** Reasoning modes, long context, large outputs, hosted tools, cache writes, and multimodal inputs change cost and latency. Do not reuse old pricing notes; verify live provider docs before shipping.
 
+Compare within a workload-shaped tier rather than assuming a provider's family labels align. Measure time to first token, end-to-end latency, retries, tool calls, and total task cost on the same inputs.
+
 **Operational control.** Open-weight models can help with deployment control, adaptation, and third-party hosting choices, but they shift responsibility for serving, safety, evaluation, and updates onto the team.
 
 **Evaluation.** Use a task-specific eval or pilot. Avoid choosing from generic leaderboard impressions unless the benchmark methodology matches the work you will run.
@@ -45,6 +53,8 @@ Use this when you need to compare model options for a product or workflow and wa
 ## Field Notes
 
 Provider docs are the source of record for current availability. This repo can organize the evidence, but it should not be treated as a live pricing or deprecation feed.
+
+Catalogs here are date-stamped maps, not rankings. Preview status, aliases, prices, regions, and product entitlements can change between review dates.
 
 Model families are not interchangeable. Feature support can differ across aliases, sizes, reasoning variants, product surfaces, and open-weight releases. Check the exact model page before assuming context length, tools, structured output, or multimodal support.
 

@@ -2,7 +2,7 @@
 
 ## One-sentence pitch
 
-A benchmark of 2,294 real GitHub issues from mature Python repos — the agent gets the repo and the issue, must produce a patch that passes the upstream maintainers' test suite. The eval everyone quotes when they say "AI can code."
+A benchmark that grades coding-agent patches against tests derived from real GitHub issues.
 
 ## Evidence
 
@@ -22,16 +22,25 @@ It's the benchmark that separates "can write a function" from "can operate a cod
 
 - **SWE-Bench** (full) — 2,294 problems across 12 repos.
 - **SWE-Bench Lite** — 300-problem subset for faster iteration.
-- **SWE-Bench Verified** — 500 problems human-validated for solvability; most papers now report on this variant.
+- **SWE-Bench Verified** — 500 problems selected through human validation, but later auditing found substantial test-quality and contamination concerns.
+- **SWE-Bench Pro** — a harder successor with broader repositories and longer tasks; a later audit also found substantial broken-task risk.
 
 ## What a result *means*
 
-A "pass" requires the agent's patch to compile, install, and make the hidden test suite go from failing to passing without breaking other tests. No partial credit. Numbers are hard to inflate, which is why the benchmark has staying power.
+A "pass" requires the patch to satisfy the benchmark's test harness. That is evidence about the model-plus-harness on a specific task image, but it is not automatically evidence that the patch satisfies the issue's intended behavior.
+
+OpenAI's February 2026 audit examined 138 of the 500 SWE-Bench Verified tasks (27.6%), selected because one model did not solve them consistently. It reported material issues in 59.4% of that audited subset and also found contamination concerns. In July, OpenAI reported that a manual review identified issues in 249 of 731 SWE-Bench Pro tasks, including overly strict tests, underspecified or misleading prompts, and inadequate test coverage. These are OpenAI's audit findings, not a neutral re-labeling of every task.
+
+Sources:
+
+- [Why we no longer evaluate on SWE-bench Verified](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/)
+- [Separating signal from noise in coding evaluations](https://openai.com/index/separating-signal-from-noise-coding-evaluations/)
 
 ## Practical takeaways
 
-- When evaluating a coding agent, SWE-Bench Verified (pass@1) is the single most citable number. Track the scaffold the score was obtained with — a given model's score varies substantially across different agent harnesses.
-- The benchmark's age means leaderboard top performers are approaching saturation. Expect the community to move to SWE-Bench Multimodal, SWE-Bench Pro, or successor benchmarks over time.
+- Treat any aggregate as a model-plus-harness result. Record the exact task set, image, model snapshot, tool surface, retry budget, and grader.
+- Audit a sample of failures and passes against the issue's intended behavior. Test success can reward an incomplete patch when coverage is weak or reject a correct patch when tests are over-constrained.
+- Prefer multiple task sets and real repository acceptance tests over one headline number.
 
 ## Related entries
 
@@ -39,4 +48,4 @@ A "pass" requires the agent's patch to compile, install, and make the hidden tes
 
 ## Status
 
-`[paper]`.
+`[paper]`. Last reviewed 2026-08-06.

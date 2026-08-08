@@ -9,7 +9,7 @@
 
 ## Evidence snapshot
 
-- Maintenance: Active. GitHub API showed `pushed_at: 2026-04-24T17:36:25Z`; latest GitHub release page showed `openclaw 2026.4.23` published on April 24, 2026.
+- Maintenance: Active. The latest default-branch commit was `ddcc3fb` at `2026-08-06T04:42:38Z`; the official repository remains under the OpenClaw organization.
 - Usage evidence: Maintainer used this wave of tools to autonomously scan a codebase overnight and report back, and to implement small high-confidence, tight-scope fixes. Maintainer impression: useful with setup friction.
 - Docs/install: Official README recommends `npm install -g openclaw@latest` and `openclaw onboard --install-daemon`; it documents macOS, Linux, and Windows via WSL2.
 - License/pricing: MIT license; self-hosted. Model/provider and messaging-service costs depend on configured services.
@@ -32,7 +32,7 @@
 ## Draft entry
 
 - **[OpenClaw](https://github.com/openclaw/openclaw)** `[vetted-tool]` — Self-hosted personal assistant for messaging-native automation on user-owned devices.
-  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* messaging-native codebase maintenance.
+  - *Last commit:* 2026-08-06. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* messaging-native codebase maintenance.
   - *Gotcha:* Treat inbound DMs and connected channel content as untrusted input.
 
 ## Sources
@@ -41,3 +41,4 @@
 - Official site: https://openclaw.ai/
 - GitHub releases: https://github.com/openclaw/openclaw/releases
 - GitHub API check: https://api.github.com/repos/openclaw/openclaw
+- Latest verified commit: https://github.com/openclaw/openclaw/commit/ddcc3fbd80bfa163a458f1d8e8318d3d911bf424

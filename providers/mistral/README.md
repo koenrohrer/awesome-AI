@@ -1,31 +1,38 @@
 # Mistral `[provider-doc]`
 
-*Last reviewed: 2026-04-22. Verify against [mistral.ai](https://mistral.ai/) and the [Mistral platform docs](https://docs.mistral.ai/) before building a cost model.*
+*Last reviewed: 2026-08-06. Mistral publishes hosted services, open-weight models, and research-only releases. This catalog is date-stamped, not a ranking; verify each release against the [Mistral model docs](https://docs.mistral.ai/models/model-selection-guide) before building a cost or deployment model.*
 
 ## Current model lines
 
 | Line | Role | Notable feature |
 |---|---|---|
-| Mistral Large | Main proprietary tier | Closed API; chat + reasoning |
-| Mistral Small / Medium | Balanced | Lower cost, widely available |
-| Mixtral-family (MoE) | Open weights | Sparse mixture-of-experts |
-| Codestral | Code | Code-specialized variant |
-| Pixtral | Vision-language | Multimodal |
+| Mistral Medium 3.5 | General multimodal tier | Hosted and open weights under a Modified MIT license |
+| Mistral Small 4 | Hybrid general model | Hosted and open weights; instruct, reasoning, and coding modes |
+| Mistral OCR 4 | Document AI service | `mistral-ocr-4-0`; block labels and paragraph bounding boxes |
+| Leanstral 1.5 | Lean 4 proof engineering | `labs-leanstral-1-5`; 256K context, open weights, Labs API until September 30, 2026 |
+| Robostral Navigate | Embodied-navigation research release | 8B vision-language model using a single RGB camera; no public API ID documented |
 
 Mistral runs a **dual-track** strategy: proprietary hosted models behind `la Plateforme`, plus open-weight releases on [HuggingFace](https://huggingface.co/mistralai). The split varies — check which track a given release belongs to before planning.
 
+## Docs-only specialist releases
+
+| Release | Availability | Operational notes | Evidence |
+|---|---|---|---|
+| Mistral OCR 4 | Hosted OCR API | `mistral-ocr-4-0`; $4/1,000 pages or $5/1,000 annotated pages; `mistral-ocr-latest` points to OCR 4 | `[provider-doc]` [model card](https://docs.mistral.ai/models/model-cards/ocr-4-0), [OCR guide](https://docs.mistral.ai/studio-api/document-processing/basic_ocr) |
+| Leanstral 1.5 | Labs API and open weights | `labs-leanstral-1-5`; 119B total / 6.5B active, 256K context, 128K output; scheduled retirement September 30, 2026 | `[provider-doc]` [model card](https://docs.mistral.ai/models/model-cards/leanstral-1-5), [changelog](https://docs.mistral.ai/resources/changelogs) |
+| Robostral Navigate | Research announcement | 8B single-camera navigation model; Mistral reports 76.6% success on R2R-CE validation unseen | `[provider-doc]` [release post](https://mistral.ai/news/robostral-navigate/) |
+
 ## Strengths (cited)
 
-- **Open-weight mixture-of-experts.** Mixtral 8x7B and 8x22B (and successors) were among the first broadly-accessible open-weight MoE models — large total capacity, small *active* parameter count per token. See the [Mistral blog](https://mistral.ai/news/) for release-specific architecture details.
-- **European jurisdiction.** For organizations requiring EU data residency or preferring European providers, Mistral's Paris-based hosting is a meaningful distinction.
-- **Strong open-weight performance per active parameter.** MoE variants often beat dense models of similar active-parameter counts on public benchmarks — verify on the specific eval you care about.
-- **Clear licensing on open releases** — Apache 2.0 on most open-weight releases, making commercial use straightforward. Verify the specific model's license.
+- **Hosted and open-weight paths.** Current general models such as Mistral Medium 3.5 and Small 4 expose both routes. Verify the release-specific license and hardware requirements.
+- **Specialist services.** OCR 4, Leanstral, and Robostral target document extraction, formal proofs, and robot navigation instead of broad chat.
+- **Document structure output.** OCR 4 can return paragraph bounding boxes and structural labels in reading order. [OCR guide](https://docs.mistral.ai/studio-api/document-processing/basic_ocr).
 
 ## Weaknesses (cited)
 
-- **Smaller ecosystem than Llama.** Fine-tunes and tooling lag Llama's, though MoE-capable open-source inference (vLLM, llama.cpp for GGUF variants) supports them well.
-- **Track ambiguity.** Not every Mistral announcement is open-weight; some are closed. Read the release post carefully — the distinction isn't always prominent.
-- **Tool-calling conventions** differ from OpenAI's format on some variants; check the specific model's docs.
+- **Availability varies by release.** A Mistral name can refer to hosted-only, open-weight, or research-only access; check the model card or release post.
+- **Labs models retire quickly.** Leanstral 1.5 is scheduled to retire from the Labs API on September 30, 2026. [Changelog](https://docs.mistral.ai/resources/changelogs).
+- **MoE memory remains tied to total weights.** Small 4 activates 6.5B of 119B parameters, but local deployment must still store the full model or a quantization. [Model selection guide](https://docs.mistral.ai/models/model-selection-guide).
 
 ## Fits
 
@@ -48,4 +55,4 @@ Mistral runs a **dual-track** strategy: proprietary hosted models behind `la Pla
 
 ## Status
 
-`[provider-doc]`. Track (open vs proprietary) and pricing rotate per release.
+`[provider-doc]`. OCR 4, Leanstral 1.5, and Robostral Navigate remain docs-only entries; their hosted, open-weight, and research-only availability is stated separately.

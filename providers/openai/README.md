@@ -1,6 +1,6 @@
 # OpenAI `[provider-doc]`
 
-*Last reviewed: 2026-04-23. OpenAI's catalog is moving quickly; GPT-5.5 launched today for ChatGPT and Codex with API access announced as coming soon. Verify exact availability against the live [models page](https://developers.openai.com/api/docs/models), [GPT-5.5 launch post](https://openai.com/index/introducing-gpt-5-5/), and current system-card pages before building around a specific snapshot.*
+*Last reviewed: 2026-08-06. GPT-5.6 is generally available across the OpenAI API, ChatGPT, and Codex. Verify exact access and pricing against the live [models page](https://developers.openai.com/api/docs/models) before deployment.*
 
 ## Product surfaces
 
@@ -10,6 +10,9 @@
 
 ## Model pages
 
+- [GPT-5.6 Sol](models/gpt-5-6-sol.md)
+- [GPT-5.6 Terra](models/gpt-5-6-terra.md)
+- [GPT-5.6 Luna](models/gpt-5-6-luna.md)
 - [GPT-5.5](models/gpt-5-5.md)
 - [GPT-5.5 Pro](models/gpt-5-5-pro.md)
 - [GPT-5.4](models/gpt-5-4.md)
@@ -23,70 +26,65 @@
 
 ## Current model lines
 
-| Line | Role | Notable feature |
-|---|---|---|
-| GPT-5.5 | Current ChatGPT/Codex top tier; API soon | Stronger agentic coding, computer use, research, and document/spreadsheet work |
-| GPT-5.5 Pro | Higher-compute ChatGPT tier; API soon | Harder-question / higher-accuracy path |
-| GPT-5.4 | Current main API tier | 1.05M context, native computer use, default API starting point |
-| GPT-5.4 Pro | Max-compute API tier | Slower, more expensive, deeper reasoning path |
-| GPT-5.4 mini / nano | Fast and cheap GPT-5.4-class models | Strong fit for subagents, coding helpers, high-volume tasks |
-| GPT-5.3 Instant | Fast GPT-5-series conversational model | Better web-search flow and lower latency than heavier models |
-| GPT-5.3-Codex / GPT-5.2-Codex / GPT-5-Codex | Agentic coding | Codex-tuned coding models with long-horizon tool use |
-| `codex-mini-latest` | Budget Codex helper | Fast Codex CLI / IDE workload tier |
+| Line | API ID | Role | Input / output per 1M tokens |
+|---|---|---|---|
+| GPT-5.6 Sol | `gpt-5.6-sol` (`gpt-5.6` alias) | Flagship tier for complex reasoning and coding | $5 / $30 |
+| GPT-5.6 Terra | `gpt-5.6-terra` | Balanced capability-and-cost tier | $2 / $12 |
+| GPT-5.6 Luna | `gpt-5.6-luna` | Cost-sensitive, high-volume tier | $0.20 / $1.20 |
+| GPT-5.5 | `gpt-5.5` | Previous frontier tier; active for pinned workloads | $5 / $30 |
+| GPT-5.5 Pro | `gpt-5.5-pro` | Previous higher-compute tier; active for pinned workloads | $30 / $180 |
+| GPT-5.4 family | `gpt-5.4*` | Older main, Pro, mini, and nano tiers | See each model page |
+| Codex models | `gpt-5.3-codex`, `gpt-5-codex`, `codex-mini-latest` | Coding-specialized models | See each model page |
 
-The live API docs still recommend `gpt-5.4` as the default API starting point. OpenAI's April 23, 2026 GPT-5.5 launch post says `gpt-5.5` and `gpt-5.5-pro` are coming to the API soon; until the live models page lists them, treat them as product-available rather than generally callable API models.
+The three GPT-5.6 API models support text and image input, text output, a 1.05M-token context window, 128K-token output, and reasoning efforts from `none` through `max`. Their per-model pages list the same broad Responses API tool set. OpenAI's current model pages are authoritative when launch-post prices or capabilities differ.
 
 ## System cards
 
+- [GPT-5.6 system card](https://deploymentsafety.openai.com/gpt-5-6)
 - [GPT-5.5 system card](https://openai.com/index/gpt-5-5-system-card/)
 - [GPT-5.4 Thinking system card](https://openai.com/index/gpt-5-4-thinking-system-card)
 - [GPT-5.3 Instant system card](https://openai.com/index/gpt-5-3-instant-system-card/)
 - [GPT-5.3-Codex system card](https://openai.com/index/gpt-5-3-codex-system-card/)
 - [Addendum to GPT-5 system card: GPT-5-Codex](https://openai.com/index/gpt-5-system-card-addendum-gpt-5-codex/)
-- [GPT-5 system card](https://openai.com/blog/gpt-5-system-card/)
 
-OpenAI does not currently expose a separate public system-card page for every API alias on the models page. For example, `gpt-5.4-pro`, `gpt-5.4-mini`, and `gpt-5.4-nano` are documented on the models page and launch posts, but the main public safety document is still anchored on GPT-5.4 Thinking.
+OpenAI publishes family-level system cards rather than a separate card for every API alias. Read the current family card with the per-model catalog page.
 
 ## Strengths (cited)
 
-- **Broad hosted tools surface.** `web_search`, `file_search`, `computer_use`, `hosted shell`, `apply_patch`, and related tools are exposed directly in the Responses API. [Models page](https://developers.openai.com/api/docs/models), [tools docs](https://platform.openai.com/docs/guides/tools).
-- **Strong agentic coding depth.** GPT-5.5 is now OpenAI's newest product model for agentic coding in ChatGPT and Codex, while GPT-5.4 remains the live default API starting point. See [Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/), [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/), and the [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex).
-- **Wide product/API convergence.** The same core line now spans ChatGPT, the API, and Codex, reducing “web model vs API model” drift for many workflows. [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/).
-- **Automatic prompt caching and flexible scaling paths.** OpenAI supports prompt caching, batch, flex processing, and background mode in the main API stack. See the [API docs](https://developers.openai.com/api/docs/models) and [pricing](https://openai.com/api/pricing/).
+- **Broad hosted tool surface.** GPT-5.6 supports web search, file search, code interpreter, hosted shell, apply patch, computer use, MCP, and related Responses API tools. [GPT-5.6 Sol model page](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
+- **Three current cost tiers.** Sol, Terra, and Luna share the core GPT-5.6 context, modality, and tool surface while exposing different prices and rate limits. [Models page](https://developers.openai.com/api/docs/models).
+- **Product/API availability.** OpenAI launched GPT-5.6 across ChatGPT, Codex, and the API on July 9, 2026. [GPT-5.6 launch post](https://openai.com/index/gpt-5-6/).
 
 ## Weaknesses (cited)
 
-- **Catalog breadth.** OpenAI has overlapping mainline GPT-5, GPT-5.4 variants, Codex variants, and specialized models. The [models page](https://developers.openai.com/api/docs/models) is authoritative.
-- **Feature support varies by alias.** `gpt-5.4-pro` supports a narrower subset of structured-output/tooling features than `gpt-5.4`, and Codex-optimized models differ again. Always check the per-model page.
-- **Safety docs do not map 1:1 to every alias.** You often need to read the family system card plus addenda and launch posts.
+- **Catalog breadth.** OpenAI maintains overlapping general, Pro, Codex, image, realtime, and specialist lines. Confirm the exact alias on the [models page](https://developers.openai.com/api/docs/models).
+- **Feature support varies by alias.** GPT-5.5 Pro, for example, omits streaming and several tools supported by base GPT-5.5. Compare their [model pages](https://developers.openai.com/api/docs/models/compare).
+- **Long-context pricing changes above a threshold.** GPT-5.6 requests with more than 272K input tokens use higher input and output rates. Check the per-model pricing notes before estimating cost.
 
 ## Fits
 
-- Multimodal agent workflows that need hosted tools rather than self-hosted infrastructure
-- Coding agents that mix planning, computer use, and repo edits
+- Multimodal agent workflows that need hosted tools
+- Coding agents that combine planning, computer use, and repository edits
 - Knowledge-work automation across documents, spreadsheets, and presentations
-- Small/large mixed-model systems where GPT-5.4 coordinates and mini/nano handle support tasks
+- Mixed-model systems that route work among Sol, Terra, and Luna by task value
 
 ## Provider-specific quirks
 
-- **Responses API is the primary surface.** New tool support lands there first. Older Chat Completions integrations still work for many models, but new builds should bias toward Responses.
-- **Model-specific tool support matters.** The models page now lists supported tools per model; do not assume parity across aliases.
-- **Codex models remain separate.** Even though GPT-5.4 absorbed a lot of Codex capability, dedicated Codex models still exist and are easier to justify for coding-only workloads.
+- **Responses API is the primary surface.** OpenAI's [GPT-5.6 guidance](https://developers.openai.com/api/docs/guides/latest-model) directs reasoning, tool-calling, and multi-turn workflows there.
+- **`gpt-5.6` routes to Sol.** Use the suffixed Terra and Luna IDs when you want those tiers.
+- **GPT-5.6 cache writes are billed.** Cache writes cost 1.25 times uncached input; cache reads receive the discount listed on each [model page](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
+- **Codex models remain separate.** The [model catalog](https://developers.openai.com/api/docs/models) keeps coding-specialized aliases separate from the GPT-5.6 family.
 
 ## Official docs
 
 - [Models](https://developers.openai.com/api/docs/models)
-- [GPT-5.5 launch post](https://openai.com/index/introducing-gpt-5-5/)
-- [GPT-5.5 system card](https://openai.com/index/gpt-5-5-system-card/)
-- [GPT-5.4 launch post](https://openai.com/index/introducing-gpt-5-4/)
-- [GPT-5.4 mini and nano launch post](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)
-- [GPT-5.4 model page](https://developers.openai.com/api/docs/models/gpt-5.4)
-- [GPT-5.4 Pro model page](https://developers.openai.com/api/docs/models/gpt-5.4-pro)
-- [GPT-5.3-Codex model page](https://developers.openai.com/api/docs/models/gpt-5.3-codex)
-- [GPT-5-Codex model page](https://developers.openai.com/api/docs/models/gpt-5-codex)
-- [codex-mini-latest model page](https://developers.openai.com/api/docs/models/codex-mini-latest)
-- [Pricing](https://openai.com/api/pricing/)
+- [Model comparison](https://developers.openai.com/api/docs/models/compare)
+- [GPT-5.6 model guidance](https://developers.openai.com/api/docs/guides/latest-model)
+- [GPT-5.6 launch post](https://openai.com/index/gpt-5-6/)
+- [GPT-5.6 system card](https://deploymentsafety.openai.com/gpt-5-6)
+- [GPT-5.5 model page](https://developers.openai.com/api/docs/models/gpt-5.5)
+- [GPT-5.5 Pro model page](https://developers.openai.com/api/docs/models/gpt-5.5-pro)
 
 ## Status
 
-`[provider-doc]`. OpenAI now has public GPT-5.5 system-card coverage, but GPT-5.5 and GPT-5.5 Pro should be treated as product-available/API-soon until they appear on the live API models page.
+`[provider-doc]`. GPT-5.6 is generally available; GPT-5.5 and older lines remain available for evaluated or pinned workloads.

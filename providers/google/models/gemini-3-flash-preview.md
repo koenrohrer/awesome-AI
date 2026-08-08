@@ -1,6 +1,6 @@
 # Gemini 3 Flash Preview `[provider-doc]`
 
-*Last reviewed: 2026-04-23.*
+*Last reviewed: 2026-08-06.*
 
 ## At a glance
 
@@ -13,6 +13,8 @@
 ## What it is
 
 Gemini 3 Flash Preview is Google's fast Gemini 3 model for lower-latency, lower-cost multimodal and agentic workloads.
+
+The endpoint remains listed as preview. Stable Gemini 3.6 Flash is the current recommended fast model for new integrations.
 
 ## Integration notes
 

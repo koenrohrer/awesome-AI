@@ -21,16 +21,16 @@ Standalone AI tools and apps that don't fit a more specific category. If a tool 
 ## Entries
 
 - **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** `[vetted-tool]` — Self-hosted persistent agent for memory-backed scheduled codebase maintenance.
-  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* scheduled self-hosted codebase maintenance.
+  - *Last commit:* 2026-08-06. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* scheduled self-hosted codebase maintenance.
   - *Gotcha:* Useful, but long-running agents need explicit secrets, permissions, and gateway review before use.
 - **[OpenClaw](https://github.com/openclaw/openclaw)** `[vetted-tool]` — Self-hosted personal assistant for messaging-native codebase maintenance.
-  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* messaging-native codebase maintenance.
+  - *Last commit:* 2026-08-06. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* messaging-native codebase maintenance.
   - *Gotcha:* Treat inbound DMs and connected channel content as untrusted input.
 - **[OpenShell](https://github.com/NVIDIA/OpenShell)** `[vetted-tool]` — Policy-governed sandbox runtime for constraining autonomous coding agents.
-  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* sandboxed agent execution.
+  - *Last commit:* 2026-08-05. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* sandboxed agent execution.
   - *Gotcha:* Alpha software; treat policies as a tested constraint layer, not a production security guarantee.
-- **[Pi Agent](https://github.com/badlogic/pi-mono)** `[vetted-tool]` — Minimal terminal coding harness for custom provider, prompt, skill, and extension workflows.
-  - *Last commit:* 2026-04-24. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* customizable terminal coding agent.
+- **[Pi Agent](https://github.com/earendil-works/pi)** `[vetted-tool]` — Minimal terminal coding harness for custom provider, prompt, skill, and extension workflows.
+  - *Last commit:* 2026-08-05. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* customizable terminal coding agent.
   - *Gotcha:* Common workflow features are extension territory, not built-in defaults.
 
 ## Status

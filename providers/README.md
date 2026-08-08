@@ -15,25 +15,25 @@ providers/
 
 ## Model directory
 
-- **[Provider model directory](models/)** `[provider-doc]` — cross-provider map of seeded model pages and docs-only model lines for Anthropic, OpenAI, Google, DeepSeek, Moonshot/Kimi, MiniMax, and adjacent providers.
+- **[Provider model directory](models/)** `[provider-doc]` — date-stamped, cross-provider map of full model pages and docs-only releases.
 
 ## Providers
 
 ### Closed frontier
 
-- **[Anthropic](anthropic/)** `[provider-doc]` — Claude model families plus Anthropic-specific product surfaces like Claude Code, Claude Desktop, and Claude Design.
-- **[OpenAI](openai/)** `[provider-doc]` — GPT-5.5/GPT-5.4 model lines plus Codex, ChatGPT Desktop, and image-generation surfaces.
-- **[Google](google/)** `[provider-doc]` — Gemini/Gemma models plus Google-specific product surfaces like Antigravity and Stitch.
-- **[xAI](xai/)** `[provider-doc]` — Grok models, consumer/API split, and live-data positioning.
+- **[Anthropic](anthropic/)** `[provider-doc]` — Fable, Opus, Sonnet, and Haiku models, limited-access Mythos, and Claude product surfaces.
+- **[OpenAI](openai/)** `[provider-doc]` — GPT-5.6 and maintained older model lines plus Codex, ChatGPT Desktop, and image generation.
+- **[Google](google/)** `[provider-doc]` — Gemini/Gemma models, preview Computer Use, and product surfaces such as Antigravity and Stitch.
+- **[xAI](xai/)** `[provider-doc]` — Grok 4.5, Grok Build, first-party server tools, and historical migration coverage.
 
 ### Open-weight and Chinese labs
 
-- **[Moonshot AI](moonshot/)** `[provider-doc]` — Kimi long-context models and open-weight releases.
-- **[Alibaba](alibaba/)** `[provider-doc]` — Qwen general and specialist variants.
-- **[DeepSeek](deepseek/)** `[provider-doc]` — V4, R1, and open-weight long-context reasoning.
-- **[MiniMax](minimax/)** `[provider-doc]` — M2.x text models, open-weight M1, and broader multimodal platform surfaces.
-- **[Meta](meta/)** `[provider-doc]` — Llama-family open weights and adjacent safety surfaces.
-- **[Mistral](mistral/)** `[provider-doc]` — proprietary platform + open-weight dual track.
+- **[Moonshot AI](moonshot/)** `[provider-doc]` — Kimi K3 hosted/open-weight flagship plus earlier K2 lines.
+- **[Alibaba](alibaba/)** `[provider-doc]` — Hosted Qwen 3.7/3.8 plus open-weight general and specialist families.
+- **[DeepSeek](deepseek/)** `[provider-doc]` — V4 hosted/open-weight models and retired legacy aliases.
+- **[MiniMax](minimax/)** `[provider-doc]` — M3, maintained M2.x tiers, and broader multimodal platform surfaces.
+- **[Meta](meta/)** `[provider-doc]` — Llama open weights plus hosted Muse model and media surfaces.
+- **[Mistral](mistral/)** `[provider-doc]` — Hosted/open-weight general models plus OCR, formal-proof, and robotics specialists.
 
 More providers (Phi, Command R, Yi) land in a later wave.
 

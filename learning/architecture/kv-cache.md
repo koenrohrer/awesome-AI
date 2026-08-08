@@ -26,6 +26,14 @@ That matters because live serving workloads are dynamic: requests enter and leav
 - Serving throughput depends on more than model speed; memory allocation, batching, and cache reuse also matter.
 - Techniques like prefix caching, paged attention, speculative decoding, and KV quantization all build on this same bottleneck.
 
+## MosaicKV: two-dimensional compression
+
+Most KV-cache methods reduce the sequence positions retained, the precision of each cached vector, or the representation produced by the attention architecture. MosaicKV combines sequence selection with channel selection: it chooses which tokens and which feature channels to preserve at different layers and heads.
+
+The MosaicKV authors report, on their evaluated H800 setup and LongBench/RULER tasks, up to 16x attention speedup, 4.8x lower decode latency, 7.3x higher throughput, and 3x lower memory use with a 1.76% average accuracy reduction. These are paper-reported system results, not portable expectations; hardware, model, workload, baseline, and compression budget all affect the tradeoff.
+
+**Citation:** Qiang et al. (2026). *MosaicKV: Serving Long-Context LLM with Dynamic Two-D KV Cache Compression.* [arxiv.org/abs/2607.00760](https://arxiv.org/abs/2607.00760)
+
 ## Read it when
 
 - You are choosing between local runners or hosted inference engines.
@@ -38,10 +46,11 @@ That matters because live serving workloads are dynamic: requests enter and leav
 - `learning/architecture/native-sparse-attention.md` — reduces long-context attention work rather than only managing cached tensors.
 - `learning/architecture/multi-head-latent-attention.md` — reduces the cached representation at the model-architecture level.
 - `learning/architecture/turboquant.md` — compresses KV cache vectors rather than paging them.
+- `learning/architecture/context-folding.md` — reduces logical active context rather than only its serving representation.
 - `learning/architecture/disaggregated-llm-serving.md` — moves KV cache between prefill and decode resources.
 - `learning/papers/attention-is-all-you-need.md` — the attention mechanism that creates keys and values.
 - `self-hosted/runners/README.md` — where runner-specific serving tradeoffs will land.
 
 ## Status
 
-`[paper]`.
+`[paper]`. Last reviewed 2026-08-06.
