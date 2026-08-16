@@ -22,17 +22,17 @@ providers/
 ### Closed frontier
 
 - **[Anthropic](anthropic/)** `[provider-doc]` — Fable, Opus, Sonnet, and Haiku models, limited-access Mythos, and Claude product surfaces.
-- **[OpenAI](openai/)** `[provider-doc]` — GPT-5.6 and maintained older model lines plus Codex, ChatGPT Desktop, and image generation.
-- **[Google](google/)** `[provider-doc]` — Gemini/Gemma models, preview Computer Use, and product surfaces such as Antigravity and Stitch.
-- **[xAI](xai/)** `[provider-doc]` — Grok 4.5, Grok Build, first-party server tools, and historical migration coverage.
+- **[OpenAI](openai/)** `[provider-doc]` — GPT-5.6 including the access-gated Cyber tier, maintained older lines, Codex, ChatGPT Desktop, and image generation.
+- **[Google](google/)** `[provider-doc]` — Gemini 3.7 Flash and earlier Gemini/Gemma models, preview Computer Use, and product surfaces such as Antigravity and Stitch.
+- **[xAI](xai/)** `[provider-doc]` — Grok 4.6, the 4.5/4.3/4.20 lines, Grok Build, Imagine media models, and historical migration coverage.
 
 ### Open-weight and Chinese labs
 
-- **[Moonshot AI](moonshot/)** `[provider-doc]` — Kimi K3 hosted/open-weight flagship plus earlier K2 lines.
+- **[Moonshot AI](moonshot/)** `[provider-doc]` — Kimi K3 and K2.7 Code hosted/open-weight lines plus the discontinued K2 series.
 - **[Alibaba](alibaba/)** `[provider-doc]` — Hosted Qwen 3.7/3.8 Model Studio tiers plus Qwen 3.8 open weights in two sizes and earlier open-weight families.
 - **[DeepSeek](deepseek/)** `[provider-doc]` — V4 hosted/open-weight models and retired legacy aliases.
-- **[MiniMax](minimax/)** `[provider-doc]` — M3, maintained M2.x tiers, and broader multimodal platform surfaces.
-- **[Meta](meta/)** `[provider-doc]` — Llama open weights plus hosted Muse model and media surfaces.
+- **[MiniMax](minimax/)** `[provider-doc]` — M3, maintained M2.x tiers, the H3 video model, and named speech, image, and music surfaces.
+- **[Meta](meta/)** `[provider-doc]` — Llama open weights, the Apache 2.0 Muse Glimmer 30B release, and hosted Muse Spark, Muse Code, and media surfaces.
 - **[Mistral](mistral/)** `[provider-doc]` — Hosted/open-weight general models plus OCR, formal-proof, and robotics specialists.
 
 More providers (Phi, Command R, Yi) land in a later wave.

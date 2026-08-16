@@ -116,14 +116,14 @@ Provider and model pages are useful starting points, but they are date-sensitive
 
 - **[Provider model directory](providers/models/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Cross-provider map of seeded model pages and docs-only model lines.
 - **[Anthropic](providers/anthropic/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Claude API, limited-access models, and product surfaces.
-- **[OpenAI](providers/openai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — GPT model lines plus Codex, ChatGPT Desktop, and image generation.
-- **[Google](providers/google/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Gemini/Gemma models, preview Computer Use, and product surfaces.
-- **[xAI](providers/xai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Grok 4.5, Grok Build, and historical migration coverage.
-- **[Moonshot AI](providers/moonshot/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted and open-weight Kimi model lines.
+- **[OpenAI](providers/openai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — GPT-5.6 lines including the Cyber tier, plus Codex, ChatGPT Desktop, and image generation.
+- **[Google](providers/google/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Gemini 3.7 Flash and earlier Gemini/Gemma models, preview Computer Use, and product surfaces.
+- **[xAI](providers/xai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Grok 4.6 and earlier Grok lines, Grok Build, and historical migration coverage.
+- **[Moonshot AI](providers/moonshot/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted and open-weight Kimi lines including K3 and K2.7 Code.
 - **[Alibaba](providers/alibaba/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted Qwen 3.7/3.8 tiers plus Qwen 3.8 open weights in two sizes.
 - **[DeepSeek](providers/deepseek/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — V4 hosted/open-weight lines and retired legacy aliases.
-- **[MiniMax](providers/minimax/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — M3, maintained M2.x tiers, and multimodal platform surfaces.
-- **[Meta](providers/meta/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Llama open weights plus hosted Muse model and media surfaces.
+- **[MiniMax](providers/minimax/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — M3, maintained M2.x tiers, the H3 video model, and multimodal platform surfaces.
+- **[Meta](providers/meta/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Llama and Muse Glimmer open weights plus hosted Muse Spark, Muse Code, and media surfaces.
 - **[Mistral](providers/mistral/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — General models plus OCR, proof, and robotics specialists.
 
 #### Extensions

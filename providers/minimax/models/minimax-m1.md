@@ -1,6 +1,6 @@
 # MiniMax M1 `[provider-doc]`
 
-*Last reviewed: 2026-04-23.*
+*Last reviewed: 2026-08-16.*
 
 ## At a glance
 
@@ -12,7 +12,7 @@
 
 ## What it is
 
-MiniMax M1 is MiniMax's open-source large-scale reasoning model with a long-context positioning rather than the hosted M2.x API line.
+MiniMax M1 is MiniMax's open-weight reasoning model, announced with a 1M-token context window and an 80,000-token reasoning output budget. It is not listed on the current API overview; the announcement points to Hugging Face and GitHub for weights.
 
 ## Public system card availability
 

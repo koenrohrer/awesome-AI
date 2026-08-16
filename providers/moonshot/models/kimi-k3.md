@@ -1,6 +1,6 @@
 # Kimi K3 `[provider-doc]`
 
-*Last reviewed: 2026-08-06.*
+*Last reviewed: 2026-08-16.*
 
 ## At a glance
 
@@ -22,7 +22,9 @@ Kimi K3 is Moonshot's native multimodal, long-context model for coding, knowledg
 
 Moonshot serves Kimi K3 as `kimi-k3` through the Kimi API Platform. The platform lists automatic context caching, tool calls, JSON mode, structured output, partial mode, tool-choice constraints, and dynamic tool loading.
 
-As reviewed on 2026-08-06, the platform lists $3.00 per 1M input tokens, $0.30 per 1M cached input tokens, and $15.00 per 1M output tokens. Pricing and platform features are date-sensitive; recheck the live pricing page before production use.
+As reviewed on 2026-08-16, the platform lists $3.00 per 1M cache-miss input tokens, $0.30 per 1M cache-hit input tokens, and $15.00 per 1M output tokens. Pricing and platform features are date-sensitive; recheck the live pricing page before production use.
+
+For coding work that fits a 256K context, [Kimi K2.7 Code](kimi-k2-7-code.md) is the cheaper documented path on the same platform.
 
 ## Open weights and report
 

@@ -1,14 +1,14 @@
 # MiniMax M2.5-highspeed `[provider-doc]`
 
-*Last reviewed: 2026-04-23.*
+*Last reviewed: 2026-08-16.*
 
 ## At a glance
 
 - Provider: MiniMax
 - Model ID: `MiniMax-M2.5-highspeed`
-- Tier: Faster M2.5 variant
+- Tier: Faster M2.5 variant; M3 is the current top M-series line
 - Token limit: 204,800 input+output
-- Official docs: [API overview](https://platform.minimaxi.com/docs/api-reference/api-overview)
+- Official docs: [API overview](https://platform.minimax.io/docs/api-reference/api-overview)
 
 ## What it is
 
@@ -20,7 +20,7 @@ MiniMax does not currently publish a public system card for M2.5-highspeed.
 
 ## Links
 
-- [API overview](https://platform.minimaxi.com/docs/api-reference/api-overview)
+- [API overview](https://platform.minimax.io/docs/api-reference/api-overview)
 
 ## Status
 
