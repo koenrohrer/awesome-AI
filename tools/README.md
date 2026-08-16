@@ -20,6 +20,9 @@ Standalone AI tools and apps that don't fit a more specific category. If a tool 
 
 ## Entries
 
+- **[anydoc](https://github.com/firecrawl/anydoc)** `[vetted-tool]` — Local Rust converter turning Office, OpenDocument, EPUB, and PDF files into clean Markdown so agents can read them.
+  - *Last commit:* 2026-08-13. *Used for:* converting Office documents to Markdown so coding agents could read them in-context. *Scope:* document-to-Markdown conversion for agent consumption.
+  - *Gotcha:* Repository created 2026-08-03 and still on `v0.1.x`; images and embedded objects become alt text, not extracted files.
 - **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** `[vetted-tool]` — Self-hosted persistent agent for memory-backed scheduled codebase maintenance.
   - *Last commit:* 2026-08-06. *Used for:* overnight codebase scan/report and small tight-scope fixes. *Scope:* scheduled self-hosted codebase maintenance.
   - *Gotcha:* Useful, but long-running agents need explicit secrets, permissions, and gateway review before use.
@@ -35,12 +38,13 @@ Standalone AI tools and apps that don't fit a more specific category. If a tool 
 
 ## Status
 
-Seeded in v0.5 with four maintainer-tested, codebase-maintenance scoped tools.
+Seeded in v0.5 with four maintainer-tested, codebase-maintenance scoped tools. anydoc joins as a document-conversion tool for agent consumption, so the directory is no longer scoped to codebase maintenance alone.
 
 ## Decision briefs
 
 Detailed decision briefs capture source checks, caveats, and follow-up questions for each entry.
 
+- [anydoc](candidates/anydoc.md)
 - [Hermes Agent](candidates/hermes-agent.md)
 - [OpenClaw](candidates/openclaw.md)
 - [OpenShell](candidates/openshell.md)
