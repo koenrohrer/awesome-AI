@@ -29,7 +29,7 @@ providers/
 ### Open-weight and Chinese labs
 
 - **[Moonshot AI](moonshot/)** `[provider-doc]` — Kimi K3 hosted/open-weight flagship plus earlier K2 lines.
-- **[Alibaba](alibaba/)** `[provider-doc]` — Hosted Qwen 3.7/3.8 plus open-weight general and specialist families.
+- **[Alibaba](alibaba/)** `[provider-doc]` — Hosted Qwen 3.7/3.8 Model Studio tiers plus Qwen 3.8 open weights in two sizes and earlier open-weight families.
 - **[DeepSeek](deepseek/)** `[provider-doc]` — V4 hosted/open-weight models and retired legacy aliases.
 - **[MiniMax](minimax/)** `[provider-doc]` — M3, maintained M2.x tiers, and broader multimodal platform surfaces.
 - **[Meta](meta/)** `[provider-doc]` — Llama open weights plus hosted Muse model and media surfaces.

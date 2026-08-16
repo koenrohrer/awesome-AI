@@ -1,6 +1,6 @@
 # Provider Model Directory `[provider-doc]`
 
-*Last reviewed: 2026-08-06. This date-stamped catalog is a non-ranking map of documented model surfaces. Provider pages and their linked live docs remain the source of record.*
+*Last reviewed: 2026-08-16. This date-stamped catalog is a non-ranking map of documented model surfaces. Provider pages and their linked live docs remain the source of record.*
 
 ## Scope
 
@@ -107,6 +107,8 @@
 | [Grok 4.5](../xai/models/grok-4-5.md) | Full page | `[provider-doc]` [Model page](https://docs.x.ai/developers/models/grok-4.5) |
 | [xAI Grok models and products](../xai/) | Grok Build product surface and retained migration pages | `[provider-doc]` [xAI models](https://docs.x.ai/developers/models), [Grok Build](https://docs.x.ai/build/overview) |
 | [Meta models and products](../meta/) | Full pages for Llama 4, guard models, Muse Spark 1.1 API, and Muse media products | `[provider-doc]` [Meta Llama](https://huggingface.co/meta-llama), [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) |
+| [Qwen3.8-2.4T-A95B](../alibaba/models/qwen3-8-2-4t-a95b.md) | Full page; open weights, Max-class | `[provider-doc]` [Model card](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B), [release post](https://qwen.ai/blog?id=qwen3.8) |
+| [Qwen3.8-27B](../alibaba/models/qwen3-8-27b.md) | Full page; open weights, Apache 2.0 | `[provider-doc]` [Model card](https://huggingface.co/Qwen/Qwen3.8-27B), [release post](https://qwen.ai/blog?id=qwen3.8) |
 | Qwen 3.8 Max | Docs only; hosted production model | `[provider-doc]` [Model Studio catalog](https://help.aliyun.com/en/model-studio/text-generation-model/) |
 | Qwen 3.7 Plus | Docs only; current hosted model | `[provider-doc]` [Model Studio catalog](https://help.aliyun.com/en/model-studio/text-generation-model/) |
 | Qwen 3.7 Max | Docs only; supported legacy model | `[provider-doc]` [Model Studio catalog](https://help.aliyun.com/en/model-studio/text-generation-model/) |
