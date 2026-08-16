@@ -136,6 +136,7 @@ Current primer indexes, not finished evidence entries: [Skills](extensions/skill
 
 Standalone AI tools that do not fit a narrower category. See [tools/README.md](tools/README.md).
 
+- **[anydoc](tools/candidates/anydoc.md)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Local Rust converter turning Office, OpenDocument, EPUB, and PDF files into agent-readable Markdown.
 - **[Hermes Agent](tools/candidates/hermes-agent.md)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Self-hosted persistent agent for scheduled codebase maintenance.
 - **[OpenClaw](tools/candidates/openclaw.md)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Messaging-native personal assistant for codebase maintenance.
 - **[OpenShell](tools/candidates/openshell.md)** ![vetted tool](assets/badges/vetted-tool.svg)<!-- [vetted-tool] --> — Policy-governed sandbox runtime for autonomous coding agents.
