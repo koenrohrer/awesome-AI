@@ -1,6 +1,6 @@
 # MiniMax M3 `[provider-doc]`
 
-*Last reviewed: 2026-08-06.*
+*Last reviewed: 2026-08-16.*
 
 ## At a glance
 

@@ -1,6 +1,6 @@
 # Grok 4 Fast (non-reasoning) `[provider-doc]`
 
-*Last reviewed: 2026-08-06.*
+*Last reviewed: 2026-08-16.*
 
 ## At a glance
 
@@ -12,7 +12,7 @@
 
 ## What it is
 
-Grok 4 Fast (non-reasoning) is a retired model ID retained for migration history. Continuing to send the old slug invokes and bills the `grok-4.3` replacement, not the original model.
+Grok 4 Fast (non-reasoning) is a retired model ID retained for migration history. Continuing to send the old slug invokes and bills the `grok-4.3` replacement, not the original model. See [Grok 4.3](grok-4-3.md) for the replacement's context window, pricing, and rate limits.
 
 ## Public system card availability
 

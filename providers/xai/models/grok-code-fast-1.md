@@ -1,6 +1,6 @@
 # Grok Code Fast 1 `[provider-doc]`
 
-*Last reviewed: 2026-08-06.*
+*Last reviewed: 2026-08-16.*
 
 ## At a glance
 
@@ -12,7 +12,7 @@
 
 ## What it is
 
-Grok Code Fast 1 is a retired coding-model ID retained for migration history. Continuing to send the old slug invokes and bills the documented replacement rather than the original model.
+Grok Code Fast 1 is a retired coding-model ID retained for migration history. Continuing to send the old slug invokes and bills the documented replacement rather than the original model. `grok-code-fast-1` is also listed as an alias on the `grok-build-0.1` model page. See [Grok Build 0.1](grok-build-0-1.md).
 
 ## Public system card availability
 
