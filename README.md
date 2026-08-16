@@ -120,7 +120,7 @@ Provider and model pages are useful starting points, but they are date-sensitive
 - **[Google](providers/google/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Gemini/Gemma models, preview Computer Use, and product surfaces.
 - **[xAI](providers/xai/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Grok 4.5, Grok Build, and historical migration coverage.
 - **[Moonshot AI](providers/moonshot/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted and open-weight Kimi model lines.
-- **[Alibaba](providers/alibaba/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted Qwen 3.7/3.8 and open-weight model families.
+- **[Alibaba](providers/alibaba/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Hosted Qwen 3.7/3.8 tiers plus Qwen 3.8 open weights in two sizes.
 - **[DeepSeek](providers/deepseek/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — V4 hosted/open-weight lines and retired legacy aliases.
 - **[MiniMax](providers/minimax/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — M3, maintained M2.x tiers, and multimodal platform surfaces.
 - **[Meta](providers/meta/README.md)** ![provider doc](assets/badges/provider-doc.svg)<!-- [provider-doc] --> — Llama open weights plus hosted Muse model and media surfaces.
